@@ -1,0 +1,16 @@
+.sticky,
+.fixed {
+  position: fixed;
+}
+
+@each $side in $sides {
+  .#{$side} {
+    #{$side}: 0;
+
+    @for $i from 1 through 5 {
+      &-#{$i} {
+        #{$side}: #{$i}rem;
+      }
+    }
+  }
+}

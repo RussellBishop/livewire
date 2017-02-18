@@ -1,0 +1,12 @@
+.button,
+.link {
+  background-color: #1e87f0;
+  color: white;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+}
+
+.button {
+  @include pad(0, .5);
+  display: inline-block;
+  line-height: 2;
+}

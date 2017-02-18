@@ -1,0 +1,123 @@
+@function font-stack($family) {
+
+  $return: null;
+
+  @if ($family == 'franklin') {
+    $return: 'Georgia', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif;
+
+  }
+
+  @return $return;
+}
+
+@mixin font-scale($smallest, $largest) {
+
+  @media (max-width: #{map-get($bp, xl)}px) {
+    font-size: calc(#{$smallest}px + (#{$largest} - #{$smallest}) * ( (100vw - #{map-get($bp, xs)}px) / ( #{map-get($bp, xl)} - #{map-get($bp, xs)}) ));
+  }
+
+  @media (min-width: #{map-get($bp, xl)}px) {
+    font-size: #{$largest}px;
+  }
+
+}
+
+@function pow($number, $exponent) {
+  $value: 1;
+
+  @if $exponent > 0 {
+    @for $i from 1 through $exponent {
+      $value: $value * $number;
+    }
+  }
+
+  @return $value;
+}
+
+$textSmallest: 16;
+$testLargest: 36;
+
+$bodyTextSmallest: $textSmallest;
+$bodyTextLargest: 20;
+
+
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis; white-space: nowrap;
+}
+
+:root {
+  @include font-scale($textSmallest, $bodyTextLargest);
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  line-height: 1.5;
+}
+
+%heading {
+  font-family: 'Slabo 27px', serif;
+  letter-spacing: .02em;
+}
+
+$modular: 1.35;
+$headingCount: 3;
+$headingCountMax: $headingCount + 1;
+
+@for $i from 1 through $headingCount {
+  h#{$i},
+  .h#{$i} {
+    @extend %heading;
+  }
+}
+
+@for $i from 1 through $headingCount {
+  h#{$i} {
+    font-size: #{pow($modular, $headingCountMax - $i)}em;
+  }
+}
+
+h#{$headingCountMax} {
+  font-weight: bold;
+}
+
+.txt {
+  &-caps {
+    text-transform: uppercase;
+  }
+
+  &-ellipsis {
+    @include ellipsis;
+  }
+
+  &-small {
+    font-size: $textSmallest;
+  }
+}
+
+a {
+
+  &:hover,
+  &:focus {
+
+  }
+}
+
+hr {
+  display: block;
+  height: 2px;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  background: #E8E8E8;
+  border: none;
+}
+
+.fontsize-plus-1 {
+  font-size: 1.1rem;
+}
+
+.text-colour {
+  &--white {
+    color: colour(white);
+  }
+}

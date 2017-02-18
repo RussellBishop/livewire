@@ -1,0 +1,42 @@
+@mixin hide {
+  display: none !important;
+}
+
+@mixin show {
+  display: block !important;
+}
+
+/*
+
+  Should these * always * be !important? We'll find out!
+
+  Might be only the media query ones need it..
+
+*/
+
+@mixin visibility($state) {
+  @if ($state == 'hide') {
+    @include hide;
+  }
+
+  @else if ($state == 'show') {
+    @include show;
+  }
+}
+
+$visibility: hide, show;
+
+@each $state in $visibility {
+
+  .#{$state} {
+    @include visibility($state);
+
+    @each $size, $point in $bp {
+      &-#{$size} {
+        @media (min-width: #{$point}px) {
+          @include visibility($state);
+        }
+      }
+    }
+  }
+}

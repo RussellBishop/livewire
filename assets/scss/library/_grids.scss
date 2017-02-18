@@ -1,0 +1,70 @@
+$gutter: 1rem;
+
+[class*='grid'] {
+  display: flex;
+}
+
+[class*='grid-auto'] {
+  flex-flow: row wrap;
+  margin-right: -#{$gutter};
+
+  > * {
+    flex: 1;
+    flex-basis: 30ch; /* what to do here? */
+    flex-grow: 1;
+    margin-right: #{$gutter};
+    margin-bottom: #{$gutter};
+  }
+}
+
+[class*='space-between'] {
+  justify-content: space-between;
+}
+
+[class*='vertical-centre'] {
+  align-items: center;
+}
+
+.width- {
+  &100 {
+    width: 100%;
+  }
+}
+
+.height- {
+  @for $i from 1 through 20 {
+    &#{$i} {
+      height: #{$i}rem;
+    }
+  }
+}
+
+
+[class*=' ratio'] {
+  position: relative;
+
+  &:before {
+    display: block;
+    width: 100%;
+    content: '';
+  }
+
+  > * {
+    @include absolute-fill;
+  }
+}
+
+.ratio- {
+  $ratios: 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300;
+
+  @each $ratio in $ratios {
+
+    &#{$ratio} {
+
+      &:before {
+        padding-bottom: #{$ratio}#{%};
+      }
+    }
+  }
+}
+

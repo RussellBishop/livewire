@@ -1,0 +1,19 @@
+@mixin background-size($size) {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: $size;
+}
+
+$width: #{map-get($bp, xl)}px;
+$gutter: 1rem;
+$padding: calc((100vw - #{$width}) / 2);
+
+.contained {
+  padding-right: $gutter;
+  padding-left: $gutter;
+
+  @media (min-width: #{$width} + 32px) {
+    padding-right: $padding;
+    padding-left: $padding;
+  }
+}
