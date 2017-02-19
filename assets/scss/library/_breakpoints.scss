@@ -15,11 +15,34 @@
   @return $return;
 }
 
+$breakpointSmallest: 520;
+$breakpointLargest: 1100;
 
-$bp: (
-  xs: 320,
-  s: 480,
-  m: 760,
-  l: 1000,
-  xl: 1400,
+$breakpoints: (
+  s: (
+    min: 0,
+    max: $breakpointSmallest
+  ),
+
+  s-m: (
+    min: 0,
+    max: 960
+  ),
+
+  m: (
+    min: $breakpointSmallest+1,
+    max: 960
+  ),
+
+  m-l: (
+    min: $breakpointSmallest+1,
+    max: 9999999 // this sucks, but it saves me from writing weird switch cases
+  ),
+
+  l: (
+    min: 961,
+    max: 9999999 // this sucks, but it saves me from writing weird switch cases
+  )
 );
+
+

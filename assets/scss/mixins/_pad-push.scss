@@ -1,0 +1,62 @@
+@mixin layout($property, $a: false, $b: false, $c: false, $d: false) {
+  $value: map-get($values, $property);
+
+  @if ($a) {
+    @if $a == 'verticals' or $a == 'sides' {
+
+      @if ($a == 'verticals') {
+        #{$property}-top: $value;
+        #{$property}-bottom: $value;
+      }
+      @else if ($a == 'sides') {
+        #{$property}-right: $value;
+        #{$property}-left: $value;
+      }
+      @else if ($a == 'top') {
+        #{$property}-top: $value;
+      }
+      @else if ($a == 'right') {
+        #{$property}-right: $value;
+      }
+      @else if ($a == 'bottom') {
+        #{$property}-bottom: $value;
+      }
+      @else if ($a == 'left') {
+        #{$property}-left: $value;
+      }
+    }
+
+    @else {
+      @if $d {
+        @if $a > 0 { #{$property}-top: $a * $value; }
+        @if $b > 0 { #{$property}-right: $b * $value; }
+        @if $c > 0 { #{$property}-bottom: $c * $value; }
+        @if $d > 0 { #{$property}-left: $d * $value; }
+      }
+      @else if $c {
+        @if $a > 0 { #{$property}-top: $a * $value; }
+        @if $b > 0 { #{$property}-right: $b * $value; #{$property}-left: $b * $value; }
+        @if $c > 0 { #{$property}-bottom: $c * $value; }
+      }
+      @else if $b {
+        @if $a > 0 { #{$property}-top: $a * $value; #{$property}-bottom: $a * $value; }
+        @if $b > 0 { #{$property}-left: $b * $value; #{$property}-right: $b * $value; }
+      }
+      @else if $a {
+        @if $a > 0 { #{$property}-top: $a * $value; #{$property}-right: $a * $value; #{$property}-bottom: $a * $value; #{$property}-left: $a * $value; }
+      }
+    }
+  }
+
+  @else {
+    #{$property}: $value;
+  }
+}
+
+@mixin pad($properties...) {
+  @include layout('padding', $properties...);
+}
+
+@mixin push($properties...) {
+  @include layout('margin', $properties...);
+}

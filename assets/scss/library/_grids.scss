@@ -1,20 +1,44 @@
 $gutter: 1rem;
 
-[class*='grid'] {
+[grid],
+[class*='grid'], {
   display: flex;
+  flex-wrap: wrap;
+  margin-right: -#{$gutter};
+  margin-bottom: -#{$gutter};
+
+  > * {
+    flex: 0 1 auto;
+    margin-bottom: #{$gutter};
+    padding-right: #{$gutter};
+  }
 }
 
-[class*='grid-auto'] {
-  flex-flow: row wrap;
+[row],
+[class*='row'], {
+  display: flex;
   margin-right: -#{$gutter};
 
   > * {
-    flex: 1;
-    flex-basis: 30ch; /* what to do here? */
-    flex-grow: 1;
-    margin-right: #{$gutter};
-    margin-bottom: #{$gutter};
+    padding-right: #{$gutter};
   }
+}
+
+// [class*='grid-auto'] {
+//   flex-flow: row wrap;
+//   margin-right: -#{$gutter};
+
+//   > * {
+//     flex: 1;
+//     flex-basis: 30ch; /* what to do here? */
+//     flex-grow: 1;
+//     margin-right: #{$gutter};
+//     margin-bottom: #{$gutter};
+//   }
+// }
+
+[class*='space-around'] {
+  justify-content: space-around;
 }
 
 [class*='space-between'] {
@@ -25,22 +49,45 @@ $gutter: 1rem;
   align-items: center;
 }
 
-.width- {
-  &100 {
-    width: 100%;
+[class*='content-centre'] {
+  justify-content: center;
+}
+
+.centre {
+  margin-left: auto; margin-right: auto;
+}
+
+// .width {
+//   $widths: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100;
+
+//   @each $width in $widths {
+//     &-#{$width} {
+//       width: percentage($width/100);
+//     }
+//   }
+// }
+
+$constraints: min, max;
+
+@each $type in $constraints {
+  .#{$type} {
+    @for $i from 1 through 50 {
+      &-#{$i} {
+        #{$type}-width: #{$i}rem;
+      }
+    }
   }
 }
 
-.height- {
-  @for $i from 1 through 20 {
-    &#{$i} {
+.height {
+  @for $i from 0 through 20 {
+    &-#{$i} {
       height: #{$i}rem;
     }
   }
 }
 
-
-[class*=' ratio'] {
+[class*='ratio'] {
   position: relative;
 
   &:before {
@@ -54,12 +101,12 @@ $gutter: 1rem;
   }
 }
 
-.ratio- {
+.ratio {
   $ratios: 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300;
 
   @each $ratio in $ratios {
 
-    &#{$ratio} {
+    &-#{$ratio} {
 
       &:before {
         padding-bottom: #{$ratio}#{%};
@@ -67,4 +114,74 @@ $gutter: 1rem;
     }
   }
 }
+
+
+$gridColumns: 12;
+
+.cell {
+  @for $i from 1 through 12 {
+    &-#{$i} {
+      flex-basis: percentage($i/$gridColumns);
+      max-width: percentage($i/$gridColumns);
+    }
+  }
+}
+
+@each $key, $value in $breakpoints {
+
+  @media
+  (min-width: #{map-get($value, min)}px) and
+  (max-width: #{map-get($value, max)}px) {
+
+    .cell-#{$key} {
+      @for $i from 1 through 12 {
+        &-#{$i} {
+          flex-basis: percentage($i/$gridColumns);
+          max-width: percentage($i/$gridColumns);
+        }
+      }
+    }
+  }
+}
+
+@mixin cell-auto {
+  overflow: hidden;
+  flex: 1;
+}
+
+.cell-auto {
+  @include cell-auto;
+}
+
+@each $key, $value in $breakpoints {
+
+  @media
+  (min-width: #{map-get($value, min)}px) and
+  (max-width: #{map-get($value, max)}px) {
+
+    .cell-#{$key} {
+      &-auto {
+        @include cell-auto;
+      }
+    }
+  }
+}
+
+
+/**
+ * alternative selectors to consider:
+
+ s-m {
+  @media (min-width: s) and (max-width: m-max) {
+
+  }
+ }
+
+ m-l {
+  @media (min-width: m) {
+
+  }
+ }
+*/
+
 

@@ -1,12 +1,36 @@
 .button,
 .link {
-  background-color: #1e87f0;
+  background-color: colour(button);
   color: white;
   text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+
+  &:hover {
+    background-color: darken(colour(button), 5%);
+  }
+
+  &:focus {
+    background-color: darken(colour(button), 15%);
+  }
 }
 
 .button {
   @include pad(0, .5);
   display: inline-block;
   line-height: 2;
+
+  &.m,
+  &.med,
+  &.mdm,
+  &.medium {
+    @include pad(.8, 1.5);
+    font-size: 1.2rem;
+  }
+
+  &.l,
+  &.lar,
+  &.lrg,
+  &.large {
+    @include pad(1.2, 2.6);
+    font-size: 1.5rem;
+  }
 }

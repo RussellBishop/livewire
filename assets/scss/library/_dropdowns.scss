@@ -1,0 +1,25 @@
+[class*='dropdown'] {
+  position: absolute;
+
+  text-indent: 5em;
+
+  &[class*='-top'] {
+    top: 100%;
+  }
+
+  &[class*='-right'] {
+    right: 0;
+  }
+
+  &[class*='-left'] {
+    left: 0;
+  }
+}
+
+[data-toggles] {
+  position: relative;
+}
+
+[data-target]:not(.hide) {
+  z-index: z-index(target);
+}

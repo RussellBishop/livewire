@@ -1,0 +1,13 @@
+@function z-index($layer) {
+  @if $layer == 'behind' {
+    @return -1;
+  }
+
+  @else if $layer == 'fixed' {
+    @return 10;
+  }
+
+  @else if $layer == 'toggled' {
+    @return 20;
+  }
+}

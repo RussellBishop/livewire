@@ -1,0 +1,11 @@
+.border {
+  border: 1px solid colour(border);
+
+  &-light {
+    border: 1px solid colour(border-light);
+  }
+
+  &-dark {
+    border: 1px solid colour(border-dark);
+  }
+}

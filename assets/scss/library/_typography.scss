@@ -10,14 +10,14 @@
   @return $return;
 }
 
-@mixin font-scale($smallest, $largest) {
+@mixin font-scale($smallestFont, $largestFont) {
 
-  @media (max-width: #{map-get($bp, xl)}px) {
-    font-size: calc(#{$smallest}px + (#{$largest} - #{$smallest}) * ( (100vw - #{map-get($bp, xs)}px) / ( #{map-get($bp, xl)} - #{map-get($bp, xs)}) ));
+  @media (max-width: #{$breakpointLargest}px) {
+    font-size: calc(#{$smallestFont}px + (#{$largestFont} - #{$smallestFont}) * ( (100vw - #{$breakpointSmallest}px) / ( #{$breakpointLargest} - #{$breakpointSmallest}) ));
   }
 
-  @media (min-width: #{map-get($bp, xl)}px) {
-    font-size: #{$largest}px;
+  @media (min-width: #{$breakpointLargest}px) {
+    font-size: #{$largestFont}px;
   }
 
 }
@@ -35,10 +35,12 @@
 }
 
 $textSmallest: 16;
-$testLargest: 36;
+$textLargest: 36;
+
+$lineHeight: 1.5;
 
 $bodyTextSmallest: $textSmallest;
-$bodyTextLargest: 20;
+$bodyTextLargest: 18;
 
 
 @mixin ellipsis {
@@ -52,7 +54,7 @@ $bodyTextLargest: 20;
 }
 
 body {
-  line-height: 1.5;
+  line-height: $lineHeight;
 }
 
 %heading {
@@ -81,7 +83,7 @@ h#{$headingCountMax} {
   font-weight: bold;
 }
 
-.txt {
+.text {
   &-caps {
     text-transform: uppercase;
   }
@@ -108,12 +110,18 @@ hr {
   height: 2px;
   margin-top: 2rem !important;
   margin-bottom: 2rem !important;
-  background: #E8E8E8;
+  background: colour(hr);
   border: none;
 }
 
-.fontsize-plus-1 {
-  font-size: 1.1rem;
+.text-align {
+  $directions: left, right, center;
+
+  @each $direction in $directions {
+    &-#{$direction} {
+      text-align: #{$direction};
+    }
+  }
 }
 
 .text-colour {

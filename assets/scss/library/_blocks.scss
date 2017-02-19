@@ -4,7 +4,7 @@
   background-size: $size;
 }
 
-$width: #{map-get($bp, xl)}px;
+$width: #{$breakpointLargest}px;
 $gutter: 1rem;
 $padding: calc((100vw - #{$width}) / 2);
 
@@ -15,5 +15,21 @@ $padding: calc((100vw - #{$width}) / 2);
   @media (min-width: #{$width} + 32px) {
     padding-right: $padding;
     padding-left: $padding;
+  }
+
+  &-left {
+  	padding-right: $gutter*2;
+
+  	@media (min-width: #{$width} + 32px) {
+  	  padding-right: $padding / 2;
+  	}
+  }
+
+  &-right {
+    padding-left: $gutter*2;
+
+    @media (min-width: #{$width} + 32px) {
+      padding-left: $padding / 2;
+    }
   }
 }

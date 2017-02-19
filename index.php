@@ -19,7 +19,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-    <script>
+<script>
     $(function() {
 
         function stickyMargins() {
@@ -39,51 +39,48 @@
 
             var target = $(this).data('toggles');
 
-            $(target).toggleClass('hide');
-            console.log(target);
+            $('[data-target="'+target+'"]').toggleClass('hide');
 
         });
 
     });
-    </script>
+</script>
 
 </head>
 
-<header class="bg-white-darken-1 contained pad sticky top left right grid-space-between-vertical-centre shadow">
+<?php include('sections/header.php'); ?>
 
-    <img src="/dist/img/logo.png" class="height-3" />
-
-    <nav class="hide-m">
-        <button class="button hide-m z-max" data-toggles="#nav">≡</button>
-
-        <ul class="fixed top right bottom left bg-black hide" id="nav" data-group="popouts">
-
-            <a href="/about.php" class="button">About</a>
-            <a href="/about.php" class="button">About</a>
-            <a href="/about.php" class="button">About</a>
-            <a href="/about.php" class="button">About</a>
-        </ul>
-    </nav>
-
-
-    <nav class="hide show-m">
-        <ul>
-            <button class="button" data-toggles="#selector">Toggler</button>
-            <a href="/about.php" class="button">About</a>
-            <a href="/about.php" class="button">About</a>
-            <a href="/about.php" class="button">About</a>
-            <a href="/about.php" class="button">About</a>
-        </ul>
-    </nav>
-
+<header class="spacing contained pad-sides-3 pad-verticals-3 bg-black text-align-center">
+    <h1>Decision Metrics & Finance</h1>
+    <h2>Novel metrics suite of automotive solutions</h2>
+    <p><a href="#" class="button medium">Meet the Team</a></p>
 </header>
 
-<header class="space-content contained pad-sides-3 pad-verticals-3 bg-black">
-    <h1>Hello</h1>
-    <h2>The president decided quickly: She has to go, he told them.</h2>
-</header>
+<div grid class="contained content-centre">
 
-<main class="space-contents contained">
+<?php for ($x = 1; $x <= 2; $x++) : ?>
+
+    <div class="max-20">
+        <?php include('repeats/post.php'); ?>
+    </div>
+
+<?php endfor; ?>
+
+</div>
+
+<div grid class="contained">
+
+    <?php for ($x = 1; $x <= 12; $x++) : ?>
+
+        <div class="cell-m-6 cell-l-3">
+            <?php include('repeats/post.php'); ?>
+        </div>
+
+    <?php endfor; ?>
+
+</div>
+
+<main class="spacing-article contained">
 
     <h1>Hello</h1>
 
@@ -103,45 +100,65 @@
 
 </main>
 
-<main class="grid-auto contained">
+<main class="contained">
 
-    <div class="bg-white-darken-1 pad-2 space-contents">
-        <h2>Do you know too much?</h2>
+    <div class="row space-between vertical-centre">
+        <h1>Resources</h1>
 
-        <p>“It is time to get serious about protecting our country,” Mr. Spicer said in the statement. He accused Democrats of holding up the confirmation of Mr. Sessions for political reasons. “Calling for tougher vetting for individuals traveling from seven dangerous places is not extreme. It is reasonable and necessary to protect our country.”</p>
-
+        <div>
+        <a href="/resources.php" class="button">More Resources</a>
+        </div>
     </div>
 
-    <div class="bg-white-darken-1 pad-2 space-contents link">
+    <div grid class="push-top">
 
-        <h3>Franklin Gothic Medium</h3>
+        <?php for ($x = 1; $x <= 3; $x++) : ?>
 
-        <p>Former Justice Department officials said the president’s action would send a deep shudder through an agency that was already on edge as officials anticipated an ideological overhaul once Mr. Session takes over. One former senior official said that department lawyers would be unnerved by the firing.</p>
+            <div class="cell-m-6 cell-l-4">
+                <?php include('repeats/resource.php'); ?>
+            </div>
 
-        <blockquote>Former Justice Department officials said the president’s action would send a deep shudder through an agency that was already on edge as officials anticipated an ideological overhaul once Mr. Session takes over. One former senior official said that department lawyers would be unnerved by the firing.</blockquote>
-
-    </div>
-
-    <div class="bg-white-darken-1 pad-2 space-contents">
-        <h2>Do you know too much?</h2>
-
-        <p>“It is time to get serious about protecting our country,” Mr. Spicer said in the statement. He accused Democrats of holding up the confirmation of Mr. Sessions for political reasons. “Calling for tougher vetting for individuals traveling from seven dangerous places is not extreme. It is reasonable and necessary to protect our country.”</p>
-
-    </div>
-
-    <div class="bg-white-darken-1 pad-2 space-contents">
-
-        <h3>Franklin Gothic Medium</h3>
-
-        <p>Former Justice Department officials said the president’s action would send a deep shudder through an agency that was already on edge as officials anticipated an ideological overhaul once Mr. Session takes over. One former senior official said that department lawyers would be unnerved by the firing.</p>
-
-        <blockquote>Former Justice Department officials said the president’s action would send a deep shudder through an agency that was already on edge as officials anticipated an ideological overhaul once Mr. Session takes over. One former senior official said that department lawyers would be unnerved by the firing.</blockquote>
+        <?php endfor; ?>
 
     </div>
 
 </main>
 
+<main class="row contained">
 
+    <div class="cell-m-l-8 bg-white-darken-1">
+
+        <section class="pad-2 spacing-article">
+            <h2>Do you know too much?</h2>
+
+            <p>“It is time to get serious about protecting our country,” Mr. Spicer said in the statement. He accused Democrats of holding up the confirmation of Mr. Sessions for political reasons. “Calling for tougher vetting for individuals traveling from seven dangerous places is not extreme. It is reasonable and necessary to protect our country.”</p>
+        </section>
+
+        <section class="pad-2 spacing-article">
+            <h2>Do you know too much?</h2>
+
+            <p>“It is time to get serious about protecting our country,” Mr. Spicer said in the statement. He accused Democrats of holding up the confirmation of Mr. Sessions for political reasons. “Calling for tougher vetting for individuals traveling from seven dangerous places is not extreme. It is reasonable and necessary to protect our country.”</p>
+        </section>
+
+    </div>
+
+    <div class="cell-m-l-4">
+
+        <div class="link pad-2 spacing-article">
+
+            <h2>Franklin Gothic Medium</h2>
+
+            <p>Former Justice Department officials said the president’s action would send a deep shudder through an agency that was already on edge as officials anticipated an ideological overhaul once Mr.</p>
+
+        </div>
+
+    </div>
+
+</main>
+
+<main class="bg-black-lighten-2 contained">
+
+</main>
 
 </body>
 </html>

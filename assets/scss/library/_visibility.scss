@@ -31,9 +31,13 @@ $visibility: hide, show;
   .#{$state} {
     @include visibility($state);
 
-    @each $size, $point in $bp {
-      &-#{$size} {
-        @media (min-width: #{$point}px) {
+    @each $key, $value in $breakpoints {
+
+      @media
+      (min-width: #{map-get($value, min)}px) and
+      (max-width: #{map-get($value, max)}px) {
+
+        &-#{$key} {
           @include visibility($state);
         }
       }
