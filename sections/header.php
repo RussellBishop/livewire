@@ -18,7 +18,7 @@
         <ul>
             <li>
             <button class="button" data-toggles="toggleA">Education</button>
-                <ul data-target="toggleA" class="dropdown-top-right hide">
+                <ul data-target="toggleA" data-group="nav" class="dropdown-top-right hide">
                     <li><a href="/about.php" class="button">1</a></li>
                     <li><a href="/about.php" class="button">2</a></li>
                     <li><a href="/about.php" class="button">3</a></li>
