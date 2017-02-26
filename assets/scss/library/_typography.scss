@@ -43,10 +43,10 @@ $bodyTextSmallest: $textSmallest;
 $bodyTextLargest: 18;
 
 
-@mixin ellipsis {
-  overflow: hidden;
-  text-overflow: ellipsis; white-space: nowrap;
-}
+// @mixin ellipsis {
+//   overflow: hidden;
+//   text-overflow: ellipsis; white-space: nowrap;
+// }
 
 :root {
   @include font-scale($textSmallest, $bodyTextLargest);
@@ -62,7 +62,7 @@ body {
   letter-spacing: .02em;
 }
 
-$modular: 1.35;
+$modular: 1.2;
 $headingCount: 3;
 $headingCountMax: $headingCount + 1;
 
@@ -88,9 +88,9 @@ h#{$headingCountMax} {
     text-transform: uppercase;
   }
 
-  &-ellipsis {
-    @include ellipsis;
-  }
+  // &-ellipsis {
+  //   @include ellipsis;
+  // }
 
   &-small {
     font-size: $textSmallest;

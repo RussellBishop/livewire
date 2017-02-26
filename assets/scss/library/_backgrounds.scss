@@ -1,28 +1,37 @@
 .bg {
-  &-black {
-    background-color: #262626;
+
+  /* dark */
+  &-black,
+  &-0,
+  &-1,
+  &-2 {
     color: #F4F4F4;
-
-    &-lighten-1 {
-      background-color: #3F3F3F;
-      color: #F4F4F4;
-    }
-
-    &-lighten-2 {
-      background-color: #5F5F5F;
-      color: #F4F4F4;
-    }
   }
 
+  &-black,
+  &-0 {
+    background-color: #262626;
+  }
+
+  &-1 {
+    background-color: #3F3F3F;
+  }
+
+  &-2 {
+    background-color: #5F5F5F;
+  }
+
+  /* light */
+  &-3 {
+    background-color: #3f3f3f;
+  }
+
+  &-4 {
+    background-color: #F8F8F8;
+  }
+
+  &-5,
   &-white {
     background-color: #fff;
-
-    &-darken-1 {
-      background-color: #F8F8F8;
-    }
-
-    &-darken-2 {
-      background-color: #3f3f3f;
-    }
   }
 }

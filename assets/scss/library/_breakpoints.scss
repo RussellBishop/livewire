@@ -19,27 +19,27 @@ $breakpointSmallest: 520;
 $breakpointLargest: 1100;
 
 $breakpoints: (
-  s: (
+  small: (
     min: 0,
     max: $breakpointSmallest
   ),
 
-  s-m: (
+  small-medium: (
     min: 0,
     max: 960
   ),
 
-  m: (
+  medium: (
     min: $breakpointSmallest+1,
     max: 960
   ),
 
-  m-l: (
+  medium-large: (
     min: $breakpointSmallest+1,
     max: 9999999 // this sucks, but it saves me from writing weird switch cases
   ),
 
-  l: (
+  large: (
     min: 961,
     max: 9999999 // this sucks, but it saves me from writing weird switch cases
   )
