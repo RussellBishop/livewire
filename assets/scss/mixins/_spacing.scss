@@ -1,0 +1,11 @@
+@mixin spacing($spacing: false) {
+  > * + * {
+
+    @if ($spacing == false) {
+      margin-top: 1rem;
+
+    } @else {
+      margin-top: $spacing;
+    }
+  }
+}

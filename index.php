@@ -37,9 +37,14 @@
 
         $(document).on('click', '[data-toggles]', function(event) {
 
-            var target = $(this).data('toggles');
+            var dataTarget = $(this).data('toggles');
+            var target = $('[data-target="'+dataTarget+'"]');
 
-            $('[data-target="'+target+'"]').toggleClass('hide');
+            var dataGroup = $(target).data('group');
+            var group = $('[data-group="'+dataGroup+'"]');
+
+            $(group).addClass('hide');
+            $(target).removeClass('hide');
 
         });
 
@@ -138,6 +143,22 @@
     </grid>
 
 </div>
+
+<tabs class="contained">
+
+    <button type="button" data-toggles="content1" class="active">Tab 1</button>
+    <button type="button" data-toggles="content2">Tab 2</button>
+    <button type="button" data-toggles="content3">Tab 3</button>
+
+</tabs>
+
+<div border class="pad push-top-0 contained">
+    <section data-target="content1" data-group="tabgroup">Content 1</section>
+    <section data-target="content2" data-group="tabgroup" class="hide">Content 2</section>
+    <section data-target="content3" data-group="tabgroup" class="hide">Content 3</section>
+</div>
+
+</tabs>
 
 <main class="spacing-article contained">
 
