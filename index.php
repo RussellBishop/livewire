@@ -51,32 +51,91 @@
 <?php include('sections/header.php'); ?>
 
 <header class="spacing contained pad-sides-3 pad-verticals-3 bg-black text-align-center">
+
     <h1>Decision Metrics & Finance</h1>
     <h2>Novel metrics suite of automotive solutions</h2>
-    <p><a href="#" class="button medium">Meet the Team</a></p>
+
+    <p><a href="#test" class="button medium">Meet the Team</a></p>
+    <p><a href="#test" class="button large">Suck an Egg</a></p>
+
 </header>
 
-<div grid class="contained content-centre">
+<row class="contained content-centre">
 
-<?php for ($x = 1; $x <= 2; $x++) : ?>
-
-    <div class="max-20">
+    <div class="max-20" border="light">
         <?php include('repeats/post.php'); ?>
     </div>
 
-<?php endfor; ?>
+    <div class="max-20" border>
+        <?php include('repeats/post.php'); ?>
+    </div>
 
-</div>
+    <div class="max-20" border="dark">
+        <?php include('repeats/post.php'); ?>
+    </div>
 
-<div grid class="contained">
+</row>
 
-    <?php for ($x = 1; $x <= 12; $x++) : ?>
+<div class="contained">
 
-        <div class="cell-m-6 cell-l-3">
-            <?php include('repeats/post.php'); ?>
-        </div>
+    <grid>
 
-    <?php endfor; ?>
+        <?php for ($x = 1; $x <= 12; $x++) : ?>
+
+            <div medium="6" large="1" class="pad" border>
+            </div>
+
+        <?php endfor; ?>
+
+    </grid>
+
+    <grid>
+
+        <?php for ($x = 1; $x <= 6; $x++) : ?>
+
+            <div medium="6" large="2" border="light">
+                <?php include('repeats/post.php'); ?>
+            </div>
+
+        <?php endfor; ?>
+
+    </grid>
+
+    <grid>
+
+        <?php for ($x = 1; $x <= 4; $x++) : ?>
+
+            <div medium="6" large="3" border="dark">
+                <?php include('repeats/post.php'); ?>
+            </div>
+
+        <?php endfor; ?>
+
+    </grid>
+
+    <grid>
+
+        <?php for ($x = 1; $x <= 3; $x++) : ?>
+
+            <div medium="6" large="4" border>
+                <?php include('repeats/post.php'); ?>
+            </div>
+
+        <?php endfor; ?>
+
+    </grid>
+
+    <grid>
+
+        <?php for ($x = 1; $x <= 2; $x++) : ?>
+
+            <div medium-large="6" border="light">
+                <?php include('repeats/post.php'); ?>
+            </div>
+
+        <?php endfor; ?>
+
+    </grid>
 
 </div>
 
@@ -110,23 +169,23 @@
         </div>
     </div>
 
-    <div grid class="push-top">
+    <row grid class="push-top">
 
         <?php for ($x = 1; $x <= 3; $x++) : ?>
 
-            <div class="cell-m-6 cell-l-4">
+            <div medium="6" large="4">
                 <?php include('repeats/resource.php'); ?>
             </div>
 
         <?php endfor; ?>
 
-    </div>
+    </row>
 
 </main>
 
-<main class="row contained">
+<row>
 
-    <div class="cell-m-l-8 bg-white-darken-1">
+    <div class="bg-1" medium-large="8">
 
         <section class="pad-2 spacing-article">
             <h2>Do you know too much?</h2>
@@ -142,7 +201,7 @@
 
     </div>
 
-    <div class="cell-m-l-4">
+    <aside medium-large="4">
 
         <div class="link pad-2 spacing-article">
 
@@ -152,13 +211,9 @@
 
         </div>
 
-    </div>
+    </aside>
 
-</main>
-
-<main class="bg-black-lighten-2 contained">
-
-</main>
+</row>
 
 </body>
 </html>

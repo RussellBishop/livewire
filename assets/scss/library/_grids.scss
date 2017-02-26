@@ -1,41 +1,29 @@
 $gutter: 1rem;
-
+grid,
 [grid],
 [class*='grid'], {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -#{$gutter};
-  margin-bottom: -#{$gutter};
+  justify-content: space-between;
 
   > * {
-    flex: 0 1 auto;
-    margin-bottom: #{$gutter};
-    padding-right: #{$gutter};
+    margin-bottom: 1rem;
   }
 }
 
+row,
 [row],
-[class*='row'], {
+[class^='row'], {
   display: flex;
-  margin-right: -#{$gutter};
+  justify-content: space-between;
+  margin-bottom: 1rem;
 
-  > * {
-    padding-right: #{$gutter};
-  }
+  // margin-right: -#{$gutter};
+
+  // > * {
+  //   padding-right: #{$gutter};
+  // }
 }
-
-// [class*='grid-auto'] {
-//   flex-flow: row wrap;
-//   margin-right: -#{$gutter};
-
-//   > * {
-//     flex: 1;
-//     flex-basis: 30ch; /* what to do here? */
-//     flex-grow: 1;
-//     margin-right: #{$gutter};
-//     margin-bottom: #{$gutter};
-//   }
-// }
 
 [class*='space-around'] {
   justify-content: space-around;
@@ -57,23 +45,13 @@ $gutter: 1rem;
   margin-left: auto; margin-right: auto;
 }
 
-// .width {
-//   $widths: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100;
-
-//   @each $width in $widths {
-//     &-#{$width} {
-//       width: percentage($width/100);
-//     }
-//   }
-// }
-
 $constraints: min, max;
 
 @each $type in $constraints {
   .#{$type} {
     @for $i from 1 through 50 {
       &-#{$i} {
-        #{$type}-width: #{$i}rem;
+        #{$type}-width: #{$i}rem !important; // Important to overwrite our flex widths
       }
     }
   }
@@ -87,45 +65,7 @@ $constraints: min, max;
   }
 }
 
-[class*='ratio'] {
-  position: relative;
-
-  &:before {
-    display: block;
-    width: 100%;
-    content: '';
-  }
-
-  > * {
-    @include absolute-fill;
-  }
-}
-
-.ratio {
-  $ratios: 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300;
-
-  @each $ratio in $ratios {
-
-    &-#{$ratio} {
-
-      &:before {
-        padding-bottom: #{$ratio}#{%};
-      }
-    }
-  }
-}
-
-
 $gridColumns: 12;
-
-.cell {
-  @for $i from 1 through 12 {
-    &-#{$i} {
-      flex-basis: percentage($i/$gridColumns);
-      max-width: percentage($i/$gridColumns);
-    }
-  }
-}
 
 @each $key, $value in $breakpoints {
 
@@ -133,13 +73,16 @@ $gridColumns: 12;
   (min-width: #{map-get($value, min)}px) and
   (max-width: #{map-get($value, max)}px) {
 
-    .cell-#{$key} {
-      @for $i from 1 through 12 {
-        &-#{$i} {
-          flex-basis: percentage($i/$gridColumns);
-          max-width: percentage($i/$gridColumns);
-        }
+    @for $i from 1 through $gridColumns {
+      [#{$key}="#{$i}"] {
+        flex-basis: calc(#{percentage($i/$gridColumns)} - #{$gutter});
+        max-width: calc(#{percentage($i/$gridColumns)} - #{$gutter});
       }
+    }
+
+    [#{$key}="auto"] {
+      overflow: hidden;
+      flex: 1;
     }
   }
 }
@@ -166,22 +109,3 @@ $gridColumns: 12;
     }
   }
 }
-
-
-/**
- * alternative selectors to consider:
-
- s-m {
-  @media (min-width: s) and (max-width: m-max) {
-
-  }
- }
-
- m-l {
-  @media (min-width: m) {
-
-  }
- }
-*/
-
-

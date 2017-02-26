@@ -14,9 +14,9 @@
 }
 
 .button {
-  @include pad(0, .5);
+  @include pad(.5, .5);
   display: inline-block;
-  line-height: 2;
+  line-height: 1;
 
   &.m,
   &.med,
@@ -32,5 +32,12 @@
   &.large {
     @include pad(1.2, 2.6);
     font-size: 1.5rem;
+  }
+
+  &.arrow-down {
+    &:after {
+      margin-left: .5ch;
+      content: '↓';
+    }
   }
 }

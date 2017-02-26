@@ -28,18 +28,19 @@ $visibility: hide, show;
 
 @each $state in $visibility {
 
-  .#{$state} {
+  .#{$state},
+  [#{$state}] {
     @include visibility($state);
+  }
 
-    @each $key, $value in $breakpoints {
+  @each $key, $value in $breakpoints {
 
-      @media
-      (min-width: #{map-get($value, min)}px) and
-      (max-width: #{map-get($value, max)}px) {
+    @media
+    (min-width: #{map-get($value, min)}px) and
+    (max-width: #{map-get($value, max)}px) {
 
-        &-#{$key} {
-          @include visibility($state);
-        }
+      [#{$key}="#{$state}"] {
+        @include visibility($state);
       }
     }
   }

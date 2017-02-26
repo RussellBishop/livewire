@@ -7,16 +7,10 @@ $colours: (
   hr: #E8E8E8,
 
   border-light: #E8E8E8,
-  border: #666,
-  border-dark: #262626,
+  border: gray,
+  border-dark: #bbb,
 );
 
 @function colour($key) {
   @return map-get($colours, $key);
 }
-
-      // #262626;
-      // #F4F4F4;
-      // #3F3F3F;
-      // #5F5F5F;
-      // #F8F8F8;
