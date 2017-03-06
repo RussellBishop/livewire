@@ -12,7 +12,9 @@
 
 @mixin font-scale($smallestFont, $largestFont) {
 
-  @media (max-width: #{$breakpointLargest}px) {
+  font-size: #{$smallestFont}px;
+
+  @media (min-width: #{$breakpointSmallest}px) and (max-width: #{$breakpointLargest}px) {
     font-size: calc(#{$smallestFont}px + (#{$largestFont} - #{$smallestFont}) * ( (100vw - #{$breakpointSmallest}px) / ( #{$breakpointLargest} - #{$breakpointSmallest}) ));
   }
 

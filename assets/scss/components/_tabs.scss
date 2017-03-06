@@ -1,0 +1,12 @@
+tabs {
+  overflow-x: hidden;
+  white-space: nowrap;
+
+  > * {
+    @extend .button;
+
+    &.active {
+      @extend .bg-4;
+    }
+  }
+}

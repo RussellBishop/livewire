@@ -40,4 +40,9 @@
       content: '↓';
     }
   }
+
+  &[disabled] {
+    opacity: .6;
+    filter: grayscale(.5);
+  }
 }
