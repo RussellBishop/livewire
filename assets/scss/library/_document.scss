@@ -1,3 +1,9 @@
 body {
   @include spacing(2rem);
 }
+
+tabs,
+group,
+row {
+  display: block;
+}
