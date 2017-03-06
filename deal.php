@@ -28,9 +28,11 @@
 
 <?php include('sections/im-header.php'); ?>
 
-<section class="contained bg-4 pad-verticals-3 spacing">
+<section class="contained bg-4 pad-verticals-2 spacing">
 
     <h1 class="h1">BEX AU - AD</h1>
+
+    <p data-forcefeed="sentences|3|6"></p>
 
     <grid type="auto">
         <li>Bids <h3><?= number_format(rand(1000000,99000000)) ?></h3></li>

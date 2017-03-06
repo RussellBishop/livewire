@@ -1,5 +1,5 @@
-<row class="bg-5 contained pad">
+<grid class="bg-5 contained pad">
 
-    <img src="/dist/img/im-logo.jpeg" class="height-3" />
+    <a href="/deal.php"><img src="/dist/img/im-logo.jpeg" class="height-3" /></a>
 
-</row>
+</grid>

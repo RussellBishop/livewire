@@ -1,5 +1,6 @@
 var faker = require('faker');
 
+
 $(function() {
 
     function stickyMargins() {
