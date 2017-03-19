@@ -53,7 +53,7 @@
 
 </head>
 
-<?php include('sections/header.php'); ?>
+<?php include('templates/header.php'); ?>
 
 <header class="spacing contained pad-sides-3 pad-verticals-3 bg-black text-align-center">
 
@@ -68,15 +68,15 @@
 <row class="contained content-centre">
 
     <div class="max-20" border="light">
-        <?php include('repeats/post.php'); ?>
+        <?php include('symbols/post.php'); ?>
     </div>
 
     <div class="max-20" border>
-        <?php include('repeats/post.php'); ?>
+        <?php include('symbols/post.php'); ?>
     </div>
 
     <div class="max-20" border="dark">
-        <?php include('repeats/post.php'); ?>
+        <?php include('symbols/post.php'); ?>
     </div>
 
 </row>
@@ -99,7 +99,7 @@
         <?php for ($x = 1; $x <= 6; $x++) : ?>
 
             <div medium="6" large="2" border="light">
-                <?php include('repeats/post.php'); ?>
+                <?php include('symbols/post.php'); ?>
             </div>
 
         <?php endfor; ?>
@@ -111,7 +111,7 @@
         <?php for ($x = 1; $x <= 4; $x++) : ?>
 
             <div medium="6" large="3" border="dark">
-                <?php include('repeats/post.php'); ?>
+                <?php include('symbols/post.php'); ?>
             </div>
 
         <?php endfor; ?>
@@ -123,7 +123,7 @@
         <?php for ($x = 1; $x <= 3; $x++) : ?>
 
             <div medium="6" large="4" border>
-                <?php include('repeats/post.php'); ?>
+                <?php include('symbols/post.php'); ?>
             </div>
 
         <?php endfor; ?>
@@ -135,7 +135,7 @@
         <?php for ($x = 1; $x <= 2; $x++) : ?>
 
             <div medium-large="6" border="light">
-                <?php include('repeats/post.php'); ?>
+                <?php include('symbols/post.php'); ?>
             </div>
 
         <?php endfor; ?>
@@ -195,7 +195,7 @@
         <?php for ($x = 1; $x <= 3; $x++) : ?>
 
             <div medium="6" large="4">
-                <?php include('repeats/resource.php'); ?>
+                <?php include('symbols/resource.php'); ?>
             </div>
 
         <?php endfor; ?>
