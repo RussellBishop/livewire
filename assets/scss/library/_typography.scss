@@ -85,6 +85,10 @@ h#{$headingCountMax} {
   font-weight: bold;
 }
 
+blockquote {
+  font-style: italic;
+}
+
 .text {
   &-caps {
     text-transform: uppercase;
@@ -100,10 +104,14 @@ h#{$headingCountMax} {
 }
 
 a {
+  color: colour(button);
 
-  &:hover,
+  &:hover {
+    color: darken(colour(button), 5%);
+  }
+
   &:focus {
-
+    color: darken(colour(button), 15%);
   }
 }
 

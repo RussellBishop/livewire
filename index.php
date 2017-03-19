@@ -1,6 +1,6 @@
 <?php
     // The URL you're watching
-    $url = '/projects/im/deal.php';
+    $url = '/documentation/index.php';
     // Set up your screen sizes
     $sizes = array(320, 760, 960, 1200);
 ?>
@@ -29,7 +29,7 @@ iframe {
     display: block;
     line-height: 30px;
     height: 30px;
-    font-size: 16px;
+    font-size: 16px;]
     font-family: bariol;
     background: #dedede;
     border-right: 1px solid #ccc;
