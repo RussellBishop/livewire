@@ -1,8 +1,10 @@
 @import 'mixins/_pad-push.scss';
 @import 'mixins/_z-index.scss';
 @import 'mixins/_clearfix.scss';
+@import 'mixins/_spacing.scss';
 
 @import 'library/_reset.scss';
+@import 'library/_document.scss';
 
 @import 'library/_global.scss';
 @import 'library/_breakpoints.scss';
@@ -16,7 +18,6 @@
 @import 'library/_typography.scss';
 
 @import 'library/_margins-padding.scss';
-@import 'library/_document.scss';
 @import 'library/_blocks.scss';
 @import 'library/_visibility.scss';
 
@@ -30,6 +31,8 @@
 
 @import 'library/_nav.scss';
 @import 'library/_dropdowns.scss';
+
+@import 'components/_tabs.scss';
 
 // @import 'library/_forms.scss';
 // @import 'library/_utilities.scss';

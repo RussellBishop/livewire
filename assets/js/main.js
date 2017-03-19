@@ -1,5 +1,4 @@
-var faker = require('faker');
-
+// var faker = require('faker');
 
 $(function() {
 

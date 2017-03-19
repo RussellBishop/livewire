@@ -37,9 +37,14 @@
 
         $(document).on('click', '[data-toggles]', function(event) {
 
-            var target = $(this).data('toggles');
+            var dataTarget = $(this).data('toggles');
+            var target = $('[data-target="'+dataTarget+'"]');
 
-            $('[data-target="'+target+'"]').toggleClass('hide');
+            var dataGroup = $(target).data('group');
+            var group = $('[data-group="'+dataGroup+'"]');
+
+            $(group).addClass('hide');
+            $(target).removeClass('hide');
 
         });
 
@@ -48,7 +53,7 @@
 
 </head>
 
-<?php include('sections/header.php'); ?>
+<?php include('templates/header.php'); ?>
 
 <header class="spacing contained pad-sides-3 pad-verticals-3 bg-black text-align-center">
 
@@ -63,15 +68,15 @@
 <row class="contained content-centre">
 
     <div class="max-20" border="light">
-        <?php include('repeats/post.php'); ?>
+        <?php include('symbols/post.php'); ?>
     </div>
 
     <div class="max-20" border>
-        <?php include('repeats/post.php'); ?>
+        <?php include('symbols/post.php'); ?>
     </div>
 
     <div class="max-20" border="dark">
-        <?php include('repeats/post.php'); ?>
+        <?php include('symbols/post.php'); ?>
     </div>
 
 </row>
@@ -94,7 +99,7 @@
         <?php for ($x = 1; $x <= 6; $x++) : ?>
 
             <div medium="6" large="2" border="light">
-                <?php include('repeats/post.php'); ?>
+                <?php include('symbols/post.php'); ?>
             </div>
 
         <?php endfor; ?>
@@ -106,7 +111,7 @@
         <?php for ($x = 1; $x <= 4; $x++) : ?>
 
             <div medium="6" large="3" border="dark">
-                <?php include('repeats/post.php'); ?>
+                <?php include('symbols/post.php'); ?>
             </div>
 
         <?php endfor; ?>
@@ -118,7 +123,7 @@
         <?php for ($x = 1; $x <= 3; $x++) : ?>
 
             <div medium="6" large="4" border>
-                <?php include('repeats/post.php'); ?>
+                <?php include('symbols/post.php'); ?>
             </div>
 
         <?php endfor; ?>
@@ -130,7 +135,7 @@
         <?php for ($x = 1; $x <= 2; $x++) : ?>
 
             <div medium-large="6" border="light">
-                <?php include('repeats/post.php'); ?>
+                <?php include('symbols/post.php'); ?>
             </div>
 
         <?php endfor; ?>
@@ -138,6 +143,22 @@
     </grid>
 
 </div>
+
+<tabs class="contained">
+
+    <button type="button" data-toggles="content1" class="active">Tab 1</button>
+    <button type="button" data-toggles="content2">Tab 2</button>
+    <button type="button" data-toggles="content3">Tab 3</button>
+
+</tabs>
+
+<div border class="pad push-top-0 contained">
+    <section data-target="content1" data-group="tabgroup">Content 1</section>
+    <section data-target="content2" data-group="tabgroup" class="hide">Content 2</section>
+    <section data-target="content3" data-group="tabgroup" class="hide">Content 3</section>
+</div>
+
+</tabs>
 
 <main class="spacing-article contained">
 
@@ -174,7 +195,7 @@
         <?php for ($x = 1; $x <= 3; $x++) : ?>
 
             <div medium="6" large="4">
-                <?php include('repeats/resource.php'); ?>
+                <?php include('symbols/resource.php'); ?>
             </div>
 
         <?php endfor; ?>
