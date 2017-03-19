@@ -1,8 +1,8 @@
 <?php
     // The URL you're watching
-    $url = 'http://localhost:3000/deal.php';
+    $url = '/projects/im/deal.php';
     // Set up your screen sizes
-    $sizes = array(340, 760, 960, 1200);
+    $sizes = array(320, 760, 960, 1200);
 ?>
 
 <!doctype html>
