@@ -44,12 +44,6 @@ $lineHeight: 1.5;
 $bodyTextSmallest: $textSmallest;
 $bodyTextLargest: 18;
 
-
-// @mixin ellipsis {
-//   overflow: hidden;
-//   text-overflow: ellipsis; white-space: nowrap;
-// }
-
 :root {
   @include font-scale($textSmallest, $bodyTextLargest);
   font-family: 'Roboto', sans-serif;
@@ -94,12 +88,8 @@ blockquote {
     text-transform: uppercase;
   }
 
-  // &-ellipsis {
-  //   @include ellipsis;
-  // }
-
   &-small {
-    font-size: $textSmallest;
+    font-size: .9rem;
   }
 }
 
@@ -131,6 +121,10 @@ hr {
     &-#{$direction} {
       text-align: #{$direction};
     }
+  }
+
+  &-centre {
+    text-align: centre;
   }
 }
 

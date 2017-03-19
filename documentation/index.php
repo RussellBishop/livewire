@@ -29,6 +29,7 @@
         <h3>Components</h3>
         <ul>
             <li><a href="#tabs">Tabs</a></li>
+            <li><a href="#dropdowns">Dropdowns</a></li>
         </ul>
 
     </section>
@@ -49,8 +50,37 @@
             <blockquote>
                 <p>Blockquote</p>
             </blockquote>
+
+            <hr />
+
+            <p class="text-small">.text-small</p>
+            <p class="text-caps">.text-caps</p>
+
+            <p class="text-align-center">.text-align-center</p>
+            <p class="text-align-left">.text-align-left</p>
+            <p class="text-align-right">.text-align-right</p>
         </div>
 
+    </section>
+
+    <section id="backgrounds">
+        <div class="pad bg-black">.bg-black | .bg-0</div>
+        <div class="pad bg-1">.bg-1</div>
+        <div class="pad bg-2">.bg-2</div>
+        <div class="pad bg-3">.bg-3</div>
+        <div class="pad bg-4">.bg-4</div>
+        <div class="pad bg-white">.bg-white | .bg-5</div>
+    </section>
+
+    <section id="borders" class="spacing">
+        <div class="pad" border><code>&lt;div border&gt;</code></div>
+        <div class="pad" border="dark"><code>&lt;div border="dark"&gt;</code></div>
+        <div class="pad" border="light"><code>&lt;div border="light"&gt;</code></div>
+    </section>
+
+    <section id="buttons-links" class="spacing">
+        <button>Button</button>
+        <a>Anchor Tag</a>
     </section>
 
 </div>
