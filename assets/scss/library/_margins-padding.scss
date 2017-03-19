@@ -34,6 +34,12 @@
   }
 }
 
+@each $side in $sides {
+  .pad-#{$side}-0 {
+    padding-#{$side}: 0;
+  }
+}
+
 @for $i from 0 through 5 {
   .pad-top-#{$i} {
     @include pad($i, 0, 0, 0);
@@ -114,6 +120,10 @@
 
 .spacing {
   @include spacing(1rem);
+}
+
+.spacing-2 {
+  @include spacing(2rem);
 }
 
 $contentSpacing: 1rem;

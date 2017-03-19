@@ -5,44 +5,60 @@ grid,
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: -1rem;
 
   > * {
     margin-bottom: 1rem;
   }
-}
 
-row,
-[row],
-[class^='row'], {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1rem;
+  &[type="auto"] {
 
-  // margin-right: -#{$gutter};
+    > * {
+      margin-right: 1rem;
+    }
+  }
 
-  // > * {
-  //   padding-right: #{$gutter};
-  // }
-}
+  &[type="no-wrap"],
+  &[type="nowrap"] {
+    flex-wrap: nowrap;
 
-[class*='space-around'] {
-  justify-content: space-around;
-}
+    > * {
+      margin-bottom: 0;
+    }
+  }
 
-[class*='space-between'] {
-  justify-content: space-between;
+  &[type="float-left"] {
+    @include clearfix;
+    display: block;
+
+    > * {
+      float: left;
+      margin-right: 1rem;
+    }
+  }
+
+  &[justify="space-around"] {
+    justify-content: space-around;
+  }
+
+  &[justify="space-between"] {
+    justify-content: space-between;
+  }
+
+  &[justify="centre"],
+  &[justify="center"] {
+    justify-content: center;
+  }
 }
 
 [class*='vertical-centre'] {
   align-items: center;
 }
 
-[class*='content-centre'] {
-  justify-content: center;
-}
-
 .centre {
-  margin-left: auto; margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 $constraints: min, max;
@@ -73,11 +89,16 @@ $gridColumns: 12;
   (min-width: #{map-get($value, min)}px) and
   (max-width: #{map-get($value, max)}px) {
 
-    @for $i from 1 through $gridColumns {
+    @for $i from 1 through $gridColumns - 1 {
       [#{$key}="#{$i}"] {
         flex-basis: calc(#{percentage($i/$gridColumns)} - #{$gutter});
         max-width: calc(#{percentage($i/$gridColumns)} - #{$gutter});
       }
+    }
+
+    [#{$key}="12"] {
+      flex-basis: 100%;
+      max-width: 100%;
     }
 
     [#{$key}="auto"] {

@@ -1,5 +1,6 @@
+html,
 body {
-  @include spacing(2rem);
+  min-width: 320px;
 }
 
 tabs,
