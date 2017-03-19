@@ -73,9 +73,9 @@
     </section>
 
     <section id="borders" class="spacing">
-        <div class="pad" border><code>&lt;div border&gt;</code></div>
-        <div class="pad" border="dark"><code>&lt;div border="dark"&gt;</code></div>
-        <div class="pad" border="light"><code>&lt;div border="light"&gt;</code></div>
+        <xmp class="pad" border><div border></xmp>
+        <xmp class="pad" border="light"><div border="light"></xmp>
+        <xmp class="pad" border="dark"><div border="dark"></xmp>
     </section>
 
     <section id="buttons-links" class="spacing">
