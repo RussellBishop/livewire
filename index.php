@@ -27,7 +27,7 @@ iframe {
 }
 .window:before {
     display: block;
-    line-height: 30px;
+    line-height: 30px;33
     height: 30px;
     font-size: 16px;]
     font-family: bariol;
