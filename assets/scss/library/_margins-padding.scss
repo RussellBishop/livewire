@@ -1,7 +1,9 @@
+$max: 20;
+
 .pad {
   @include pad();
 
-  @for $i from 0 through 5 {
+  @for $i from 0 through $max {
     &-#{$i} {
       @include pad($i);
     }
@@ -11,7 +13,7 @@
 .pad-verticals {
   @include pad(verticals);
 
-  @for $i from 0 through 5 {
+  @for $i from 0 through $max {
     &-#{$i} {
       @include pad($i, 0);
     }
@@ -21,7 +23,7 @@
 .pad-sides {
   @include pad(sides);
 
-  @for $i from 0 through 5 {
+  @for $i from 0 through $max {
     &-#{$i} {
       @include pad(0, $i);
     }
@@ -40,25 +42,25 @@
   }
 }
 
-@for $i from 0 through 5 {
+@for $i from 0 through $max {
   .pad-top-#{$i} {
     @include pad($i, 0, 0, 0);
   }
 }
 
-@for $i from 0 through 5 {
+@for $i from 0 through $max {
   .pad-right-#{$i} {
     @include pad(0, $i, 0, 0);
   }
 }
 
-@for $i from 0 through 5 {
+@for $i from 0 through $max {
   .pad-bottom-#{$i} {
     @include pad(0, 0, $i, 0);
   }
 }
 
-@for $i from 0 through 5 {
+@for $i from 0 through $max {
   .pad-left-#{$i} {
     @include pad(0, 0, 0, $i);
   }
@@ -71,7 +73,7 @@
 .push-verticals {
   @include push(verticals);
 
-  @for $i from 0 through 5 {
+  @for $i from 0 through $max {
     &-#{$i} {
       @include push($i, 0);
     }
@@ -81,7 +83,7 @@
 .push-sides {
   @include push(sides);
 
-  @for $i from 0 through 5 {
+  @for $i from 0 through $max {
     &-#{$i} {
       @include push(0, $i);
     }
@@ -94,25 +96,25 @@
   }
 }
 
-@for $i from 0 through 5 {
+@for $i from 0 through $max {
   .push-top-#{$i} {
     @include push($i, 0, 0, 0);
   }
 }
 
-@for $i from 0 through 5 {
+@for $i from 0 through $max {
   .push-right-#{$i} {
     @include push(0, $i, 0, 0);
   }
 }
 
-@for $i from 0 through 5 {
+@for $i from 0 through $max {
   .push-bottom-#{$i} {
     @include push(0, 0, $i, 0);
   }
 }
 
-@for $i from 0 through 5 {
+@for $i from 0 through $max {
   .push-left-#{$i} {
     @include push(0, 0, 0, $i);
   }
