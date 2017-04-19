@@ -1,6 +1,6 @@
 <?php
     // The URL you're watching
-    $url = '/documentation/index.php';
+    $url = '/projects/clarkebanks/index.php';
     // Set up your screen sizes
     $sizes = array(320, 760, 960, 1200);
 ?>
