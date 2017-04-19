@@ -16,7 +16,4 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto|Slabo+27px" rel="stylesheet">
 <link href="/dist/css/style.css" rel="stylesheet" />
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="/dist/js/bundle.js"></script>
-
 </head>
