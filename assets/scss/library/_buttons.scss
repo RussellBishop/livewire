@@ -4,6 +4,7 @@ button,
   background-color: colour(button);
   color: white;
   text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  border-radius: 2px;
 
   &:hover {
     background-color: darken(colour(button), 5%);

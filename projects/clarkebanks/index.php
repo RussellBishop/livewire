@@ -42,19 +42,17 @@
 
 ?>
 
-<div class="spacing">
-
-    <section class="contained bg-4 pad-verticals-6 spacing">
+    <section class="contained bg-0 pad-verticals-6 spacing">
 
         <h1 <?= live($page->intro_statement_tagline, 'sentences|1')?></h1>
 
         <h3 <?= live($page->intro_to_services, 'sentences|2')?></h3>
 
-        <button class="button med" <?= live($page->testimonial, 'words|3')?></button>
+        <button class="button med" <?= live($page->call_to_action, 'words|3')?></button>
 
     </section>
 
-    <grid class="contained pad-verticals-2">
+    <grid class="contained bg-4 pad-verticals-2">
 
         <blockquote medium-large="6" class="spacing">
             &ldquo;
@@ -73,8 +71,6 @@
     </grid>
 
     <?php print_r($page->logos) ?>
-
-</div>
 
 <script src="/dist/js/bundle.js"></script>
 
