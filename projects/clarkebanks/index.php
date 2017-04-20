@@ -1,58 +1,31 @@
 <?php
-    /*
-     * Which template is this?
-     * e.g. https://wearelighthouse.gathercontent.com/item/4201435
-     */
-?>
 
-<?php require 'Page.php'; ?>
-
-<?php include('../shared/head.php'); ?>
-
-<header class="contained pad-verticals">
-
-    <img src="/dist/img/im-logo.jpeg" class="height-3" />
-
-</header>
-
-<?php
+    require '../shared/functions.php';
+    require '../shared/class-page.php';
     $page = new Page(4317255);
-?>
 
-<?php
-
-    function live($fieldName, $structure)
-    {
-
-        $fieldReturn = '';
-
-        // is it empty?
-        if(empty($fieldName)) {
-            $fieldReturn .= 'data-forcefeed="'.$structure.'"';
-        }
-
-        // end the tag
-        $fieldReturn .= '>';
-
-        // add the contents of that field before the closing tag
-        $fieldReturn .= $fieldName;
-
-        return $fieldReturn;
-    }
+    include('../shared/head.php');
+    include('nav.php');
 
 ?>
 
-    <section class="contained bg-0 pad-verticals-6 spacing">
+<body class="bg-4">
 
-        <h1 <?= live($page->intro_statement_tagline, 'sentences|1')?></h1>
+    <section class="contained bg-0 pad-verticals-6">
 
-        <h3 <?= live($page->intro_to_services, 'sentences|2')?></h3>
+        <div class="spacing" medium-large="9">
 
-        <button class="button med" <?= live($page->call_to_action, 'words|3')?></button>
+            <h1 <?= live($page->intro_statement_tagline, 'sentences|1')?></h1>
+
+            <h3 <?= live($page->intro_to_services, 'sentences|2')?></h3>
+
+            <button class="button med" <?= live($page->call_to_action, 'words|3')?></button>
+
+        </div>
 
     </section>
 
-    <grid class="contained bg-4 pad-verticals-2">
+    <grid class="contained pad-verticals-2">
 
         <blockquote medium-large="6" class="spacing">
             &ldquo;
@@ -72,7 +45,8 @@
 
     <?php print_r($page->logos) ?>
 
-<script src="/dist/js/bundle.js"></script>
+<?php
 
-</body>
-</html>
+    include('../shared/footer.php');
+
+?>

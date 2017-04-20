@@ -53,7 +53,7 @@
 
 </head>
 
-<?php include('templates/header.php'); ?>
+<?php include('blocks/header.php'); ?>
 
 <header class="spacing contained pad-sides-3 pad-verticals-3 bg-black text-align-center">
 
