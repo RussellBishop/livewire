@@ -2,10 +2,16 @@
 
     require '../shared/functions.php';
     require '../shared/class-page.php';
+    require '../shared/class-sitemap.php';
     $page = new Page(4317255);
+    $sitemap = new Sitemap(111466);
 
     include('../shared/head.php');
     include('nav.php');
+
+    print_r($sitemap);
+
+    // echo $sitemap;
 
 ?>
 
