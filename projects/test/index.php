@@ -57,7 +57,7 @@
 
 <header class="spacing contained pad-sides-3 pad-verticals-3 bg-black text-align-center">
 
-    <h1>Decision Metrics & Finance</h1>
+    <h1>I KNOW WHAT YOU DID LAST SUMMER!</h1>
     <h2>Novel metrics suite of automotive solutions</h2>
 
     <p><a href="#test" class="button medium">Meet the Team</a></p>
@@ -65,7 +65,7 @@
 
 </header>
 
-<row class="contained content-centre">
+<grid class="contained content-centre">
 
     <div class="max-20" border="light">
         <?php include('symbols/post.php'); ?>
@@ -79,7 +79,7 @@
         <?php include('symbols/post.php'); ?>
     </div>
 
-</row>
+</grid>
 
 <div class="contained">
 
@@ -162,7 +162,7 @@
 
 <main class="spacing-article contained">
 
-    <h1>Hello</h1>
+    <h1>I SAID I KNOW WHAT YOU DID LAST SUMMER!</h1>
 
     <p><b>The president decided quickly: She has to go, he told them.</b></p>
 

@@ -9,14 +9,14 @@
     <p data-forcefeed="sentences|3|6"></p>
 
     <grid type="auto">
-        <li>Bids <h3><?= number_format(rand(1000000,99000000)) ?></h3></li>
-        <li>Impressions <h3><?= number_format(rand(1000000,99000000)) ?></h3></li>
-        <li>Clicks <h3><?= number_format(rand(10000,990000)) ?></h3></li>
-        <li>Conversions <h3><?= number_format(rand(50,5000)) ?></h3></li>
-        <li>Win Rate <h3><?= rand(0,1000) / 10 ?>%</h3></li>
-        <li><abbr title="Click through rate">CTR</abbr> <h3><?= rand(0,10) / 10 ?>%</h3></li>
-        <li><abbr title="Cost per click">CPC</abbr> <h3>£<?= rand(50,100) / 50 ?></h3></li>
-        <li><abbr title="Cost per acquisition">CPA</abbr> <h3>£<?= rand(50,100) / 5 ?></h3></li>
+        <span>Bids <h3><?= number_format(rand(1000000,99000000)) ?></h3></span>
+        <span>Impressions <h3><?= number_format(rand(1000000,99000000)) ?></h3></span>
+        <span>Cspancks <h3><?= number_format(rand(10000,990000)) ?></h3></span>
+        <span>Conversions <h3><?= number_format(rand(50,5000)) ?></h3></span>
+        <span>Win Rate <h3><?= rand(0,1000) / 10 ?>%</h3></span>
+        <span><abbr title="Cspanck through rate">CTR</abbr> <h3><?= rand(0,10) / 10 ?>%</h3></span>
+        <span><abbr title="Cost per cspanck">CPC</abbr> <h3>£<?= rand(50,100) / 50 ?></h3></span>
+        <span><abbr title="Cost per acquisition">CPA</abbr> <h3>£<?= rand(50,100) / 5 ?></h3></span>
     </grid>
 
 </section>

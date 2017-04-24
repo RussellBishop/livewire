@@ -1,4 +1,4 @@
-<row class="bg-4 contained pad sticky top left right row-space-between-vertical-centre shadow">
+<grid class="bg-4 contained pad sticky top left right row-space-between-vertical-centre shadow">
 
     <img src="/dist/img/logo.svg" class="height-2" />
 
@@ -35,4 +35,4 @@
         </ul>
     </nav>
 
-</row>
+</grid>
