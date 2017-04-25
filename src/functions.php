@@ -3,20 +3,17 @@
     function live($fieldName, $structure)
     {
 
-        $fieldReturn = '';
+        $content = '';
 
         // is it empty?
         if(empty($fieldName)) {
-            $fieldReturn .= 'data-forcefeed="'.$structure.'"';
+            $content .= '<span data-forcefeed="'.$structure.'"></span>';
         }
 
-        // end the tag
-        $fieldReturn .= '>';
-
         // add the contents of that field before the closing tag
-        $fieldReturn .= $fieldName;
+        $content .= $fieldName;
 
-        return $fieldReturn;
+        return $content;
     }
 
 ?>

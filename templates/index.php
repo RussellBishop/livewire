@@ -1,7 +1,9 @@
 <?php
 
     $title = 'Homepage';
+
     require '../src/src.php';
+
     $page = new Page(4317255);
 
 ?>
@@ -14,11 +16,17 @@
 
         <div class="spacing" medium-large="9">
 
-            <h1 <?= live($page->intro_statement_tagline, 'sentences|1')?></h1>
+            <h1>
+                <?= live($page->intro_statement_tagline, 'sentences|1')?>
+            </h1>
 
-            <h3 <?= live($page->intro_to_services, 'sentences|2')?></h3>
+            <h3>
+                <?= live($page->intro_to_services, 'sentences|2')?>
+            </h3>
 
-            <button class="button med" <?= live($page->call_to_action, 'words|3')?></button>
+            <button class="button med">
+                <?= live($page->call_to_action, 'words|3')?>
+             </button>
 
         </div>
 
@@ -28,14 +36,14 @@
 
         <blockquote medium-large="6" class="spacing">
             &ldquo;
-            <span <?= live($page->testimonial, 'sentences|1')?></span>
+            <?= live($page->testimonial, 'sentences|1')?>
             &rdquo;
             <p><cite <?= live($page->testimonial, 'names|1')?></cite></p>
         </blockquote>
 
         <blockquote medium-large="6" class="spacing">
             &ldquo;
-            <span <?= live($page->testimonial, 'sentences|1')?></span>
+            <?= live($page->testimonial, 'sentences|1')?>
             &rdquo;
             <p><cite <?= live($page->testimonial, 'names|1')?></cite></p>
         </blockquote>
