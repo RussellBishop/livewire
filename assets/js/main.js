@@ -3,6 +3,14 @@ var jquery = require('jquery');
 
 window.words = ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'adipsing', 'consectetur', 'elit', 'sed', 'commodo', 'eu', 'ligula', 'vitae', 'mollis'];
 
+window.listitems = [
+'<li>Social orchestrate disintermediate maximize user-centric generate.</li>',
+'<li>Bleeding-edge implement unleash channels synergistic long-tail, addelivery.</li>',
+'<li>Seize enable web-readiness vertical efficient interfaces cross-media; harness optimize.</li>',
+'<li>Web-readiness vertical efficient interfaces cross-media; harness optimize.</li>',
+'<li>Efficient disintermediate integrate B2B, visualize dynamic cutting-edge.</li>',
+];
+
 window.sentences = [
 'Platforms vortals compelling e-markets streamline innovate deliver mashups envisioneer e-enable podcasting.',
 'Networking drive dot-com interactive compelling wikis relationships repurpose real-time strategic.',
@@ -26,7 +34,8 @@ window.sentences = [
 'Partnerships networking innovate deliverables data-driven virtual semantic value integrate proactive revolutionary methodologies plug-and-play dynamic target data-driven.',
 'Best-of-breed vertical blogging data-driven deploy.',
 'Exploit data-driven niches integrate AJAX-enabled synergize portals deploy visionary rich-clientAPIs extend strategize long-tail streamline share.',
-'Supply-chains; aggregate platforms platforms virtual leverage maximize.'];
+'Supply-chains; aggregate platforms platforms virtual leverage maximize.'
+];
 
 window.names = [
 'Melaine Yang',
@@ -51,10 +60,25 @@ window.names = [
 'Taina Manriquez'
 ];
 
+window.logos = [
+'<img src="http://vignette4.wikia.nocookie.net/random-junk/images/5/5a/Bain_and_Company_Logo.png/revision/latest?cb=20160123000001" />',
+'<img src="https://www.penguinrandomhouse.co.uk/content/dam/prh-corporate/penguin-random-house/corporate/image-gallery/corporate-publishers/ebury/Re-sized/imprints/Vermilion%20logo%202_.png" />',
+'<img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Westinghouse_Electric_Company_Logo.svg/1280px-Westinghouse_Electric_Company_Logo.svg.png" />',
+'<img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/The_Travelers_Companies.svg/1280px-The_Travelers_Companies.svg.png" />',
+'<img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/The_Travelers_Companies.svg/1280px-The_Travelers_Companies.svg.png" />',
+'<img src="http://vectorlogofree.com/wp-content/uploads/2013/12/chep-company-vector-logo-400x400.png" />',
+'<img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Titan_Company_Logo.png" />',
+'<img src="https://upload.wikimedia.org/wikipedia/en/4/41/Cornell_Companies_logo.png" />',
+'<img src="https://s-media-cache-ak0.pinimg.com/originals/33/4e/0a/334e0ac1ae2c531d3fb1563dc8509987.jpg" />',
+'<img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/Penguin_logo.svg/805px-Penguin_logo.svg.png" />',
+];
+
 forceFeed({
     words: window.words,
     sentences: window.sentences,
-    names: window.names
+    names: window.names,
+    listitems: window.listitems,
+    logos: window.logos
 });
 
 $(function() {
