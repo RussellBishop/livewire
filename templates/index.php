@@ -1,21 +1,14 @@
 <?php
 
-    require '../shared/functions.php';
-    require '../shared/class-page.php';
-    require '../shared/class-sitemap.php';
+    $title = 'Homepage';
+    require '../src/src.php';
     $page = new Page(4317255);
-    $sitemap = new Sitemap(111466);
-
-    include('../shared/head.php');
-    include('nav.php');
-
-    print_r($sitemap);
-
-    // echo $sitemap;
 
 ?>
 
 <body class="bg-4">
+
+    <?php include('blocks/nav.php'); ?>
 
     <section class="contained bg-0 pad-verticals-6">
 
@@ -49,10 +42,4 @@
 
     </grid>
 
-    <?php print_r($page->logos) ?>
-
-<?php
-
-    include('../shared/footer.php');
-
-?>
+    <?php include('../src/footer.php'); ?>

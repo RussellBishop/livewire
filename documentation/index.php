@@ -1,4 +1,4 @@
-<?php include('../projects/shared/head.php'); ?>
+<?php include('../src/head.php'); ?>
 
 <div class="spacing-2">
 
