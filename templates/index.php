@@ -1,53 +1,63 @@
 <?php
 
-    $title = 'Homepage';
+    $title = 'Home';
 
     require '../src/src.php';
 
-    $page = new Page(4317255);
-
+    $page = new Page(4201435);
 ?>
 
 <body class="bg-4">
 
     <?php include('blocks/nav.php'); ?>
 
-    <section class="contained bg-0 pad-verticals-6">
+    <div class="bg-0 contained pad-verticals-6 text-align-center">
+        <h1>
+            <?= live($page->intro_statement_or_tagline, 'sentences|1')?>
+        </h1>
+    </div>
+    
+    <div class="bg-3 contained pad-verticals-6">
+        <p>
+            <?= live($page->intro_to_services, 'sentences|3')?>
+        </p>
+    </div>
 
-        <div class="spacing" medium-large="9">
 
-            <h1>
-                <?= live($page->intro_statement_tagline, 'sentences|1')?>
-            </h1>
+    <div class="contained spacing pad-verticals-2 text-align-center">
+        <h2>
+            <?= live($page->testimonials_heading, 'sentences|1')?>
+        </h2>
+    </div>
 
-            <h3>
-                <?= live($page->intro_to_services, 'sentences|2')?>
-            </h3>
+    <div class="contained spacing pad-verticals-2">
+         <grid>
+                <div class="pad-sides-1 pad-verticals-2 text-align-center" border="dark" small="12" medium="4" large="4"><?= live($page->testimonial1, 'sentences|1')?></div>
+                <div class="pad-sides-1 pad-verticals-2 text-align-center" border="dark" small="12" medium="4" large="4"><?= live($page->testimonial2, 'sentences|1')?></div>
+                <div class="pad-sides-1 pad-verticals-2 text-align-center" border="dark" small="12" medium="4" large="4"><?= live($page->testimonial3, 'sentences|1')?></div>
+        </grid>
+    </div>
 
-            <button class="button med">
-                <?= live($page->call_to_action, 'words|3')?>
-             </button>
+    <div class="bg-3 contained pad-verticals-4 text-align-center">
+    <div class="pad-verticals-1">
+        <p>
+            <?= live($page->call_to_action_intro, 'sentences|1')?>
+        </p>
+    </div>
+        <button class="button med">
+            <?= live($page->call_to_action, 'words|2')?>
+        </button>
+    </div>    
 
-        </div>
+    <div class="contained spacing pad-verticals-2 text-align-center">
+        <h2>
+            <?= live($page->brand_logos, 'sentences|1')?>
+        </h2>
 
-    </section>
-
-    <grid class="contained pad-verticals-2">
-
-        <blockquote medium-large="6" class="spacing">
-            &ldquo;
-            <?= live($page->testimonial, 'sentences|1')?>
-            &rdquo;
-            <p><cite <?= live($page->testimonial, 'names|1')?></cite></p>
-        </blockquote>
-
-        <blockquote medium-large="6" class="spacing">
-            &ldquo;
-            <?= live($page->testimonial, 'sentences|1')?>
-            &rdquo;
-            <p><cite <?= live($page->testimonial, 'names|1')?></cite></p>
-        </blockquote>
-
-    </grid>
+        <?php include('blocks/logos.php'); ?>
+        
+    </div>
+  
+    
 
     <?php include('../src/footer.php'); ?>

@@ -82,6 +82,7 @@ elixir(function(mix) {
         files: [
             elixir.config.publicPath + '/' + elixir.config.css.outputFolder + '/**/*.css',
             elixir.config.publicPath + '/' + elixir.config.js.outputFolder + '/**/*.js',
+            'templates/**/*.php'
         ]
     });
 });
