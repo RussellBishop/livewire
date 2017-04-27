@@ -14,8 +14,8 @@
 
     <grid class="contained">
 
-        <?php for ($i=1; $i<5; $i++) : ?>
-            <div data-forcefeed="logos|1" medium-large="6"></div>
+        <?php for ($i=1; $i<6; $i++) : ?>
+            <div data-forcefeed="logos|1" small="4" medium="3" large="2"></div>
         <?php endfor; ?>
 
     </grid>
