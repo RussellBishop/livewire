@@ -16,7 +16,7 @@
             <?= live($page->intro_statement_or_tagline, 'sentences|1')?>
         </h1>
     </div>
-    
+
     <div class="bg-3 contained pad-verticals-6">
         <p>
             <?= live($page->intro_to_services, 'sentences|3')?>
@@ -47,7 +47,7 @@
         <button class="button med">
             <?= live($page->call_to_action, 'words|2')?>
         </button>
-    </div>    
+    </div>
 
     <div class="contained spacing pad-verticals-2 text-align-center">
         <h2>
@@ -55,9 +55,7 @@
         </h2>
 
         <?php include('blocks/logos.php'); ?>
-        
+
     </div>
-  
-    
 
     <?php include('../src/footer.php'); ?>
