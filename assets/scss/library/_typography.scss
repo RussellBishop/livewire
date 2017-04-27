@@ -133,3 +133,16 @@ hr {
     color: colour(white);
   }
 }
+
+[data-forcefeed*='sentences'] {
+  * + * {
+    margin-top: 1rem;
+  }
+}
+
+[data-forcefeed*='listitems'] {
+  * + * {
+    margin-top: .5rem;
+  }
+}
+
