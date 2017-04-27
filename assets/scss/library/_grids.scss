@@ -2,7 +2,7 @@ $gutter: 1rem;
 
 grid,
 [grid],
-[class*='grid'], {
+[class*='grid'] {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -40,7 +40,20 @@ grid,
       margin-bottom: 0;
     }
   }
+}
 
+flex,
+[flex],
+[class*='flex'] {
+  display: flex;
+}
+
+grid,
+[grid],
+[class*='grid'],
+flex,
+[flex],
+[class*='flex'] {
   /*
     Direction
   */
