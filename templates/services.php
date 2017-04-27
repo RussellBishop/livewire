@@ -4,9 +4,8 @@
 
     require '../src/src.php';
 
-    $page = new Page(4201623);
+    $page = new Page(4201620);
 
-    $buildingregulations = new Page(4201635);
 ?>
 
 <body class="bg-4">
@@ -15,11 +14,11 @@
 
     <div class="bg-0 spacing contained pad-verticals-6">
         <h1>
-            <?= live($page->services_heading, 'words|2')?>
+            <?= live($page->heading, 'words|2')?>
         </h1>
     
     <p>
-        <?= live($page->introduction, 'sentences|1')?>
+        <?= live($page->introduction, 'sentences|2')?>
     </p>
 </div>
 

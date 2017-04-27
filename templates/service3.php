@@ -4,42 +4,55 @@
 
     require '../src/src.php';
 
-    $page = new Page(4201623);
-
-    $buildingregulations = new Page(4201635);
+    $page = new Page(4201637);
 ?>
 
 <body class="bg-4">
 
     <?php include('blocks/nav.php'); ?>
 
+    <div class="bg-0 spacing contained pad-verticals-6">
+        <h1>
+            <?= live($page->services_heading, 'words|2')?>
+        </h1>
+    
     <p>
-        <?= live($page->vision, 'sentences|1')?>
+        <?= live($page->introduction, 'sentences|1')?>
     </p>
+</div>
 
-    <div class="contained spacing pad-verticals-2">
-         <grid>
-                <div class="pad-sides-1 pad-verticals-2 text-align-center bg-3" border="dark" small="12" medium="4" large="4"><a>Building regulations</a></div>
-                <div class="pad-sides-1 pad-verticals-2 text-align-center bg-3" border="dark" small="12" medium="4" large="4"><a>Fire engineering</a></div>
-                <div class="pad-sides-1 pad-verticals-2 text-align-center bg-3" border="dark" small="12" medium="4" large="4"><a>Health and Safety</a></div>
-        </grid>
+    <div class="contained spacing pad-verticals-4">
+
+    <p>
+        <?= live($page->service_introduction, 'sentences|2')?>
+    </p>
+    <p>
+        <?= live($page->process_description, 'sentences|2')?>
+    </p>
+    <p>
+        <?= live($page->client_testimonial, 'sentences|2')?>
+    </p>
+    
     </div>
 
-    <p>
-        <?= live($page->strategy, 'sentences|1')?>
-    </p>
+<div class="spacing contained pad-verticals-2 bg-5">
 
-    <p>
-        <?= live($page->story, 'sentences|1')?>
-    </p>
+    <h2><?= live($page->contact_heading, 'words|2')?></h2>
 
-    <p>
-        <?= live($page->senior_team, 'sentences|1')?>
-    </p>
+<div class="spacing pad-verticals-2">
 
-    <p>
-        <?= live($buildingregulations->service_introduction, 'sentences|1')?>
-    </p>
+</div>
+
+    <grid>
+        <div class="bg-3 ratio-100"  small="6" medium-large="3" caption="Contact"></div>
+        <div small="6" medium-large="3"><?= live($page->main_contact1, 'words|5')?></div>
+        <div class="bg-3 ratio-100"  small="6" medium-large="3" caption="Contact"></div>
+        <div small="6" medium-large="3"><?= live($page->main_contact2, 'words|5')?></div>
+
+    </grid>
+
+
+</div>
 
 
     <?php include('../src/footer.php'); ?>

@@ -4,9 +4,7 @@
 
     require '../src/src.php';
 
-    $page = new Page(4201623);
-
-    $buildingregulations = new Page(4201635);
+    $page = new Page(4201635);
 ?>
 
 <body class="bg-4">
@@ -24,14 +22,37 @@
 </div>
 
     <div class="contained spacing pad-verticals-4">
-         <grid>
-                <div class="pad-sides-1 pad-verticals-2 text-align-center bg-3" border="dark" small="12" medium="4" large="4"><a href="/templates/service1.php">Building regulations</a></div>
-                <div class="pad-sides-1 pad-verticals-2 text-align-center bg-3" border="dark" small="12" medium="4" large="4"><a href="/templates/service2.php">Fire engineering</a></div>
-                <div class="pad-sides-1 pad-verticals-2 text-align-center bg-3" border="dark" small="12" medium="4" large="4"><a href="/templates/service3.php">Health and Safety</a></div>
-        </grid>
+
+    <p>
+        <?= live($page->service_introduction, 'sentences|2')?>
+    </p>
+    <p>
+        <?= live($page->process_description, 'sentences|2')?>
+    </p>
+    <p>
+        <?= live($page->client_testimonial, 'sentences|2')?>
+    </p>
+    
     </div>
 
+<div class="spacing contained pad-verticals-2 bg-5">
 
+    <h2><?= live($page->contact_heading, 'words|2')?></h2>
+
+<div class="spacing pad-verticals-2">
+
+</div>
+
+    <grid>
+        <div class="bg-3 ratio-100"  small="6" medium-large="3" caption="Contact"></div>
+        <div small="6" medium-large="3"><?= live($page->main_contact1, 'words|5')?></div>
+        <div class="bg-3 ratio-100"  small="6" medium-large="3" caption="Contact"></div>
+        <div small="6" medium-large="3"><?= live($page->main_contact2, 'words|5')?></div>
+
+    </grid>
+
+
+</div>
 
 
     <?php include('../src/footer.php'); ?>

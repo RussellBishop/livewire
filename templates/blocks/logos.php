@@ -1,15 +1,5 @@
-
-        <grid class="" >
-            <div class="bg-3 ratio-50" small="4" medium="3" large="2"></div>
-            <div class="bg-3 ratio-50" small="4" medium="3" large="2"></div>
-            <div class="bg-3 ratio-50" small="4" medium="3" large="2"></div>
-            <div class="bg-3 ratio-50" small="4" medium="3" large="2"></div>
-            <div class="bg-3 ratio-50" small="4" medium="3" large="2"></div>
-            <div class="bg-3 ratio-50" small="4" medium="3" large="2"></div>
-            <div class="bg-3 ratio-50" small="4" medium="3" large="2"></div>
-            <div class="bg-3 ratio-50" small="4" medium="3" large="2"></div>
-            <div class="bg-3 ratio-50" small="4" medium="3" large="2"></div>
-            <div class="bg-3 ratio-50" small="4" medium="3" large="2"></div>
-            <div class="bg-3 ratio-50" small="4" medium="3" large="2"></div>
-            <div class="bg-3 ratio-50" small="4" medium="3" large="2"></div>
-        </grid>
+<grid>
+    <?php for ($i=0; $i<12; $i++) : ?>
+        <div data-forcefeed="logos|1" small="4" medium="3" large="2"></div>
+    <?php endfor; ?>
+</grid>
