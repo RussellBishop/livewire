@@ -72,15 +72,15 @@ grid,
     align-items: center;
   }
 
-  &[align="start"]
+  &[align="start"] {
     align-items: start;
   }
 
-  &[align="end"]
+  &[align="end"] {
     align-items: end;
   }
 
-  &[align="stretch"]
+  &[align="stretch"] {
     align-items: stretch;
   }
 
