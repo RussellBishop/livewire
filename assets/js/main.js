@@ -1,7 +1,48 @@
 var forcefeed = require('forcefeed');
 var $ = require('jquery');
 
-window.words = ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'adipsing', 'consectetur', 'elit', 'sed', 'commodo', 'eu', 'ligula', 'vitae', 'mollis'];
+window.words = [
+'leverage',
+'agile',
+'frameworks',
+'to',
+'provide',
+'a',
+'robust',
+'synopsis',
+'for',
+'high',
+'level',
+'overviews',
+'Iterative',
+'approaches',
+'to',
+'corporate',
+'strategy',
+'foster',
+'collaborative',
+'thinking',
+'to',
+'further',
+'when',
+'the',
+'overall',
+'value',
+'proposition',
+'Organically',
+'grow',
+'the',
+'holistic',
+'world',
+'view',
+'of',
+'disruptive',
+'innovation',
+'via',
+'workplace',
+'diversity',
+'and',
+'empowerment'];
 
 window.listitems = [
 '<li>Social orchestrate disintermediate maximize user-centric generate.</li>',
@@ -96,17 +137,86 @@ $(function() {
         logos: window.logos
     });
 
-    // function stickyMargins() {
-    //     $('.sticky').each(function() {
-    //         var stickyHeight = $(this).outerHeight();
-    //         $(this).next().css('margin-top', stickyHeight);
-    //     });
-    // }
+    var openClass = 'is--open';
 
-    // stickyMargins();
+    //nav
+    $('[data-toggle]').click(function(e) {
 
-    // $(window).resize(function() {
-    //     stickyMargins();
-    // });
+      e.preventDefault();
+
+      // the toggle and it's group
+      var toggleGroup = $(this).data('group');
+
+      // the target and it's group
+      var targetId = $(this).data('target');
+      var target = $('[data-id="'+targetId+'"]');
+      var targetGroup = $(target).data('group');
+
+      if ($(this).is('.'+openClass)) {
+
+        // is already open
+
+        $(this).removeClass(openClass);
+        $(target).removeClass(openClass);
+
+      } else {
+
+        // isnt open already
+
+        hideGroupShowMe(toggleGroup, this);
+        hideGroupShowMe(targetGroup, target);
+
+      }
+
+    });
+
+    $('[data-target]').click(function(e) {
+
+      e.preventDefault();
+
+      // the toggle and it's group
+      var toggleGroup = $(this).data('group');
+
+      // the target and it's group
+      var targetId = $(this).data('target');
+      var target = $('[data-id="'+targetId+'"]');
+      var targetGroup = $(target).data('group');
+
+        hideGroupShowMe(toggleGroup, this);
+        hideGroupShowMe(targetGroup, target);
+
+        // $('[data-group="'+targetGroup+'"]')
+        //   .not(this)
+        //   .removeClass(openClass);
+
+        // $(target).addClass(openClass);
+
+    });
+
+    // close the target!
+    $('[data-untarget]').click(function(e) {
+
+      e.preventDefault();
+
+      // the target and it's group
+      var targetId = $(this).data('target');
+      var target = $('[data-id="'+targetId+'"]');
+
+      $(target).removeClass(openClass);
+
+    });
+
+    function hideGroupShowMe(group, me) {
+
+        // console.log(group);
+        // console.log(me);
+
+        $('[data-group="'+ group + '"]')
+          .not(me)
+          .removeClass(openClass);
+
+        $(me).addClass(openClass);
+
+    }
 
 });
