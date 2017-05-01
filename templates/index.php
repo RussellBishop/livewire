@@ -8,7 +8,7 @@
 
 ?>
 
-<body class="bg-4">
+<body class="bg-4 spacing">
 
     <?php include('blocks/nav.php'); ?>
 
