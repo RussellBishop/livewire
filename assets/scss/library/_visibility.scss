@@ -45,3 +45,9 @@ $visibility: hide, show;
     }
   }
 }
+
+group {
+  > *:not(.is--open) {
+    display: none;
+  }
+}
