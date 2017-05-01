@@ -146,3 +146,11 @@ hr {
   }
 }
 
+[data-forcefeed*='words'] {
+  display: inline-block;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
