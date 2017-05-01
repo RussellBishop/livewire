@@ -1,11 +1,11 @@
-[border] {
+.border {
   border: 1px solid colour(border);
-}
 
-$constraints: light, dark;
+  $constraints: light, dark;
 
-@each $type in $constraints {
-  [border="#{$type}"] {
-    border: 1px solid colour(border-#{$type});
+  @each $type in $constraints {
+    &-#{$type} {
+      border: 1px solid colour(border-#{$type});
+    }
   }
 }

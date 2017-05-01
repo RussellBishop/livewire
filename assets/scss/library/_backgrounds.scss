@@ -1,12 +1,5 @@
-.bg {
-
-  /* dark */
-  &-black,
-  &-0,
-  &-1,
-  &-2 {
-    color: #F4F4F4;
-  }
+.bg,
+.background {
 
   &-black,
   &-0 {
@@ -33,5 +26,13 @@
   &-5,
   &-white {
     background-color: #fff;
+  }
+
+  /* dark */
+  &-black,
+  &-0,
+  &-1,
+  &-2 {
+    color: #F4F4F4;
   }
 }
