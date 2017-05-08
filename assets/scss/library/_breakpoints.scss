@@ -42,6 +42,11 @@ $breakpoints: (
   large: (
     min: 961,
     max: 9999999 // this sucks, but it saves me from writing weird switch cases
+  ),
+
+  small-medium-large: (
+    min: 0,
+    max: 9999999 // this sucks, but it saves me from writing weird switch cases
   )
 );
 
