@@ -1,13 +1,27 @@
-// input,
-// textarea,
-// select {
+input,
+label,
+textarea,
+select {
+  display: block;
+}
 
-//   &:focus {
+input,
+textarea,
+select {
+  width: 100%;
+  padding: .25rem .5rem;
+}
 
-//   }
-// }
+input,
+select {
+  height: 2.5rem;
+  line-height: 1;
+}
 
-// [type="radio"],
-// [type="checkbox"] {
+textarea {
+  min-height: 2.5rem;
+}
 
-// }
+label {
+  margin-bottom: .25rem;
+}
