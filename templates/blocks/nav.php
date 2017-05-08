@@ -8,9 +8,11 @@
     <flex>
     	<span class="pad-sides-1"><a href="/templates/index.php">Home</a></span>
     	<span class="pad-sides-1"><a href="/templates/services.php">Services</a></span>
+        <span class="pad-sides-1"><a href="/templates/process.php">Process</a></span>
     	<span class="pad-sides-1"><a href="/templates/casestudy.php">Case studies</a></span>
     	<span class="pad-sides-1"><a href="/templates/aboutus.php">About us</a></span>
-    	<span class="pad-sides-1"><a href="/templates/enquiryform.php">Contact us</a></span>
+        <span class="pad-sides-1"><a href="/templates/enquiryform.php">Enquire</a></span>
+    	<span class="pad-sides-1"><a href="/templates/contactus.php">Contact us</a></span>
     </flex>
 
 </grid>

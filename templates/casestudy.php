@@ -11,7 +11,7 @@
 
     <?php include('blocks/nav.php'); ?>
 
-    <div class="bg-0 contained pad-verticals-6">
+    <div class="bg-0 contained text-align-center pad-verticals-6">
         <h1>
             <?= live($page->introduction, 'sentences|1')?>
         </h1>
