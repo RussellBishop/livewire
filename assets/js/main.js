@@ -219,6 +219,10 @@ $(function() {
 
     }
 
+    $(".nav").scroll(function() {
+      $(this).children('.fade').hide();
+    });
+
 });
 
 
@@ -227,105 +231,105 @@ $(function() {
 
 
 
-//slick slider
-$(function() {
+// //slick slider
+// $(function() {
 
-  var openClass = 'is--open';
+//   var openClass = 'is--open';
 
-    //nav
-    $('[data-toggle]').click(function(e) {
+//     //nav
+//     $('[data-toggle]').click(function(e) {
 
-      e.preventDefault();
+//       e.preventDefault();
 
-      // the toggle and it's group
-      var toggleGroup = $(this).data('group');
+//       // the toggle and it's group
+//       var toggleGroup = $(this).data('group');
 
-      // the target and it's group
-      var targetId = $(this).data('toggle');
-      var target = $('[data-id="'+targetId+'"]');
-      var targetGroup = $(target).data('group');
+//       // the target and it's group
+//       var targetId = $(this).data('toggle');
+//       var target = $('[data-id="'+targetId+'"]');
+//       var targetGroup = $(target).data('group');
 
-      if ($(target).is('.'+openClass)) {
+//       if ($(target).is('.'+openClass)) {
 
-        console.log('open');
-        // is already open
+//         console.log('open');
+//         // is already open
 
-        $(this).removeClass(openClass);
-        $(target).removeClass(openClass);
+//         $(this).removeClass(openClass);
+//         $(target).removeClass(openClass);
 
-      } else {
+//       } else {
 
-        // isnt open already
+//         // isnt open already
 
-        hideGroupShowMe(toggleGroup, this);
-        hideGroupShowMe(targetGroup, target);
+//         hideGroupShowMe(toggleGroup, this);
+//         hideGroupShowMe(targetGroup, target);
 
-      }
+//       }
 
-    });
+//     });
 
-    $('[data-target]').click(function(e) {
+//     $('[data-target]').click(function(e) {
 
-      e.preventDefault();
+//       e.preventDefault();
 
-      // the toggle and it's group
-      var toggleGroup = $(this).data('group');
+//       // the toggle and it's group
+//       var toggleGroup = $(this).data('group');
 
-      // the target and it's group
-      var targetId = $(this).data('target');
-      var target = $('[data-id="'+targetId+'"]');
-      var targetGroup = $(target).data('group');
+//       // the target and it's group
+//       var targetId = $(this).data('target');
+//       var target = $('[data-id="'+targetId+'"]');
+//       var targetGroup = $(target).data('group');
 
-        hideGroupShowMe(toggleGroup, this);
-        hideGroupShowMe(targetGroup, target);
-
-
-    });
-
-    // close the target!
-    $('[data-untarget]').click(function(e) {
-
-      e.preventDefault();
-
-      // the target and it's group
-      var targetId = $(this).data('untarget');
-      var target = $('[data-id="'+targetId+'"]');
-
-      $(target).removeClass(openClass);
-
-    });
-
-    // close the target!
-    $('[data-scrollto]').click(function(e) {
-
-      e.preventDefault();
-
-      // the target and it's group
-      var targetId = $(this).data('scrollto');
-      var target = $('[data-id="'+targetId+'"]');
-
-      $('html, body').animate({
-          scrollTop: $(target).offset().top
-      }, 500);
-
-    });
-
-    function hideGroupShowMe(group, me) {
-
-        // console.log(group);
-        // console.log(me);
-
-        $('[data-group="'+ group + '"]')
-          .not(me)
-          .removeClass(openClass);
-
-        $(me).addClass(openClass);
-
-    }
+//         hideGroupShowMe(toggleGroup, this);
+//         hideGroupShowMe(targetGroup, target);
 
 
+//     });
 
-});
+//     // close the target!
+//     $('[data-untarget]').click(function(e) {
+
+//       e.preventDefault();
+
+//       // the target and it's group
+//       var targetId = $(this).data('untarget');
+//       var target = $('[data-id="'+targetId+'"]');
+
+//       $(target).removeClass(openClass);
+
+//     });
+
+//     // close the target!
+//     $('[data-scrollto]').click(function(e) {
+
+//       e.preventDefault();
+
+//       // the target and it's group
+//       var targetId = $(this).data('scrollto');
+//       var target = $('[data-id="'+targetId+'"]');
+
+//       $('html, body').animate({
+//           scrollTop: $(target).offset().top
+//       }, 500);
+
+//     });
+
+//     function hideGroupShowMe(group, me) {
+
+//         // console.log(group);
+//         // console.log(me);
+
+//         $('[data-group="'+ group + '"]')
+//           .not(me)
+//           .removeClass(openClass);
+
+//         $(me).addClass(openClass);
+
+//     }
+
+
+
+// });
 
 
 

@@ -35,4 +35,9 @@
   &-2 {
     color: #F4F4F4;
   }
+
+  &-btn,
+  &-button {
+    background-color: colour(button);
+  }
 }

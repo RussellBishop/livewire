@@ -3,6 +3,11 @@ label,
 textarea,
 select {
   display: block;
+
+  &:focus,
+  &:valid {
+    color: colour(black);
+  }
 }
 
 input,
