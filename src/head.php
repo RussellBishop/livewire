@@ -7,7 +7,7 @@
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Livewire v1</title>
+<title><?=$title?></title>
 
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">

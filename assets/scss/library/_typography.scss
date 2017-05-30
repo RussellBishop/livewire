@@ -133,3 +133,24 @@ hr {
     color: colour(white);
   }
 }
+
+[data-forcefeed*='sentences'] {
+  * + * {
+    margin-top: 1rem;
+  }
+}
+
+[data-forcefeed*='listitems'] {
+  * + * {
+    margin-top: .5rem;
+  }
+}
+
+[data-forcefeed*='words'] {
+  display: inline-block;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+

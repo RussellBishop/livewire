@@ -1,12 +1,19 @@
 tabs {
-  overflow-x: hidden;
-  white-space: nowrap;
+  @extend flex;
+  overflow-x: scroll;
 
   > * {
-    @extend .button;
+    flex: 1;
+    white-space: nowrap;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 
-    &.active {
-      @extend .bg-4;
+    &:not(:last-child) {
+      margin-right: .25rem;
+    }
+
+    &:not(.is--open) {
+      opacity: .7;
     }
   }
 }

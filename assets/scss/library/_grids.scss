@@ -2,20 +2,33 @@ $gutter: 1rem;
 
 grid,
 [grid],
-[class*='grid'], {
+[class*='grid'] {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: -1rem;
+  margin-bottom: $gutter * -1;
 
   > * {
-    margin-bottom: 1rem;
+    margin-bottom: $gutter;
+  }
+
+  /*
+    Types
+  */
+  &[type="float-left"] {
+    @include clearfix;
+    display: block;
+
+    > * {
+      float: left;
+      margin-right: $gutter;
+    }
   }
 
   &[type="auto"] {
 
     > * {
-      margin-right: 1rem;
+      margin-right: $gutter;
     }
   }
 
@@ -27,22 +40,35 @@ grid,
       margin-bottom: 0;
     }
   }
+}
 
-  &[type="float-left"] {
-    @include clearfix;
-    display: block;
+flex,
+[flex],
+[class*='flex'] {
+  display: flex;
+}
 
-    > * {
-      float: left;
-      margin-right: 1rem;
-    }
+grid,
+[grid],
+[class*='grid'],
+flex,
+[flex],
+[class*='flex'] {
+  /*
+    Direction
+  */
+  &[direction="column"] {
+    flex-direction: column;
   }
 
-  &[justify="space-around"] {
+  /*
+    Justify
+  */
+  &[justify="around"] {
     justify-content: space-around;
   }
 
-  &[justify="space-between"] {
+  &[justify="between"] {
     justify-content: space-between;
   }
 
@@ -50,10 +76,27 @@ grid,
   &[justify="center"] {
     justify-content: center;
   }
-}
 
-[class*='vertical-centre'] {
-  align-items: center;
+  /*
+    Align
+  */
+  &[align="center"],
+  &[align="centre"] {
+    align-items: center;
+  }
+
+  &[align="start"] {
+    align-items: start;
+  }
+
+  &[align="end"] {
+    align-items: end;
+  }
+
+  &[align="stretch"] {
+    align-items: stretch;
+  }
+
 }
 
 .centre {

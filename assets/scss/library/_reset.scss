@@ -25,11 +25,6 @@ body {
   min-height: 100%;
 }
 
-html {
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
 body {
   line-height: 1;
 }
@@ -45,9 +40,7 @@ header,
 hgroup,
 menu,
 nav,
-section,
-row,
-grid {
+section {
   display: block;
 }
 
