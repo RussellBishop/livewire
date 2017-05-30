@@ -134,6 +134,12 @@ hr {
   }
 }
 
+.list-style {
+  &-none {
+    list-style: none;
+  }
+}
+
 [data-forcefeed*='sentences'] {
   * + * {
     margin-top: 1rem;
