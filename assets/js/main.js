@@ -142,16 +142,6 @@ $(function() {
     //nav
     $('[data-toggle]').click(function(e) {
 
-      e.preventDefault();
-
-      // the toggle and it's group
-      var toggleGroup = $(this).data('group');
-
-      // the target and it's group
-      var targetId = $(this).data('target');
-      var target = $('[data-id="'+targetId+'"]');
-      var targetGroup = $(target).data('group');
-
       if ($(this).is('.'+openClass)) {
 
         // is already open
@@ -163,8 +153,8 @@ $(function() {
 
         // isnt open already
 
-        hideGroupShowMe(toggleGroup, this);
-        hideGroupShowMe(targetGroup, target);
+        closeGroupOpenMe(toggleGroup, this);
+        closeGroupOpenMe(targetGroup, target);
 
       }
 
@@ -172,41 +162,66 @@ $(function() {
 
     $('[data-target]').click(function(e) {
 
-      e.preventDefault();
+        e.preventDefault();
 
-      // the toggle and it's group
-      var toggleGroup = $(this).data('group');
+        var action = $(this).data('action'); // what type of target?
 
-      // the target and it's group
-      var targetId = $(this).data('target');
-      var target = $('[data-id="'+targetId+'"]');
-      var targetGroup = $(target).data('group');
+        var toggleGroup = $(this).data('group'); // this group
 
-        hideGroupShowMe(toggleGroup, this);
-        hideGroupShowMe(targetGroup, target);
+        var target = $('[data-id="'+ $(this).data('target') +'"]'); // the target
+        var targetGroup = $(target).data('group'); // the target's group
 
-        // $('[data-group="'+targetGroup+'"]')
-        //   .not(this)
-        //   .removeClass(openClass);
+        // Do a clever...
+        // $('[data-id=' + $(this).data('toggle') + '"]')
 
-        // $(target).addClass(openClass);
+        if (action === 'open') {
+
+            closeGroupOpenMe(toggleGroup, this);
+            closeGroupOpenMe(targetGroup, target);
+
+        }
+
+        else if (action === 'close') {
+
+            $(this).removeClass(openClass);
+            $(target).removeClass(openClass);
+
+        }
+
+        else if (action === 'toggle') {
+
+            if ($(this).is('.'+openClass)) {
+
+                // close me
+                $(this).removeClass(openClass);
+                $(target).removeClass(openClass);
+
+            } else {
+
+                // open me
+                closeGroupOpenMe(toggleGroup, this);
+                closeGroupOpenMe(targetGroup, target);
+
+            }
+
+        }
 
     });
 
     // close the target!
-    $('[data-untarget]').click(function(e) {
+    // $('[data-untarget]').click(function(e) {
 
-      e.preventDefault();
+    //   e.preventDefault();
 
-      // the target and it's group
-      var targetId = $(this).data('target');
-      var target = $('[data-id="'+targetId+'"]');
+    //   // the target and it's group
+    //   var targetId = $(this).data('target');
+    //   var target = $('[data-id="'+targetId+'"]');
 
-      $(target).removeClass(openClass);
+    //   $(target).removeClass(openClass);
 
-    });
+    // });
 
-    function hideGroupShowMe(group, me) {
+    function closeGroupOpenMe(group, me) {
 
         // console.log(group);
         // console.log(me);
@@ -220,7 +235,7 @@ $(function() {
     }
 
     $(".nav").scroll(function() {
-      $(this).children('.fade').hide();
+      $(this).children('.fade').fadeOut(150);
     });
 
 });
@@ -261,8 +276,8 @@ $(function() {
 
 //         // isnt open already
 
-//         hideGroupShowMe(toggleGroup, this);
-//         hideGroupShowMe(targetGroup, target);
+//         closeGroupOpenMe(toggleGroup, this);
+//         closeGroupOpenMe(targetGroup, target);
 
 //       }
 
@@ -280,8 +295,8 @@ $(function() {
 //       var target = $('[data-id="'+targetId+'"]');
 //       var targetGroup = $(target).data('group');
 
-//         hideGroupShowMe(toggleGroup, this);
-//         hideGroupShowMe(targetGroup, target);
+//         closeGroupOpenMe(toggleGroup, this);
+//         closeGroupOpenMe(targetGroup, target);
 
 
 //     });
@@ -314,7 +329,7 @@ $(function() {
 
 //     });
 
-//     function hideGroupShowMe(group, me) {
+//     function closeGroupOpenMe(group, me) {
 
 //         // console.log(group);
 //         // console.log(me);

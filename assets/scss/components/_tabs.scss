@@ -2,11 +2,15 @@ tabs {
   @extend flex;
   position: relative;
   overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 
   > * {
     flex: 1;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    font-weight: bold;
     white-space: nowrap;
 
     &:not(:last-child) {
@@ -18,8 +22,8 @@ tabs {
     }
 
     &.is--open {
-      // text-decoration: underline;
       @extend .button;
+      color: white;
     }
 
     &.is--active {

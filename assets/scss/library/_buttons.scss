@@ -1,4 +1,4 @@
-button:not(.plain),
+button,
 .button,
 .link {
   background-color: colour(button);
@@ -13,13 +13,9 @@ button:not(.plain),
   &:focus {
     background-color: darken(colour(button), 15%);
   }
-}
 
-button {
-  &.plain {
-    &:not(.is--open) {
-      color: colour(button);
-    }
+  &.is--active {
+    background-color: darken(colour(button), 25%);
   }
 }
 
@@ -27,7 +23,7 @@ button,
 .button {
   @include pad(.5, .5);
   display: inline-block;
-  line-height: 1;
+  // line-height: 1;
 
   &.m,
   &.med,
@@ -43,13 +39,6 @@ button,
   &.large {
     @include pad(1.2, 2.6);
     font-size: 1.5rem;
-  }
-
-  &.arrow-down {
-    &:after {
-      margin-left: .5ch;
-      content: '↓';
-    }
   }
 
   &[disabled] {

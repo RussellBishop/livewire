@@ -140,6 +140,13 @@ hr {
   }
 }
 
+&.arrow-down {
+  &:after {
+    margin-left: .5ch;
+    content: '▾';
+  }
+}
+
 [data-forcefeed*='sentences'] {
   * + * {
     margin-top: 1rem;
