@@ -10,11 +10,11 @@
 <body class="bg-4">
 
     <?php include('blocks/nav.php'); ?>
-    <div class="contained spacing pad-verticals-6 bg-5">
+    <div class="bg-0 contained pad-verticals-6 text-align-center">
         <h1>
-            <?= live($page->vision, 'sentences|4')?>
+            <?= live($page->vision, 'words|2')?>
         </h1>
-    </div>    
+    </div>  
     <div class="contained spacing pad-verticals-4 bg-4">
         <h2>
             <?= live($page->strategy_heading, 'words|2')?>

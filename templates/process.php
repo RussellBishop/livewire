@@ -11,13 +11,20 @@
 
     <?php include('blocks/nav.php'); ?>
 
-    <div class="bg-0 spacing contained pad-verticals-6">
+    <div class="bg-0 contained pad-verticals-6 text-align-center">
         <h1>
+            <?= live($page->heading, 'words|2')?>
+        </h1>
+    </div>
+
+
+    <div class="bg-3 spacing contained pad-verticals-4">
+        <h2>
             <?= live($page->page_title, 'words|2')?>
-        </h1>
-        <h1>
+        </h2>
+        <p>
             <?= live($page->introduction, 'sentences|1')?>
-        </h1>
+        </p>
     </div>
 
 <div class="contained spacing pad-verticals-2">

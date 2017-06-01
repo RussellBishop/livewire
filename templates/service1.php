@@ -11,27 +11,45 @@
 
     <?php include('blocks/nav.php'); ?>
 
-    <div class="bg-0 spacing contained pad-verticals-6">
+    <div class="bg-0 contained pad-verticals-6 text-align-center">
         <h1>
             <?= live($page->services_heading, 'words|2')?>
         </h1>
-    
-    <p>
-        <?= live($page->introduction, 'sentences|1')?>
-    </p>
-</div>
+    </div>
 
-    <div class="contained spacing pad-verticals-4">
 
-    <p>
-        <?= live($page->service_introduction, 'sentences|2')?>
-    </p>
-    <p>
-        <?= live($page->process_description, 'sentences|2')?>
-    </p>
-    <p>
-        <?= live($page->client_testimonial, 'sentences|2')?>
-    </p>
+    <div class="contained spacing pad-verticals-4 pad-sides-6 bg-2">
+        <div class="spacing pad-verticals-2 pad-sides-6">
+            <p>
+                <?= live($page->introduction, 'sentences|2')?>
+            </p>
+        </div>
+        <div class="pad-sides-6">
+            <h2>
+                <?= live($page->pullout, 'sentences|2')?>
+            </h2>
+        </div>
+        <div class="spacing pad-verticals-2 pad-sides-6">
+        <p>
+            <?= live($page->copy, 'sentences|2')?>
+        </p>
+        </div>
+        <div class="spacing pad-verticals-4 pad-sides-6 bg-1">
+            <h3>
+                <?= live($page->process_description_title, 'sentences|2')?>
+            </h3>
+            <p>
+                <?= live($page->process_description, 'sentences|2')?>
+            </p>
+            <a href="/templates/process.php">
+                <?= live($page->process_description_link, 'sentences|2')?>
+            </a>
+        </div>
+        <div class="spacing pad-verticals-4 pad-sides-10 bg-3">
+            <blockquote>
+                <?= live($page->client_testimonial, 'sentences|2')?>
+            </blockquote>
+        </div>
     
     </div>
 

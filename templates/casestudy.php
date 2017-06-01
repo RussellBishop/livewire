@@ -17,8 +17,8 @@
         </h1>
     </div>
 
-    <div class="contained spacing pad-verticals-4 bg-2">
-    <h2>Filter content</h2>
+    <div class="contained spacing pad-verticals-3 bg-2">
+    <h3>Filter content</h3>
          <grid>
             <flex direction="column" justify="around" class="pad-sides-1 text-align-center" border="light" small="3" medium-large="2">Completed</flex>
             <flex direction="column" justify="around" class="pad-sides-1 text-align-center" border="light" small="3" medium-large="2">In Progress</flex>

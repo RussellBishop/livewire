@@ -11,7 +11,8 @@
 
     <?php include('blocks/nav.php'); ?>
 
-    <div class="bg-3 ratio-50 contained" caption="Image"></div>
+    <div class="bg-3 text-align-center"><img src="/dist/img/building2.jpg"/></div>
+    <div class="text-small"><p><?= live($page->image_credit, 'words|3')?></p></div>
 
     <h2 class="text-align-center pad-verticals-2">
         <?= live($page->project_name, 'words|3')?>
@@ -26,8 +27,23 @@
             <div>Value: <?= live($page->value, 'words|1')?></div>
         </div> 
         <div class="spacing pad-verticals-1 pad-sides-1 bg-4" small="12" medium-large="8">
-            <p><?= live($page->description_of_project, 'sentences|6')?></p>
+            <h2><?= live($page->description_of_project_title1, 'sentences|6')?></h2>
+            <div class="spacing pad-verticals-1 bg-4">
+                <p><?= live($page->description_of_project1, 'sentences|6')?></p>
+            </div>
+            <h2><?= live($page->description_of_project_title2, 'sentences|6')?></h2>
+            <div class="spacing pad-verticals-1 bg-4">
+                <p><?= live($page->description_of_project2, 'sentences|6')?></p>
+            </div>
+            <h2><?= live($page->description_of_project_title3, 'sentences|6')?></h2>
+        <div class="spacing pad-verticals-1 pad-sides-2 bg-5">
+            <blockquote>
+                <?= live($page->testimonial, 'sentences|2')?>
+            </blockquote>
+            <p><?= live($page->testimonial_signature, 'words|2')?></p>
+        </div>
         </div> 
+
     </grid>
 </div>
     
