@@ -1,6 +1,14 @@
 img {
   display: block;
   max-width: 100%;
+
+  .max-images & {
+    width: 100%;
+  }
+}
+
+.cover {
+  @include background-size(cover);
 }
 
 [caption] {

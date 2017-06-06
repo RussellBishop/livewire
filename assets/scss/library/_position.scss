@@ -37,6 +37,10 @@
   position: absolute;
 }
 
+.relative {
+  position: relative;
+}
+
 @each $side in $sides {
   .#{$side} {
     #{$side}: 0;
@@ -47,4 +51,8 @@
       }
     }
   }
+}
+
+.fill {
+  @include absolute-fill;
 }

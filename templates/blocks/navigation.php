@@ -17,7 +17,7 @@
 
         <div class="fade fade-white" large="hide"></div>
 
-        <a href="#" data-group="nav" class="<?php if ($active == 'home') echo ' bg-2'; ?>">Home</a>
+        <?php /* <a href="#" data-group="nav" class="<?php if ($active == 'home') echo ' bg-2'; ?>">Home</a> */ ?>
 
         <a href="#" data-group="nav" class="arrow-down<?php if ($active == 'makeachange') echo ' bg-2'; ?>" data-target="makeachange-subnav" data-action="toggle">Make a change</a>
 
@@ -29,7 +29,7 @@
 
         <a href="#" data-group="nav" class="<?php if ($active == 'whatson') echo ' bg-2'; ?>">What's on?</a>
 
-        <a href="#" data-group="nav" class="arrow-down<?php if ($active == 'aboutus') echo ' bg-2'; ?>" data-target="aboutus-subnav" data-action="toggle">About us</a>
+        <a href="#" id="aboutus" data-group="nav" class="arrow-down<?php if ($active == 'aboutus') echo ' bg-2'; ?>" data-target="aboutus-subnav" data-action="toggle">About us</a>
 
         <a href="#" data-group="nav" class="<?php if ($active == 'shop') echo ' bg-2'; ?>">Shop</a>
 
@@ -38,8 +38,6 @@
     <group>
 
         <div data-group="subnav" data-id="makeachange-subnav" class="nav subnav bg-button">
-
-            <!-- <div class="fade fade-button" large="hide"></div> -->
 
             <button type="button">Who represents you?</button>
             <button type="button">Union democracy</button>
@@ -53,8 +51,6 @@
 
         <div data-group="subnav" data-id="yourstudentlife-subnav" class="nav subnav bg-button">
 
-            <!-- <div class="fade fade-button" large="hide"></div> -->
-
             <button type="button">Clubs and societies</button>
             <button type="button">Sport</button>
             <button type="button" class="<?php if ($menu == 'volunteering') echo ' is--active'; ?>">Volunteering</button>
@@ -66,8 +62,6 @@
 
         <div data-group="subnav" data-id="placesforyou-subnav" class="nav subnav bg-button">
 
-            <!-- <div class="fade fade-button" large="hide"></div> -->
-
             <button type="button">Bars</button>
             <button type="button">Cafes</button>
             <button type="button">Bloomsbury Fitness</button>
@@ -78,8 +72,6 @@
         </div>
 
         <div data-group="subnav" data-id="helpandadvice-subnav" class="nav subnav bg-button">
-
-            <!-- <div class="fade fade-button" large="hide"></div> -->
 
             <button type="button">About the Rights and Advice Centre</button>
             <button type="button">Personal support</button>
@@ -96,11 +88,9 @@
 
         <div data-group="subnav" data-id="aboutus-subnav" class="nav subnav bg-button">
 
-            <!-- <div class="fade fade-button" large="hide"></div> -->
-
             <button type="button">New to UCL?</button>
             <button type="button">Membership</button>
-            <button type="button">News</button>
+            <button type="button" class="<?php if ($menu == 'news') echo ' is--active'; ?>">News</button>
             <button type="button">Our history</button>
             <button type="button">Governance and policies</button>
             <button type="button">Sustainability</button>

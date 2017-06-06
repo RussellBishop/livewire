@@ -139,27 +139,6 @@ $(function() {
 
     var openClass = 'is--open';
 
-    //nav
-    $('[data-toggle]').click(function(e) {
-
-      if ($(this).is('.'+openClass)) {
-
-        // is already open
-
-        $(this).removeClass(openClass);
-        $(target).removeClass(openClass);
-
-      } else {
-
-        // isnt open already
-
-        closeGroupOpenMe(toggleGroup, this);
-        closeGroupOpenMe(targetGroup, target);
-
-      }
-
-    });
-
     $('[data-target]').click(function(e) {
 
         e.preventDefault();
@@ -208,19 +187,6 @@ $(function() {
 
     });
 
-    // close the target!
-    // $('[data-untarget]').click(function(e) {
-
-    //   e.preventDefault();
-
-    //   // the target and it's group
-    //   var targetId = $(this).data('target');
-    //   var target = $('[data-id="'+targetId+'"]');
-
-    //   $(target).removeClass(openClass);
-
-    // });
-
     function closeGroupOpenMe(group, me) {
 
         // console.log(group);
@@ -239,116 +205,6 @@ $(function() {
     });
 
 });
-
-
-
-
-
-
-
-// //slick slider
-// $(function() {
-
-//   var openClass = 'is--open';
-
-//     //nav
-//     $('[data-toggle]').click(function(e) {
-
-//       e.preventDefault();
-
-//       // the toggle and it's group
-//       var toggleGroup = $(this).data('group');
-
-//       // the target and it's group
-//       var targetId = $(this).data('toggle');
-//       var target = $('[data-id="'+targetId+'"]');
-//       var targetGroup = $(target).data('group');
-
-//       if ($(target).is('.'+openClass)) {
-
-//         console.log('open');
-//         // is already open
-
-//         $(this).removeClass(openClass);
-//         $(target).removeClass(openClass);
-
-//       } else {
-
-//         // isnt open already
-
-//         closeGroupOpenMe(toggleGroup, this);
-//         closeGroupOpenMe(targetGroup, target);
-
-//       }
-
-//     });
-
-//     $('[data-target]').click(function(e) {
-
-//       e.preventDefault();
-
-//       // the toggle and it's group
-//       var toggleGroup = $(this).data('group');
-
-//       // the target and it's group
-//       var targetId = $(this).data('target');
-//       var target = $('[data-id="'+targetId+'"]');
-//       var targetGroup = $(target).data('group');
-
-//         closeGroupOpenMe(toggleGroup, this);
-//         closeGroupOpenMe(targetGroup, target);
-
-
-//     });
-
-//     // close the target!
-//     $('[data-untarget]').click(function(e) {
-
-//       e.preventDefault();
-
-//       // the target and it's group
-//       var targetId = $(this).data('untarget');
-//       var target = $('[data-id="'+targetId+'"]');
-
-//       $(target).removeClass(openClass);
-
-//     });
-
-//     // close the target!
-//     $('[data-scrollto]').click(function(e) {
-
-//       e.preventDefault();
-
-//       // the target and it's group
-//       var targetId = $(this).data('scrollto');
-//       var target = $('[data-id="'+targetId+'"]');
-
-//       $('html, body').animate({
-//           scrollTop: $(target).offset().top
-//       }, 500);
-
-//     });
-
-//     function closeGroupOpenMe(group, me) {
-
-//         // console.log(group);
-//         // console.log(me);
-
-//         $('[data-group="'+ group + '"]')
-//           .not(me)
-//           .removeClass(openClass);
-
-//         $(me).addClass(openClass);
-
-//     }
-
-
-
-// });
-
-
-
-
 
 
 

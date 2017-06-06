@@ -6,22 +6,15 @@
     width: 100%;
     content: '';
   }
-
-  // > * {
-  //   @include absolute-fill;
-  // }
 }
 
-.ratio {
-  $ratios: 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300;
+@for $i from 1 through 40 {
+  $ratio: $i * 10;
 
-  @each $ratio in $ratios {
+  .ratio-#{$ratio} {
 
-    &-#{$ratio} {
-
-      &:before {
-        padding-bottom: #{$ratio}#{%};
-      }
+    &:before {
+      padding-bottom: #{$ratio}#{%};
     }
   }
 }
