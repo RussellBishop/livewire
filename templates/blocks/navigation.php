@@ -51,7 +51,7 @@
 
         <div data-group="subnav" data-id="yourstudentlife-subnav" class="nav subnav bg-button">
 
-            <button type="button">Clubs and societies</button>
+            <button type="button" class="<?php if ($menu == 'clubsandsocieties') echo ' is--active'; ?>">Clubs and societies</button>
             <button type="button">Sport</button>
             <button type="button" class="<?php if ($menu == 'volunteering') echo ' is--active'; ?>">Volunteering</button>
             <button type="button">London life</button>

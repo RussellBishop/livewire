@@ -43,7 +43,7 @@
 
         <?= live($page->body_of_post, 'sentences|12')?>
 
-        <div class="bg-4 spacing pad-2 push-top-4 bg-5" border>
+        <div class="bg-4 spacing pad-2 push-top-4 bg-5 border">
             <h3>Related links</h3>
             <?= live($page->related_links, 'listitems|3')?>
         </div>

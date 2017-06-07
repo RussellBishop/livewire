@@ -147,6 +147,31 @@ hr {
   }
 }
 
+[data-forcefeed] {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    opacity: 0;
+    padding: .4rem .6rem;
+    color: white;
+    font-size: 12px;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, .8);
+    content: 'Awaiting content';
+  }
+
+  &:hover {
+    // cursor: wait;
+
+    &:before {
+      opacity: 1;
+    }
+  }
+}
+
 [data-forcefeed*='sentences'] {
   * + * {
     margin-top: 1rem;
