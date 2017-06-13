@@ -1,40 +1,44 @@
-@import 'mixins/_pad-push.scss';
-@import 'mixins/_z-index.scss';
-@import 'mixins/_clearfix.scss';
-@import 'mixins/_spacing.scss';
+@import 'mixins/pad-push';
+@import 'mixins/z-index';
+@import 'mixins/clearfix';
+@import 'mixins/spacing';
 
-@import 'library/_z-index.scss';
-@import 'library/_reset.scss';
-@import 'library/_document.scss';
+@import 'library/z-index';
+@import 'library/reset';
+@import 'library/document';
 
-@import 'library/_global.scss';
-@import 'library/_breakpoints.scss';
-@import 'library/_colours.scss';
-@import 'library/_position.scss';
-// @import 'library/_layout.scss';
-@import 'library/_grids.scss';
-@import 'library/_ratio.scss';
+@import 'library/global';
+@import 'library/breakpoints';
+@import 'library/colours';
+@import 'library/position';
+@import 'library/opacity';
+@import 'library/grids';
+@import 'library/ratio';
 
-@import 'library/_buttons.scss'; // before push/pad so that you can change padding etc.
-@import 'library/_typography.scss';
+@import 'library/buttons'; // before push/pad so that you can change padding etc.
+@import 'library/typography';
 
-@import 'library/_margins-padding.scss';
-@import 'library/_blocks.scss';
-@import 'library/_visibility.scss';
+@import 'library/margins-padding';
+@import 'library/blocks';
+@import 'library/visibility';
 
-@import 'library/_display.scss';
+@import 'library/display';
 
-@import 'library/_forms.scss';
-@import 'library/_borders.scss';
-@import 'library/_backgrounds.scss';
-@import 'library/_shadows.scss';
+@import 'library/forms';
+@import 'library/borders';
+@import 'library/backgrounds';
+@import 'library/shadows';
 
-@import 'library/_images.scss';
+@import 'library/images';
 
-@import 'library/_nav.scss';
-@import 'library/_dropdowns.scss';
+@import 'library/nav';
+@import 'library/dropdowns';
 
-@import 'components/_tabs.scss';
+@import 'components/tabs';
 
-// @import 'library/_forms.scss';
-// @import 'library/_utilities.scss';
+@import 'fontawesome/font-awesome';
+
+
+
+
+// @import 'library/utilities';

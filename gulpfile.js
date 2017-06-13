@@ -58,6 +58,11 @@ elixir(function(mix) {
         elixir.config.publicPath + '/img'
     );
 
+    mix.copy(
+        elixir.config.assetsPath + '/fonts',
+        elixir.config.publicPath + '/fonts'
+    );
+
     /**
      * JavaScript
      *
