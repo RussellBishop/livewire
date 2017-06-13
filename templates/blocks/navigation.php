@@ -7,11 +7,11 @@
             <flex align="centre">
 
                 <flex align="centre">
-                    <input small="hide" type="text" placeholder="Search&hellip;" style="" required />
+                    <input small="hide" class="max-10" placeholder="Search&hellip;" type="text" required  />
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </flex>
 
-                <a href="#" class="button push-left-2"><i class="fa fa-user"></i></a>
+                <a href="#" class="button push-left-2"><i class="fa fa-user"></i> <span small="hide">James</span></a>
 
             </flex>
 
