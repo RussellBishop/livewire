@@ -35,7 +35,7 @@
 
 <grid class="contained pad-verticals-2">
 
-    <article large="8" class="spacing max-images">
+    <article large="8" class="spacing-article max-images">
 
         <?= live($page->event_description, 'sentences|12')?>
 
@@ -57,9 +57,8 @@
             <?= live($page->booking, 'sentences|1')?>
             <?= live($page->contact_details_for_additional_information_about_the_event, 'sentences|1')?>
             <button type="button">Buy ticket</button>
-            </div>
+        </div>
     </aside>
-
 
 </grid>
 

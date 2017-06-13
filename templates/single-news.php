@@ -34,7 +34,7 @@
 
 <grid class="contained pad-verticals-2">
 
-    <article large="8" class="spacing push-bottom-4 max-images">
+    <article large="8" class="spacing-article push-bottom-4 max-images">
 
         <div>
             <h5><?= live($page->author, 'names|1')?></h5>

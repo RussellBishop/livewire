@@ -30,32 +30,81 @@
 
 </div>
 
-<grid class="contained pad-verticals-2">
-
-    <section small-medium-large="12">
-
-        <h2>Welcome Festival 2017</h2>
-
-    </section>
+<div class="contained pad-verticals-2 spacing">
 
     <section class="border spacing pad">
 
-        <h3><a href="#">Clubs and societies</a></h3>
+        <?php $welcomeFestival = new Page(4540027); ?>
 
-        <p class="text-small"><?= live($page->nothing, 'sentences|1')?></p>
+        <h2><?= live($welcomeFestival->heading_1, 'sentences|1')?></h2>
 
-        <ul class="text-small">
-        <li><a href="#">Directory A-Z</a></li>
-        <li><a href="#">Join</a></li>
-        <li><a href="#">Start your own</a></li>
-        <li><a href="#">Resources for clubs and societies</a></li>
-        <li><a href="#">FAQs</a></li>
-        </ul>
+        <p class="max-60">We're excited, you're excited and things are about to get even more exciting than that! You've made it into the best uni in the best city. It's time to start planning the best introduction to university life possible.</p>
 
     </section>
 
+    <grid class="push-top-4">
 
+        <?php
 
-</grid>
+            $section = array (
+
+                'title'         =>  'Clubs and societies',
+                'links'         =>  array ('Directory A-Z','Join','Start your own','Resources for clubs and societies','FAQs'),
+
+            );
+
+            include('blocks/sectioncard.php');
+
+        ?>
+
+        <?php
+
+            $section = array (
+
+                'title'         =>  'Sport',
+                'links'         =>  array ('Club Sport','Project Active','London Varsity Series','Facilities','Alumni'),
+
+            );
+
+            include('blocks/sectioncard.php');
+
+        ?>
+
+        <?php
+
+            $section = array (
+
+                'title'         =>  'Volunteering',
+                'links'         =>  array ('Get involved', 'Resources for current volunteers', 'Volunteering Services Unit', 'Support for UCL Departments', 'Information for Organisations'),
+
+            );
+
+            include('blocks/sectioncard.php');
+
+        ?>
+
+    </grid>
+
+    <grid>
+
+        <section large="6" class="border spacing pad">
+
+            <h2>London Life</h2>
+
+            <p> We're excited, you're excited and things are about to get even more exciting than that! You've made it into the best uni in the best city. It's time to start planning the best introduction to university life possible.</p>
+
+        </section>
+
+        <section large="6" class="border spacing pad">
+
+            <h2>Discounts and offers</h2>
+
+            <p> We're excited, you're excited and things are about to get even more exciting than that! You've made it into the best uni in the best city. It's time to start planning the best introduction to university life possible.</p>
+
+        </section>
+
+    </grid>
+
+</div>
 
 <?php include('../src/footer.php'); ?>
