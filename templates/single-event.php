@@ -41,11 +41,13 @@
 
         <hr />
 
-        <h3>Who are the Salsa Society?</h3>
+        <?php $clubsocietyname = 'Salsa Society'; ?>
+
+        <h3>Who are the <?=$clubsocietyname?>?</h3>
 
         <p><span data-forcefeed="sentences|2"></span></p>
 
-        <button type="button">Visit the Salsa Society</button>
+        <button type="button">Visit the <?=$clubsocietyname?></button>
 
     </article>
 
@@ -54,7 +56,7 @@
             <h3>Booking</h3>
             <?= live($page->booking, 'sentences|1')?>
             <?= live($page->contact_details_for_additional_information_about_the_event, 'sentences|1')?>
-            <button type="button">Purchase</button>
+            <button type="button">Buy ticket</button>
             </div>
     </aside>
 
