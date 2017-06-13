@@ -10,7 +10,7 @@
 
 <?php include('styles/navigation.styles.php'); ?>
 
-<body class="bg-4 spacing">
+<body class="spacing">
 
 <div class="bg-4">
 
