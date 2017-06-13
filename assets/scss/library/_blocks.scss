@@ -4,15 +4,15 @@
   background-size: $size;
 }
 
-$width: #{$breakpointLargest}px;
+$containerWidth: #{$breakpointLargest}px;
 $gutter: 1rem;
-$padding: calc((100vw - #{$width}) / 2);
+$padding: calc((100vw - #{$containerWidth}) / 2);
 
 .contained {
   padding-right: $gutter;
   padding-left: $gutter;
 
-  @media (min-width: #{$width} + 32px) {
+  @media (min-width: #{$containerWidth} + 32px) {
     padding-right: $padding;
     padding-left: $padding;
   }
@@ -20,7 +20,7 @@ $padding: calc((100vw - #{$width}) / 2);
   &-left {
   	padding-right: $gutter*2;
 
-  	@media (min-width: #{$width} + 32px) {
+  	@media (min-width: #{$containerWidth} + 32px) {
   	  padding-right: $padding / 2;
   	}
   }
@@ -28,7 +28,7 @@ $padding: calc((100vw - #{$width}) / 2);
   &-right {
     padding-left: $gutter*2;
 
-    @media (min-width: #{$width} + 32px) {
+    @media (min-width: #{$containerWidth} + 32px) {
       padding-left: $padding / 2;
     }
   }
