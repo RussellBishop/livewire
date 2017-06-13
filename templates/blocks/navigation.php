@@ -1,12 +1,18 @@
     <div class="contained pad-verticals-2">
 
-        <flex justify="between">
+        <flex justify="between" align="centre">
 
             <a href="#"><img class="height-3" src="/dist/img/suucl-logo.svg" /></a>
 
             <flex align="centre">
-                <input type="text" placeholder="Search&hellip;" style="" required />
-                <button type="submit">▶</button>
+
+                <flex align="centre">
+                    <input small="hide" type="text" placeholder="Search&hellip;" style="" required />
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </flex>
+
+                <a href="#" class="button push-left-2"><i class="fa fa-user"></i></a>
+
             </flex>
 
         </flex>
@@ -45,7 +51,6 @@
             <button type="button">Our impact</button>
             <button type="button">Networks</button>
             <button type="button"><?php /* Contact the */ ?>Representation &amp; Campaigns Team</button>
-
 
         </div>
 
