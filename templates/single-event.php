@@ -48,7 +48,7 @@
     </article>
 
     <aside large="4">
-        <div class="bg-4 spacing pad-2 bg-5 border">
+        <div class="bg-2 spacing pad-2 border">
             <h3>Booking</h3>
             <?= live($page->booking, 'sentences|1')?>
             <?= live($page->contact_details_for_additional_information_about_the_event, 'sentences|1')?>

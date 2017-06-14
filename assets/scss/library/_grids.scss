@@ -40,6 +40,24 @@ grid,
       margin-bottom: 0;
     }
   }
+
+  &[margins="0"] {
+    > * {
+      margin-bottom: 0;
+    }
+  }
+
+  &[margins=".5"] {
+    > * {
+      margin-bottom: .5rem;
+    }
+  }
+
+  &[margins="1"] {
+    > * {
+      margin-bottom: .5rem;
+    }
+  }
 }
 
 flex,

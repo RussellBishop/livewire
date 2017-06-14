@@ -9,6 +9,17 @@ img {
 
 .cover {
   @include background-size(cover);
+
+  &.cover {
+
+    &-top {
+      background-position: top center;
+    }
+
+    &-bottom {
+      background-position: bottom center;
+    }
+  }
 }
 
 [caption] {
