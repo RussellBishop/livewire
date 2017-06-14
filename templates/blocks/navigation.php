@@ -1,3 +1,5 @@
+<div class="bg-2">
+
     <div class="contained pad-verticals-2">
 
         <flex justify="between" align="centre">
@@ -106,3 +108,5 @@
         </div>
 
     </group>
+
+</div>

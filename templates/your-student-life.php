@@ -12,13 +12,9 @@
 
 <body>
 
-<div class="bg-4">
+<?php $active = 'yourstudentlife'; include('blocks/navigation.php'); ?>
 
-    <?php $active = 'yourstudentlife'; include('blocks/navigation.php'); ?>
-
-</div>
-
-<div class="bg-0 contained pad-top-2 pad-bottom-3 relative z-1">
+<div class="bg-5 contained pad-top-2 pad-bottom-3 relative z-1">
 
     <div class="fill cover z--1" style="opacity: .5; background-image: url('https://photos.smugmug.com/Other/UCLU-FINAL-CUT/i-qJCSs9H/0/34cc6c13/X3/UCLU_June2017-44-X3.jpg');">
     </div>
@@ -32,15 +28,23 @@
 
 <div class="contained pad-verticals-2 spacing">
 
-    <section class="border spacing pad">
+    <grid class="border push-bottom-1" type="nowrap">
 
-        <?php $welcomeFestival = new Page(4540027); ?>
+        <div small="12" medium-large="6" class="pad pad-verticals-2 spacing">
 
-        <h2><?= live($welcomeFestival->heading_1, 'sentences|1')?></h2>
+            <?php $welcomeFestival = new Page(4540027); ?>
 
-        <p class="max-60">We're excited, you're excited and things are about to get even more exciting than that! You've made it into the best uni in the best city. It's time to start planning the best introduction to university life possible.</p>
+            <h2><?= live($welcomeFestival->heading_1, 'sentences|1')?></h2>
 
-    </section>
+            <p class="max-60 dummy">We're excited, you're excited and things are about to get even more exciting than that! You've made it into the best uni in the best city. It's time to start planning the best introduction to university life possible.</p>
+
+            <p><a href="/templates/welcomefestival.php" class="button">Global</a> <a href="/templates/welcomefestival.php" class="button">Freshers</a> <a href="/templates/welcomefestival.php" class="button">Grads</a></p>
+
+        </div>
+
+        <div small="12" class="cell-auto cover ratio-60" style="background-image: url('/dist/img/welcomefestival.jpg');"></div>
+
+    </grid>
 
     <grid class="push-top-4">
 
@@ -91,7 +95,49 @@
 
             <h2>London Life</h2>
 
-            <p> We're excited, you're excited and things are about to get even more exciting than that! You've made it into the best uni in the best city. It's time to start planning the best introduction to university life possible.</p>
+            <p class=" dummy">We're excited, you're excited and things are about to get even more exciting than that! You've made it into the best uni in the best city. It's time to start planning the best introduction to university life possible.</p>
+
+            <grid>
+
+                <div medium-large="6">
+
+                    <?php
+
+                        $post = array (
+
+                            'title'         =>  'Heads Up! A Mental Health Awareness Year',
+                            'description'   =>  'Heads Up has been a mental health campaign that we’ve been running as a sabb team that I’ve been leading on for the past year',
+                            'image'         =>  'https://uclu.org/sites/uclu.org/files/styles/large/public/headsupcrew.jpg?itok=9bhpmwpj',
+                            'link'          =>  '#',
+
+                        );
+
+                        include('blocks/newscard.php');
+
+                    ?>
+
+                </div>
+
+                <div medium-large="6">
+
+                    <?php
+
+                        $post = array (
+
+                            'title'         =>  'Heads Up! A Mental Health Awareness Year',
+                            'description'   =>  'Heads Up has been a mental health campaign that we’ve been running as a sabb team that I’ve been leading on for the past year',
+                            'image'         =>  'https://uclu.org/sites/uclu.org/files/styles/large/public/headsupcrew.jpg?itok=9bhpmwpj',
+                            'link'          =>  '#',
+
+                        );
+
+                        include('blocks/newscard.php');
+
+                    ?>
+
+                </div>
+
+            </grid>
 
         </section>
 
@@ -99,7 +145,49 @@
 
             <h2>Discounts and offers</h2>
 
-            <p> We're excited, you're excited and things are about to get even more exciting than that! You've made it into the best uni in the best city. It's time to start planning the best introduction to university life possible.</p>
+            <p class=" dummy">If you are a university student with a valid student card, join online today for free  and take advantage of unsold tickets for productions by The Royal Ballet and The Royal Opera – for the bargain price of only £10.</p>
+
+            <grid>
+
+                <div medium-large="6">
+
+                    <?php
+
+                        $post = array (
+
+                            'title'         =>  'National Theatre Entry Pass',
+                            'description'   =>  'Entry Pass is a free membership scheme for anyone aged 16-25. As an Entry Pass member you receive £5 tickets to all NT productions',
+                            'image'         =>  'https://www.nationaltheatre.org.uk/sites/default/files/entrypass_960x263.jpg',
+                            'link'          =>  '#',
+
+                        );
+
+                        include('blocks/newscard.php');
+
+                    ?>
+
+                </div>
+
+                <div medium-large="6">
+
+                    <?php
+
+                        $post = array (
+
+                            'title'         =>  'Old Vic Theatre',
+                            'description'   =>  'Under 25? Strapped for cash? Love the theatre? Old Vic has just the thing for you – 100 PwC tickets for under 25s, priced at £12',
+                            'image'         =>  'http://oldvictheatre-assets.s3.amazonaws.com/assets/Image/5587-fitandcrop-400x400.jpg',
+                            'link'          =>  '#',
+
+                        );
+
+                        include('blocks/newscard.php');
+
+                    ?>
+
+                </div>
+
+            </grid>
 
         </section>
 

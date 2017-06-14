@@ -10,15 +10,11 @@
 
 <?php include('styles/navigation.styles.php'); ?>
 
-<body class="bg-4">
+<body>
 
-<div class="bg-4">
+<?php $active = 'whatson'; $menu = 'clubsandsocieties'; include('blocks/navigation.php'); ?>
 
-    <?php $active = 'yourstudentlife'; $menu = 'clubsandsocieties'; include('blocks/navigation.php'); ?>
-
-</div>
-
-<div class="bg-0 contained pad-top-2 pad-bottom-3 relative z-1">
+<div class="bg-5 contained pad-top-2 pad-bottom-3 relative z-1">
 
     <div class="fill cover z--1" style="opacity: .2; background-image: url('http://lorempixel.com/1000/750/nightlife/');">
     </div>

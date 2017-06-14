@@ -1,4 +1,4 @@
-<section small="12" medium="6" large="4" class="border spacing pad">
+<section small="12" medium="6" large="4" class="border spacing pad pad-verticals-2">
 
     <h3><a href="#"><?=$section['title']?></a></h3>
 
@@ -6,7 +6,7 @@
 
     <grid class="text-small">
         <?php foreach ($section['links'] as $link) : ?>
-            <p large="6">&middot; <a href="#"><?=$link?></a></p>
+            <p small-medium="12" large="6"><a href="#"><?=$link?></a></p>
         <?php endforeach; ?>
     </grid>
 
