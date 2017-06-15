@@ -1,10 +1,10 @@
 <?php
 
-    $title = 'Single Event';
+    $title = 'Welcome Festival 2017';
 
     require '../src/src.php';
 
-    $page = new Page(4540675);
+    $page = new Page(4540027);
 
 ?>
 

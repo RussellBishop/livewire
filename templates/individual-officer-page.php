@@ -14,7 +14,7 @@
 
 <?php $active = 'makeachange'; include('blocks/navigation.php'); ?>
 
-<grid class="bg-0 contained relative z-1">
+<grid class="bg-5 contained relative z-1">
 
     <div large="8" class="spacing push-top-10 pad-verticals-2">
         <h1><?= live($page->officer_name, 'words|2')?></h1>
@@ -136,7 +136,7 @@
         </div>
 
         <div medium="6" small="12" large="12">
-            <div class="bg-4" >
+            <div class="bg-2" >
 
                 <div class="pad-verticals-3 pad-sides-2 spacing text-align-center">
                     <div>

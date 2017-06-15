@@ -1,4 +1,4 @@
-<div class="bg-4">
+<div class="bg-2">
 
     <div class="pad-verticals-3 pad-sides-3 spacing text-align-center">
         <div>
