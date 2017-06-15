@@ -22,6 +22,10 @@ class Page
         $response = json_decode(curl_exec($ch));
         curl_close($ch);
 
+        if (!isset($response->data->config[0])) {
+          return;
+        }
+
         foreach ($response->data->config[0]->elements as $element) {
             $field = $this->slugify($element->label);
 
