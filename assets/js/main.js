@@ -208,10 +208,13 @@ $(function() {
 
 $(window).resize(function () {
 
-    var activeLinkPosition = $('.nav > .bg-2').position().left;
-    $('.nav').animate({scrollLeft: activeLinkPosition}, 0);
+    // Show active nav in horizontal overflow!
+
+    // var activeLinkPosition = $('.nav > .bg-2').position().left;
+    // $('.nav').animate({scrollLeft: activeLinkPosition}, 0);
 
     // Get rem width!
+
     // console.log($(window).width() / parseFloat($("body").css("font-size"))+'rem, apparently');
 
 }).resize();

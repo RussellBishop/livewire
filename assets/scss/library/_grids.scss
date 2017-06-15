@@ -64,6 +64,18 @@ flex,
 [flex],
 [class*='flex'] {
   display: flex;
+
+  [grow='1'] {
+    > * {
+      flex-grow: 1;
+    }
+  }
+
+  [shrink='1'] {
+    > * {
+      flex-shrink: 1;
+    }
+  }
 }
 
 grid,

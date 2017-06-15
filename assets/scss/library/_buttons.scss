@@ -22,11 +22,16 @@ button,
   &.is--active {
     background-color: darken(colour(button), 25%);
   }
+
+  &--full {
+    display: block;
+    width: 100%;
+  }
 }
 
 button,
 .button {
-  @include pad(.5, .5);
+  @include pad(.5, .6);
   display: inline-block;
   // line-height: 1;
 

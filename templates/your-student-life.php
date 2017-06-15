@@ -34,7 +34,7 @@
 
             <?php $welcomeFestival = new Page(4540027); ?>
 
-            <h2><?= live($welcomeFestival->heading_1, 'sentences|1')?></h2>
+            <h2><a href="#"><?= live($welcomeFestival->heading_1, 'sentences|1')?></a></h2>
 
             <p class="max-60 dummy">We're excited, you're excited and things are about to get even more exciting than that! You've made it into the best uni in the best city. It's time to start planning the best introduction to university life possible.</p>
 
