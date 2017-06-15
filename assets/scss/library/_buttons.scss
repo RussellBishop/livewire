@@ -19,6 +19,10 @@ button,
     background-color: darken(colour(button), 15%);
   }
 
+  &.is--open {
+    background-color: darken(colour(button), 10%);
+  }
+
   &.is--active {
     background-color: darken(colour(button), 25%);
   }

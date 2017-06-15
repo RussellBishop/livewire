@@ -145,19 +145,30 @@ $(function() {
 
         var action = $(this).data('action'); // what type of target?
 
+        var toggle = $(this);
         var toggleGroup = $(this).data('group'); // this group
 
         var target = $('[data-id="'+ $(this).data('target') +'"]'); // the target
         var targetGroup = $(target).data('group'); // the target's group
 
-        // Do a clever...
-        // $('[data-id=' + $(this).data('toggle') + '"]')
+        var targetsArray = $(this).data('target').split(' ');
 
         if (action === 'open') {
 
             closeGroupOpenMe(toggleGroup, this);
-            closeGroupOpenMe(targetGroup, target);
+            // closeGroupOpenMe(targetGroup, target);
 
+            targetsArray.forEach((targetInArray)=> {
+
+                // nav | yourstudentlife-nav
+                // console.log(targetInArray);
+
+                var target = $('[data-id="'+ targetInArray +'"]'); // the target
+                var targetGroup = $(target).data('group'); // the target's group
+
+                closeGroupOpenMe(targetGroup, target);
+
+            });
         }
 
         else if (action === 'close') {
@@ -173,24 +184,38 @@ $(function() {
 
                 // close me
                 $(this).removeClass(openClass);
-                $(target).removeClass(openClass);
+
+                targetsArray.forEach((targetInArray)=> {
+
+                    var target = $('[data-id="'+ $(this).data('target') +'"]'); // the target
+                    $(target).removeClass(openClass);
+
+                });
 
             } else {
 
                 // open me
                 closeGroupOpenMe(toggleGroup, this);
-                closeGroupOpenMe(targetGroup, target);
 
+                targetsArray.forEach((targetInArray)=> {
+
+                    // nav | yourstudentlife-nav
+                    // console.log(targetInArray);
+
+                    var target = $('[data-id="'+ targetInArray +'"]'); // the target
+                    var targetGroup = $(target).data('group'); // the target's group
+
+                    closeGroupOpenMe(targetGroup, target);
+
+                });
             }
-
         }
+
+        stickyMargins();
 
     });
 
     function closeGroupOpenMe(group, me) {
-
-        // console.log(group);
-        // console.log(me);
 
         $('[data-group="'+ group + '"]')
           .not(me)
@@ -206,19 +231,18 @@ $(function() {
 
 });
 
+function stickyMargins() {
+    $('.sticky').each(function() {
+        var stickyHeight = $(this).outerHeight();
+        $(this).next().css('margin-top', stickyHeight);
+    });
+}
+
 $(window).resize(function () {
 
-    // Show active nav in horizontal overflow!
-
-    // var activeLinkPosition = $('.nav > .bg-2').position().left;
-    // $('.nav').animate({scrollLeft: activeLinkPosition}, 0);
-
-    // Get rem width!
-
-    // console.log($(window).width() / parseFloat($("body").css("font-size"))+'rem, apparently');
+    stickyMargins();
 
 }).resize();
-
 
 
 // $(window).resize(function () {

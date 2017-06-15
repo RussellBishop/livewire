@@ -23,6 +23,10 @@
         white-space: nowrap;
     }
 
+    flex .is--active {
+        text-decoration: underline;
+    }
+
 /*    tabs {
         background-color: rgba(0,0,0,.05);
     }*/

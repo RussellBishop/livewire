@@ -60,6 +60,48 @@ grid,
   }
 }
 
+grid {
+
+  // small
+  &[sizes*="12|"] {
+    @media
+    (min-width: 0px) and
+    (max-width: #{$breakpointSmallest}px) {
+
+      > * {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  // medium
+  &[sizes*="|6|"] {
+    @media
+    (min-width: 521px) and
+    (max-width: 960px) {
+
+      > * {
+        flex-basis: calc(50% - 1rem);
+        max-width: calc(50% - 1rem);
+      }
+    }
+  }
+
+  // large
+  &[sizes*="|6"] {
+    @media
+    (min-width: 961px) and
+    (max-width: 9999999px) {
+
+      > * {
+        flex-basis: calc(50% - 1rem);
+        max-width: calc(50% - 1rem);
+      }
+    }
+  }
+}
+
 flex,
 [flex],
 [class*='flex'] {
@@ -135,6 +177,7 @@ flex,
   margin-right: auto;
 }
 
+$gridColumns: 12;
 $constraints: min, max;
 
 @each $type in $constraints {
@@ -154,8 +197,6 @@ $constraints: min, max;
     }
   }
 }
-
-$gridColumns: 12;
 
 @each $key, $value in $breakpoints {
 

@@ -12,11 +12,7 @@
 
 <body>
 
-<div class="bg-4">
-
-    <?php $active = 'makeachange'; include('blocks/navigation.php'); ?>
-
-</div>
+<?php $active = 'makeachange'; include('blocks/navigation.php'); ?>
 
 <grid class="bg-0 contained relative z-1">
 
@@ -26,7 +22,7 @@
         <p><?= live($page->about_me, 'sentences|3')?></p>
         <h2><i class="fa fa-twitter" aria-hidden="true"></i></h2>
         <p><?= live($page->contact_information_block, 'words|3')?></p>
-        
+
     </div>
 
     <div class="cover z--1" large="4" style="background-image: url('https://uclu.org/sites/uclu.org/files/styles/medium/public/halima_sqr.jpg?itok=pqOGKE1-');">
@@ -76,8 +72,8 @@
         <section class="border spacing pad">
         <h4>Promoting an interest free loan platform for students</h4>
     </section>
-    
-    
+
+
 
 
     </article>
@@ -143,7 +139,7 @@
             <div class="bg-4" >
 
                 <div class="pad-verticals-3 pad-sides-2 spacing text-align-center">
-                    <div>   
+                    <div>
                         <h3><a href="https://uclu.org/blog/94047">More at Halima's Blog <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></h3>
                     </div>
 

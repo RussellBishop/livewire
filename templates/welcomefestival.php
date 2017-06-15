@@ -10,15 +10,11 @@
 
 <?php include('styles/navigation.styles.php'); ?>
 
-<body class="bg-4">
+<body>
 
-<div class="bg-4">
+<?php $active = 'yourstudentlife'; $menu = 'clubsandsocieties'; include('blocks/navigation.php'); ?>
 
-    <?php $active = 'yourstudentlife'; $menu = 'clubsandsocieties'; include('blocks/navigation.php'); ?>
-
-</div>
-
-<div class="bg-0 contained pad-top-2 pad-bottom-3 relative z-1">
+<div class="bg-5 contained pad-top-2 pad-bottom-3 relative z-1">
 
     <div class="fill cover z--1" style="opacity: .2; background-image: url('http://lorempixel.com/1000/750/nightlife/');">
     </div>
@@ -52,7 +48,7 @@
     </article>
 
     <aside large="4">
-        <div class="bg-4 spacing pad-2 bg-5 border">
+        <div class="bg-1 spacing pad-2 border">
             <h3>Booking</h3>
             <?= live($page->booking, 'sentences|1')?>
             <?= live($page->contact_details_for_additional_information_about_the_event, 'sentences|1')?>
