@@ -35,7 +35,7 @@
     <group small-medium="hide" class="contained">
         <grid data-group="subnav-large" data-id="makeachange-subnav-large" class="pad">
             <div large="5" class="pad spacing">
-                <h1>Make a change</h1>
+                <h1><a href="/make-a-change.php">Make a change</a></h1>
                 <?= live($page->blank, 'sentences|2')?>
             </div>
             <div large="7" class="nav subnav">
@@ -47,7 +47,7 @@
 
         <grid data-group="subnav-large" data-id="yourstudentlife-subnav-large" class="pad">
             <div large="5" class="pad spacing">
-                <h1>Your Student Life</h1>
+                <h1><a href="your-student-life.php">Your Student Life</a></h1>
                 <?= live($page->blank, 'sentences|2')?>
             </div>
             <div large="7" class="nav subnav">
@@ -59,7 +59,7 @@
 
         <grid data-group="subnav-large" data-id="placesforyou-subnav-large" class="pad">
             <div large="5" class="pad spacing">
-                <h1>Places for you</h1>
+                <h1><a href="places-for-you.php">Places for you</a></h1>
                 <?= live($page->blank, 'sentences|2')?>
             </div>
             <div large="7" class="nav subnav">
@@ -71,7 +71,7 @@
 
         <grid data-group="subnav-large" data-id="helpandadvice-subnav-large" class="pad">
             <div large="5" class="pad spacing">
-                <h1>Help and Advice</h1>
+                <h1><a href="help-and-advice.php">Help and Advice</a></h1>
                 <?= live($page->blank, 'sentences|2')?>
             </div>
             <div large="7" class="nav subnav">

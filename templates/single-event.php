@@ -31,9 +31,17 @@
 
 <grid class="contained pad-verticals-2">
 
-    <article large="8" class="spacing-article max-images">
+    <article large="8" class="">
 
-        <?= live($page->event_description, 'sentences|12')?>
+        <a  href="http://uclu.org/sites/uclu.org/files/styles/large/public/muslim_aid_0.png?itok=j2QnCAE3">
+            <img " src="http://uclu.org/sites/uclu.org/files/styles/large/public/muslim_aid_0.png?itok=j2QnCAE3" />
+        </a>
+
+        <div class="spacing-article max-images">
+
+            <?= live($page->event_description, 'sentences|12')?>
+
+        </div>
 
         <hr />
 

@@ -26,7 +26,7 @@
         <h1><icon play-circle-o></icon></h1>
     </div>
 
-    <div class="spacing"> 
+    <div class="spacing">
         <h1><?= live($page->heading_1, 'sentences|1')?></h1>
     </div>
 
@@ -34,17 +34,13 @@
 
 <grid class="contained pad-verticals-2">
 
-    <article large="8" class="spacing max-images">
+    <article small-medium="12" large="8" class="spacing max-images">
         <?= live($page->introduction, 'sentences|12')?>
     </article>
 
-    <aside large="4">
+    <aside small-medium="12" large="4">
         <div small-medium-large="12" class="bg-3 pad-verticals-1 pad-sides-2 text-align-center">
-            <grid>
-                <div small-medium-large="4"><h2><icon facebook-square></icon></h2></div>
-                <div small-medium-large="4"><h2><icon twitter></icon></h2></div>
-                <div small-medium-large="4"><h2><icon instagram></icon></h2></div>
-            </grid>
+            <?php include('blocks/share.php'); ?>
         </div>
     </aside>
 
@@ -88,12 +84,12 @@
 
 <grid class="contained pad-verticals-2">
     <div class="block bg-3 cover ratio-100" style="background-image: url('assets/wel1.jpg');" medium="4" small="6" large="3"></div>
-    <div class="block bg-3 cover ratio-100" style="background-image: url('assets/wel2.jpg');" medium="4" small="6" large="3"></div>   
-    <div class="block bg-3 cover ratio-100" style="background-image: url('assets/wel3.jpg');" medium="4" small="6" large="3"></div>  
-    <div class="block bg-3 cover ratio-100" style="background-image: url('assets/wel4.jpg');" medium="4" small="6" large="3"></div>    
+    <div class="block bg-3 cover ratio-100" style="background-image: url('assets/wel2.jpg');" medium="4" small="6" large="3"></div>
+    <div class="block bg-3 cover ratio-100" style="background-image: url('assets/wel3.jpg');" medium="4" small="6" large="3"></div>
+    <div class="block bg-3 cover ratio-100" style="background-image: url('assets/wel4.jpg');" medium="4" small="6" large="3"></div>
     <div class="block bg-3 cover ratio-100" style="background-image: url('assets/wel5.jpg');" medium="4" small="6" large="3"></div>
-    <div class="block bg-3 cover ratio-100" style="background-image: url('assets/wel6.jpg');" medium="4" small="6" large="3"></div>   
-    <div class="block bg-3 cover ratio-100" style="background-image: url('assets/wel7.jpg');" medium="4" small="6" large="3"></div>  
+    <div class="block bg-3 cover ratio-100" style="background-image: url('assets/wel6.jpg');" medium="4" small="6" large="3"></div>
+    <div class="block bg-3 cover ratio-100" style="background-image: url('assets/wel7.jpg');" medium="4" small="6" large="3"></div>
     <div class="block bg-3 cover ratio-100" style="background-image: url('assets/wel8.jpg');" medium="4" small="6" large="3"></div>
 </grid>
 

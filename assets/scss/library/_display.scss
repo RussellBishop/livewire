@@ -9,3 +9,15 @@
 .inline {
   display: inline;
 }
+
+.float {
+
+  &-left {
+    float: left;
+  }
+
+  &-right {
+    float: right;
+  }
+
+}
