@@ -19,7 +19,7 @@
     <div class="fill cover z--1" style="opacity: .2; background-image: url('http://lorempixel.com/1000/750/nightlife/');">
     </div>
 
-    <h4><a href="/templates/news.php">&larr; back to Clubs and Societies</a></h4>
+    <h4><a href="/templates/whats-on.php">&larr; back to What's on</a></h4>
 
     <div class="spacing push-top-10">
         <h1><?= live($page->event_title, 'sentences|1')?></h1>
