@@ -115,6 +115,11 @@
             <xmp>.sticky | .fixed</xmp>
         </section>
 
+        <section>
+            <h1>Grids</h1>
+            <p> </p>
+        </section>
+
     </div>
 
 </div>
