@@ -17,4 +17,6 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto|Slabo+27px" rel="stylesheet">
 <link href="/dist/css/style.css" rel="stylesheet" />
 
+<link rel="icon" href="/favicon.png">
+
 </head>
