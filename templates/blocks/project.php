@@ -8,5 +8,5 @@
                     <div class="bg-1 pad-sides-1 text-small" small-medium-large="4">Section</div>
             </grid>
             <p><?= live($page->completed_project1, 'sentences|1')?></p>
-            <a href="/templates/casestudysingle.php">Read more</a>
-            </div> 
+            <a href="/templates/casestudysingle1.php">Read more</a>
+        </div> 

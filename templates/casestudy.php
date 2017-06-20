@@ -32,7 +32,76 @@
 
 <div class="contained spacing pad-verticals-2">
     <grid>
-        <?php for ($i=1; $i<13; $i++) : ?>
+
+
+        <div class="spacing pad-verticals-1 pad-sides-1 bg-4" small="12" medium-large="4">
+
+            <div class="bg-3"><img src="/dist/img/building.jpg"/></div>
+            <h3>RIBA award shortlisted “Southwark Old Town Hall”</h3>
+            <grid>
+                    <div class="bg-1 pad-sides-1 text-small" small-medium-large="4">Brand</div>
+                    <div class="bg-1 pad-sides-1 text-small" small-medium-large="4">Location</div>
+                    <div class="bg-1 pad-sides-1 text-small" small-medium-large="4">Section</div>
+            </grid>
+            <p><?= live($page->completed_project1, 'sentences|1')?></p>
+            <a href="/templates/casestudysingle1.php">Read more</a>
+        </div> 
+
+        <div class="spacing pad-verticals-1 pad-sides-1 bg-4" small="12" medium-large="4">
+
+            <div class="bg-3"><img src="/dist/img/building.jpg"/></div>
+            <h3>Elegant warehouse conversion in Primrose Hill</h3>
+            <grid>
+                    <div class="bg-1 pad-sides-1 text-small" small-medium-large="4">Brand</div>
+                    <div class="bg-1 pad-sides-1 text-small" small-medium-large="4">Location</div>
+                    <div class="bg-1 pad-sides-1 text-small" small-medium-large="4">Section</div>
+            </grid>
+            <p><?= live($page->completed_project2, 'sentences|1')?></p>
+            <a href="/templates/casestudysingle2.php">Read more</a>
+        </div> 
+
+
+        <div class="spacing pad-verticals-1 pad-sides-1 bg-4" small="12" medium-large="4">
+
+            <div class="bg-3"><img src="/dist/img/building.jpg"/></div>
+            <h3>Innovative safety solutions for city centre hotel </h3>
+            <grid>
+                    <div class="bg-1 pad-sides-1 text-small" small-medium-large="4">Brand</div>
+                    <div class="bg-1 pad-sides-1 text-small" small-medium-large="4">Location</div>
+                    <div class="bg-1 pad-sides-1 text-small" small-medium-large="4">Section</div>
+            </grid>
+            <p><?= live($page->completed_project3, 'sentences|1')?></p>
+            <a href="/templates/casestudysingle3.php">Read more</a>
+        </div> 
+
+        <div class="spacing pad-verticals-1 pad-sides-1 bg-4" small="12" medium-large="4">
+
+            <div class="bg-3"><img src="/dist/img/forest.jpg"/></div>
+            <h3>Award-winning luxury Forest Holiday sites</h3>
+            <grid>
+                    <div class="bg-1 pad-sides-1 text-small" small-medium-large="4">Brand</div>
+                    <div class="bg-1 pad-sides-1 text-small" small-medium-large="4">Location</div>
+                    <div class="bg-1 pad-sides-1 text-small" small-medium-large="4">Section</div>
+            </grid>
+            <p><?= live($page->completed_project4, 'sentences|1')?></p>
+            <a href="/templates/casestudysingle4.php">Read more</a>
+        </div> 
+
+
+        <div class="spacing pad-verticals-1 pad-sides-1 bg-4" small="12" medium-large="4">
+
+            <div class="bg-3"><img src="/dist/img/middle.jpg"/></div>
+            <h3>New £700 million Middlewood Locks Development</h3>
+            <grid>
+                    <div class="bg-1 pad-sides-1 text-small" small-medium-large="4">Brand</div>
+                    <div class="bg-1 pad-sides-1 text-small" small-medium-large="4">Location</div>
+                    <div class="bg-1 pad-sides-1 text-small" small-medium-large="4">Section</div>
+            </grid>
+            <p><?= live($page->completed_project5, 'sentences|1')?></p>
+            <a href="/templates/casestudysingle5.php">Read more</a>
+        </div> 
+
+        <?php for ($i=1; $i<8; $i++) : ?>
             <?php include('blocks/project.php'); ?>
         <?php endfor; ?> 
     </grid>
