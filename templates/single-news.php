@@ -54,6 +54,10 @@
 
     <aside large="3" class="spacing">
 
+        <div class="bg-3 pad-verticals-1 pad-sides-2 text-align-center">
+            <?php include('blocks/share.php'); ?>
+        </div>
+
         <h2>More in <a href="#">Help and Advice</a></h2>
 
         <grid>

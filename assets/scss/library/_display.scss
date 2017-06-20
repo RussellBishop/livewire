@@ -21,3 +21,27 @@
   }
 
 }
+
+$dimension: width, height;
+
+$units: (
+  pc: 1%,
+  rm: 1rem,
+  vw: 1vw,
+  vh: 1vh
+);
+
+@each $type in $dimension {
+
+  .max-#{$type} {
+    @for $i from 1 through 20 {
+
+      @each $key, $value in $units {
+
+        &-#{$i * 5}#{$key} {
+          max-#{$type}: #{$i * 5 * $value};
+        }
+      }
+    }
+  }
+}

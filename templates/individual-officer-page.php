@@ -21,20 +21,16 @@
         <h4><?= live($page->role, 'words|3')?></h4>
         <p><?= live($page->about_me, 'sentences|3')?></p>
 
-    <div class="spacing pad-verticals-1"> 
+    <div class="spacing pad-verticals-1">
     <grid>
         <div small-medium-large="4" class="bg-4 pad-verticals-1 pad-sides-2 text-align-center">
-            <grid>
-                <div small-medium-large="4"><h2><icon facebook-square></icon></h2></div>
-                <div small-medium-large="4"><h2><icon twitter></icon></h2></div>
-                <div small-medium-large="4"><h2><icon instagram></icon></h2></div>
-            </grid>
+            <?php include('blocks/share.php'); ?>
         </div>
         <div small-medium-large="4" class="bg-4 pad-verticals-1 text-align-center"><p><?= live($page->contact_information_block, 'words|3')?></p></div>
         <div small-medium-large="4" class="bg-4 pad-verticals-1 text-align-center"><p>Phone number: 020 7679 7893</p></div>
     </grid>
-        
-        
+
+
     </div>
 
     </div>

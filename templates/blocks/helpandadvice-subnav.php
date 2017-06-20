@@ -1,3 +1,4 @@
+<button large="hide" type="button" data-group="helpandadvice-subnav">About Help and Advice</button>
 <button type="button" data-group="helpandadvice-subnav">About the Rights and Advice Centre</button>
 <button type="button" data-group="helpandadvice-subnav">Personal support</button>
 <button type="button" data-group="helpandadvice-subnav">Academic support</button>

@@ -13,6 +13,7 @@
 @import 'library/position';
 @import 'library/opacity';
 @import 'library/grids';
+@import 'library/forms';
 @import 'library/ratio';
 
 @import 'library/buttons'; // before push/pad so that you can change padding etc.
@@ -24,7 +25,6 @@
 
 @import 'library/display';
 
-@import 'library/forms';
 @import 'library/borders-backgrounds';
 @import 'library/shadows';
 

@@ -33,8 +33,8 @@
 
     <article large="8" class="">
 
-        <a  href="http://uclu.org/sites/uclu.org/files/styles/large/public/muslim_aid_0.png?itok=j2QnCAE3">
-            <img " src="http://uclu.org/sites/uclu.org/files/styles/large/public/muslim_aid_0.png?itok=j2QnCAE3" />
+        <a class="float-right max-width-30vw push-left-1 push-bottom-1" href="http://uclu.org/sites/uclu.org/files/styles/large/public/muslim_aid_0.png?itok=j2QnCAE3">
+            <img src="http://uclu.org/sites/uclu.org/files/styles/large/public/muslim_aid_0.png?itok=j2QnCAE3" />
         </a>
 
         <div class="spacing-article max-images">
@@ -55,7 +55,12 @@
 
     </article>
 
-    <aside large="4">
+    <aside large="4" class="spacing">
+
+        <div class="bg-3 pad-verticals-1 pad-sides-2 text-align-center">
+            <?php include('blocks/share.php'); ?>
+        </div>
+
         <div class="bg-2 spacing pad-2 border">
             <h3>Booking</h3>
             <?= live($page->booking, 'sentences|1')?>
