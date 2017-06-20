@@ -42,7 +42,7 @@
 
         <div class="spacing-article max-images">
 
-            <?= live($page->event_description, 'sentences|12')?>
+            <?= live($page->additional_written_content_about_club, 'sentences|12')?>
 
         </div>
 
@@ -52,14 +52,12 @@
 
         <div class="bg-2 spacing pad-2 border">
             <h3>Membership</h3>
-            <?= live($page->committee_and_contact_information, 'sentences|1')?>
             <button type="button">Buy £5 membership</button>
         </div>
 
         <div class="bg-2 spacing pad-2 border">
             <h3>Contact information</h3>
-            <p>President: Leo Middleton</p>
-            <p>Email: <a href="#">uczxjaz@ucl.ac.uk</a></p>
+            <?= live($page->committee_and_contact_information, 'sentences|2')?>
         </div>
     </aside>
 
