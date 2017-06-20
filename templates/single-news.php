@@ -41,15 +41,6 @@
 
         <?= live($page->body_of_post, 'sentences|12')?>
 
-        <?php /*
-
-        <div class="bg-4 spacing pad-2 push-top-4 bg-5 border">
-            <h3>Related links</h3>
-            <?= live($page->related_links, 'listitems|3')?>
-        </div>
-
-        */ ?>
-
     </article>
 
     <aside large="3" class="spacing">
@@ -60,45 +51,45 @@
 
         <h2>More in <a href="#">Help and Advice</a></h2>
 
-        <grid>
+        <grid sizes="12|6|12">
 
-        <div medium="6">
+            <div>
 
-        <?php
+                <?php
 
-            $post = array (
+                    $post = array (
 
-                'title'         =>  'Heads Up! A Mental Health Awareness Year',
-                'description'   =>  'Heads Up has been a mental health campaign that we’ve been running as a sabb team that I’ve been leading on for the past year',
-                'image'         =>  'https://uclu.org/sites/uclu.org/files/styles/large/public/headsupcrew.jpg?itok=9bhpmwpj',
-                'link'          =>  '#',
+                        'title'         =>  'Heads Up! A Mental Health Awareness Year',
+                        'description'   =>  'Heads Up has been a mental health campaign that we’ve been running as a sabb team that I’ve been leading on for the past year',
+                        'image'         =>  'https://uclu.org/sites/uclu.org/files/styles/large/public/headsupcrew.jpg?itok=9bhpmwpj',
+                        'link'          =>  '#',
 
-            );
+                    );
 
-            include('blocks/newscard.php');
+                    include('blocks/newscard.php');
 
-        ?>
+                ?>
 
-        </div>
+            </div>
 
-        <div medium="6">
+            <div>
 
-        <?php
+                <?php
 
-            $post = array (
+                    $post = array (
 
-                'title'         =>  'Is your department taking a stand against sexual harassment?',
-                'description'   =>  'So far, over half of departments at UCL are working with us towards creating a university that says NO to sexual harassment and sexual violence',
-                'image'         =>  'https://uclu.org/sites/uclu.org/files/styles/large/public/zt_logo_for_fb_1.jpg?itok=5dEHkH4g',
-                'link'          =>  '#',
+                        'title'         =>  'Is your department taking a stand against sexual harassment?',
+                        'description'   =>  'So far, over half of departments at UCL are working with us towards creating a university that says NO to sexual harassment and sexual violence',
+                        'image'         =>  'https://uclu.org/sites/uclu.org/files/styles/large/public/zt_logo_for_fb_1.jpg?itok=5dEHkH4g',
+                        'link'          =>  '#',
 
-            );
+                    );
 
-            include('blocks/newscard.php');
+                    include('blocks/newscard.php');
 
-        ?>
+                ?>
 
-        </div>
+            </div>
 
         </grid>
 

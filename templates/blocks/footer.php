@@ -1,7 +1,7 @@
 <section class="contained bg-2 pad-verticals-2 spacing">
 
-    <grid>
-        <div small="12" medium="6" large="3" class="spacing">
+    <grid sizes="12|6|3">
+        <div class="spacing">
             <h4>Self-Service</h4>
 
             <ul>
@@ -13,7 +13,7 @@
             </ul>
         </div>
 
-        <div small="12" medium="6" large="3" class="spacing">
+        <div class="spacing">
             <h4>Top links</h4>
 
             <ul>
@@ -24,7 +24,7 @@
             </ul>
         </div>
 
-        <div small="12" medium="6" large="3" class="spacing">
+        <div class="spacing">
             <h4>Follow us</h4>
 
             <ul>
@@ -37,7 +37,7 @@
             </ul>
         </div>
 
-        <div small="12" medium="6" large="3" class="spacing">
+        <div class="spacing">
             <h4>Useful info</h4>
 
             <ul>
@@ -61,7 +61,6 @@
         <p>Copyright &copy; 2017 Students’ Union UCL. All rights reserved.</p>
 
     </grid>
-
 
     <p>Students’ Union UCL, 25 Gordon Street, London, WC1H 0AY | 020 7679 2500</p>
 

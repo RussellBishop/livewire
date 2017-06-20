@@ -45,9 +45,9 @@
     </aside>
 
 </grid>
-<grid class="contained pad-verticals-4">
+<grid sizes="12|4|4" class="contained pad-verticals-4">
 
-    <div class="spacing" medium="4" small="12" large="4">
+    <div class="spacing">
         <div class="bg-2">
             <div class="pad-verticals-3 pad-sides-3 spacing text-align-center">
                 <div>
@@ -58,7 +58,7 @@
         <p class="o-40"><?= live($page->pathway_1, 'sentences|1')?></p>
     </div>
 
-    <div class="spacing" medium="4" small="12" large="4">
+    <div class="spacing">
         <div class="bg-2">
             <div class="pad-verticals-3 pad-sides-3 spacing text-align-center">
                 <div>
@@ -69,7 +69,7 @@
         <p class="o-40"><?= live($page->pathway_2, 'sentences|1')?></p>
     </div>
 
-    <div class="spacing" medium="4" small="12" large="4">
+    <div class="spacing">
         <div class="bg-2">
             <div class="pad-verticals-3 pad-sides-3 spacing text-align-center">
                 <div>

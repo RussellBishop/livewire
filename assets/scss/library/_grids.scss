@@ -1,3 +1,4 @@
+$gridColumns: 12;
 $gutter: 1rem;
 
 grid,
@@ -62,41 +63,65 @@ grid,
 
 grid {
 
-  // small
-  &[sizes*="12|"] {
-    @media
-    (min-width: 0px) and
-    (max-width: #{$breakpointSmallest}px) {
+  @media
+  (min-width: #{map-deep-get($breakpoints, 'small', 'min')}px) and
+  (max-width: #{map-deep-get($breakpoints, 'small', 'max')}px) {
 
-      > * {
-        flex-basis: 100%;
-        max-width: 100%;
+    @for $i from 1 through $gridColumns - 1 {
+      &[sizes^="#{$i}|"] {
+        > * {
+          flex-basis: calc(#{percentage($i/$gridColumns)} - #{$gutter});
+          max-width: calc(#{percentage($i/$gridColumns)} - #{$gutter});
+        }
+      }
+
+      &[sizes^="12|"] {
+        > * {
+          flex-basis: 100%;
+          max-width: 100%;
+        }
       }
     }
   }
 
-  // medium
-  &[sizes*="|6|"] {
-    @media
-    (min-width: 521px) and
-    (max-width: 960px) {
+  @media
+  (min-width: #{map-deep-get($breakpoints, 'medium', 'min')}px) and
+  (max-width: #{map-deep-get($breakpoints, 'medium', 'max')}px) {
 
-      > * {
-        flex-basis: calc(50% - 1rem);
-        max-width: calc(50% - 1rem);
+    @for $i from 1 through $gridColumns - 1 {
+      &[sizes*="|#{$i}|"] {
+        > * {
+          flex-basis: calc(#{percentage($i/$gridColumns)} - #{$gutter});
+          max-width: calc(#{percentage($i/$gridColumns)} - #{$gutter});
+        }
+      }
+
+      &[sizes*="|12|"] {
+        > * {
+          flex-basis: 100%;
+          max-width: 100%;
+        }
       }
     }
   }
 
-  // large
-  &[sizes*="|6"] {
-    @media
-    (min-width: 961px) and
-    (max-width: 9999999px) {
+  @media
+  (min-width: #{map-deep-get($breakpoints, 'large', 'min')}px) and
+  (max-width: #{map-deep-get($breakpoints, 'large', 'max')}px) {
 
-      > * {
-        flex-basis: calc(50% - 1rem);
-        max-width: calc(50% - 1rem);
+    @for $i from 1 through $gridColumns - 1 {
+      &[sizes$="|#{$i}"] {
+        > * {
+          flex-basis: calc(#{percentage($i/$gridColumns)} - #{$gutter});
+          max-width: calc(#{percentage($i/$gridColumns)} - #{$gutter});
+        }
+      }
+
+      &[sizes$="|12"] {
+        > * {
+          flex-basis: 100%;
+          max-width: 100%;
+        }
       }
     }
   }
@@ -177,7 +202,6 @@ flex,
   margin-right: auto;
 }
 
-$gridColumns: 12;
 $constraints: min, max;
 
 @each $type in $constraints {

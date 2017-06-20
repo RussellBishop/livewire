@@ -75,9 +75,9 @@
         </div>
     </flex>
 
-    <grid class="push-bottom-3">
+    <grid sizes="12|6|3" class="push-bottom-3">
 
-        <div small="12" medium="6" large="3">
+        <div>
             <?php
 
                 $post = array (
@@ -93,7 +93,7 @@
             ?>
         </div>
 
-        <div small="12" medium="6" large="3">
+        <div>
             <?php
 
                 include('blocks/eventcard.php');
@@ -101,7 +101,7 @@
             ?>
         </div>
 
-        <div small="12" medium="6" large="3">
+        <div>
             <?php
 
                 include('blocks/eventcard.php');
@@ -109,7 +109,7 @@
             ?>
         </div>
 
-        <div small="12" medium="6" large="3">
+        <div>
             <?php
 
                 include('blocks/eventcard.php');
@@ -134,54 +134,6 @@
         include('blocks/textevent.php');
 
     ?>
-
-    <?php /*
-
-    <grid>
-
-        <div small="12" medium="6" large="3">
-            <?php
-
-                $post = array (
-
-                    'title'         =>  'Salsa Society - End of Year Party',
-                    'image'         =>  'http://lorempixel.com/1000/750/nightlife/',
-                    'link'          =>  '/templates/single-event.php',
-
-                );
-
-                include('blocks/eventcard.php');
-
-            ?>
-        </div>
-
-        <div small="12" medium="6" large="3">
-            <?php
-
-                include('blocks/eventcard.php');
-
-            ?>
-        </div>
-
-        <div small="12" medium="6" large="3">
-            <?php
-
-                include('blocks/eventcard.php');
-
-            ?>
-        </div>
-
-        <div small="12" medium="6" large="3">
-            <?php
-
-                include('blocks/eventcard.php');
-
-            ?>
-        </div>
-
-    </grid>
-
-    */ ?>
 
 </div>
 

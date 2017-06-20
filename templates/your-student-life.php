@@ -46,7 +46,7 @@
 
     </grid>
 
-    <grid class="push-top-4">
+    <grid sizes="12|6|4" class="push-top-4">
 
         <?php
 
@@ -97,9 +97,9 @@
 
             <p class=" dummy">We're excited, you're excited and things are about to get even more exciting than that! You've made it into the best uni in the best city. It's time to start planning the best introduction to university life possible.</p>
 
-            <grid>
+            <grid sizes="12|6|6">
 
-                <div medium-large="6">
+                <div>
 
                     <?php
 
@@ -118,7 +118,7 @@
 
                 </div>
 
-                <div medium-large="6">
+                <div>
 
                     <?php
 
@@ -147,9 +147,9 @@
 
             <p class=" dummy">If you are a university student with a valid student card, join online today for free  and take advantage of unsold tickets for productions by The Royal Ballet and The Royal Opera – for the bargain price of only £10.</p>
 
-            <grid>
+            <grid sizes="12|6|6">
 
-                <div medium-large="6">
+                <div>
 
                     <?php
 
@@ -168,7 +168,7 @@
 
                 </div>
 
-                <div medium-large="6">
+                <div>
 
                     <?php
 

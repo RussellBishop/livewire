@@ -1,4 +1,4 @@
-<section small="12" medium="6" large="4" class="border spacing pad pad-verticals-2">
+<section class="border spacing pad pad-verticals-2">
 
     <h2><a href="#"><?=$section['title']?></a></h2>
 
