@@ -53,3 +53,7 @@ group {
     pointer-events: none;
   }
 }
+
+[data-target] {
+  cursor: pointer;
+}

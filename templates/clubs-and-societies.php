@@ -39,18 +39,48 @@
 
         <?php
 
-            $post = array (
+            $posts = array (
 
-                'title'         =>  'American Football Club',
-                'image'         =>  'http://ucluemperors.com/wp-content/uploads/2017/01/D5Q6820.jpg',
-                'logo'          =>  'http://uclu.org/sites/uclu.org/files/styles/thumbnail-150x150/public/csc-directory-images/high_res_emperors_temp.png?itok=PgI4gJde',
-                'link'          =>  '/templates/single-club.php',
-                'category'      =>  'Sports',
-                'description'   =>  'The UCLU American Football Club was re-established in October 2015. We have just finished an affiliate year and will be participating in BUCS Leagues at the start of the 2016 season.',
+                array (
+
+                    'title'         =>  'Amateur Boxing Club',
+                    'image'         =>  'http://www.ucluabc.co.uk/images/ucluabc_2015-2016.jpg',
+                    'logo'          =>  'https://uclu.org/sites/uclu.org/files/styles/large/public/csc-directory-images/logo_2_0.png',
+                    'link'          =>  '/templates/single-club.php',
+                    'category'      =>  'Sports',
+                    'description'   =>  'UCLUABC provides fitness sessions for all - the best way to get in shape and to get fit. UCLUABC provides boxing lessons from the basics right up to advanced levels.',
+
+                ),
+
+                array (
+
+                    'title'         =>  'American Football Club',
+                    'image'         =>  'http://ucluemperors.com/wp-content/uploads/2017/01/D5Q6820.jpg',
+                    'logo'          =>  'http://uclu.org/sites/uclu.org/files/styles/thumbnail-150x150/public/csc-directory-images/high_res_emperors_temp.png',
+                    'link'          =>  '/templates/single-club.php',
+                    'category'      =>  'Sports',
+                    'description'   =>  'The UCLU American Football Club was re-established in October 2015. We have just finished an affiliate year and will be participating in BUCS Leagues at the start of the 2016 season.',
+
+                ),
+
+                array (
+
+                    'title'         =>  'Art Society',
+                    'image'         =>  'https://scontent-amt2-1.xx.fbcdn.net/v/t31.0-8/17389135_10206976479009927_6742946227513097313_o.jpg?oh=38787390fd2ad9f9654158493b994721&oe=59C88E74',
+                    'logo'          =>  'https://uclu.org/sites/uclu.org/files/styles/large/public/csc-directory-images/screen_shot_2016-08-22_at_17.27.56.png',
+                    'link'          =>  '/templates/single-club.php',
+                    'category'      =>  'Arts',
+                    'description'   =>  'The UCLU Art Society provides a creative community through which like minded individuals can look at, talk about and make art together.',
+
+                ),
 
             );
 
-            for ($x = 1; $x <= 12; $x++) {
+            $postsCount = count($posts);
+
+            for ($x = 0; $x < 12; $x++) {
+
+                $post = $posts[$x % $postsCount];
 
                 include('blocks/clubcard.php');
 
