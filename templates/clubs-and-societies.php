@@ -41,9 +41,12 @@
 
             $post = array (
 
-                'title'         =>  'Salsa Society - End of Year Party',
-                'image'         =>  'http://lorempixel.com/1000/750/nightlife/',
-                'link'          =>  '/templates/single-event.php',
+                'title'         =>  'American Football Club',
+                'image'         =>  'http://ucluemperors.com/wp-content/uploads/2017/01/D5Q6820.jpg',
+                'logo'          =>  'http://uclu.org/sites/uclu.org/files/styles/thumbnail-150x150/public/csc-directory-images/high_res_emperors_temp.png?itok=PgI4gJde',
+                'link'          =>  '/templates/single-club.php',
+                'category'      =>  'Sports',
+                'description'   =>  'The UCLU American Football Club was re-established in October 2015. We have just finished an affiliate year and will be participating in BUCS Leagues at the start of the 2016 season.',
 
             );
 
