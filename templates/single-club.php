@@ -23,7 +23,7 @@
 
     <div class="spacing push-top-10 max-width-50rm">
         <div class="max-width-10vw min-width-5rm">
-            <?= live($page->Club_logo, 'logos|1')?>
+            <?= live($page->club_logo, 'logos|1')?>
         </div>
         <h1>UCL Jazz Society</h1>
         <p class="o-60 text-caps">Arts</p>
@@ -93,7 +93,7 @@
             ?>
         </div>
 
-        <div>
+        <div small="hide">
             <?php
 
                 include('blocks/eventcard.php');
@@ -101,7 +101,7 @@
             ?>
         </div>
 
-        <div>
+        <div small-medium="hide">
             <?php
 
                 include('blocks/eventcard.php');
@@ -109,7 +109,7 @@
             ?>
         </div>
 
-        <div>
+        <div small-medium="hide">
             <?php
 
                 include('blocks/eventcard.php');
