@@ -1,7 +1,7 @@
 <div class="border">
 
     <a href="<?=$post['link'];?>" class="block bg-3 cover ratio-50 relative" style="background-image: url('<?=$post['image'];?>');">
-        <div class="absolute bottom-1 left-1 bg-1 border">
+        <div class="absolute bottom-1 left-1 bg-4 border" style="border-radius: 3px;">
             <div class="ratio-100 min-width-5rm max-width-5rm" caption="logo">
             </div>
         </div>

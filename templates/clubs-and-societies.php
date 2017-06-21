@@ -16,7 +16,7 @@
 
 <div class="bg-5 contained pad-top-2 pad-bottom-3 relative z-1">
 
-    <div class="fill cover z--1" style="opacity: .2; background-image: url('https://photos.smugmug.com/Other/UCLU-FINAL-CUT/i-2Crfn8X/0/a8b83e8c/X3/UCLU_June2017-343-X3.jpg');">
+    <div class="fill cover z--1 o-20" style="background-image: url('https://photos.smugmug.com/Other/UCLU-FINAL-CUT/i-2Crfn8X/0/a8b83e8c/X3/UCLU_June2017-343-X3.jpg');">
     </div>
 
     <h4><a href="/templates/your-student-life.php">&larr; back to Your Student Life</a></h4>
@@ -31,64 +31,7 @@
 
 </div>
 
-<div class="contained pad-verticals-1 bg-2">
-
-    <form>
-
-        <grid sizes="12|3|2" justify="between">
-
-            <fieldset>
-
-                <label for="edit-field-category-tid">Category</label>
-
-                <select id="edit-field-category-tid">
-                    <option value="All" selected="selected">- Any -</option>
-                    <option value="2757">Arts</option>
-                    <option value="2759">General Interest</option>
-                    <option value="2758">Sports</option>
-                </select>
-
-            </fieldset>
-
-            <fieldset>
-
-                <label for="edit-title">Name</label>
-
-                <input type="text" id="edit-title">
-
-            </fieldset>
-
-            <fieldset>
-
-                <label for="edit-sort-by">Sort by</label>
-                <select id="edit-sort-by" class="form-select">
-                    <option value="title" selected="selected">Name</option>
-                </select>
-
-            </fieldset>
-
-
-            <fieldset>
-
-                <label for="edit-sort-order">Order by</label>
-                <select id="edit-sort-order">
-                    <option value="ASC" selected="selected">Asc</option>
-                    <option value="DESC">Desc</option>
-                </select>
-
-            </fieldset>
-
-            <fieldset>
-
-                <button type="button" class="button button--full">Apply</button>
-
-            </fieldset>
-
-        </grid>
-
-    </form>
-
-</div>
+<?php include('blocks/clubs-and-societies-filters.php'); ?>
 
 <div class="contained spacing pad-verticals-2">
 
