@@ -36,7 +36,7 @@
     <article large="9">
         <div class="border">
 
-                <a href="<?=$post['link'];?>" class="block bg-3 cover ratio-40 relative" style="background-image: url('<?=$post['image'];?>');">
+                <a href="<?=$post['link'];?>" class="block bg-3 cover ratio-40 relative" style="background-image: url('http://uclu.org/sites/uclu.org/files/styles/large/public/v220170601-185056.jpg?itok=1RywBESH');">
                 <div class="absolute bottom-1 left-1 bg-4 border" style="border-radius: 3px;">
                 </div>
             </a>
