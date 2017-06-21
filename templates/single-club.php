@@ -22,7 +22,7 @@
     <h4><a href="/templates/whats-on.php">&larr; back to Directory</a></h4>
 
     <div class="spacing push-top-10 max-width-50rm">
-        <div class="max-width-10vw min-width-5rm">
+        <div class="max-width-10vw min-width-5rm bg-2 border" style="border-radius: 2px;">
             <?= live($page->club_logo, 'logos|1')?>
         </div>
         <h1>UCL Jazz Society</h1>
