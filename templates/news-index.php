@@ -58,7 +58,7 @@
     </div>
     </article>
 
-           <aside large="3">
+           <aside small="hide" large="3">
             
             <div  class="spacing">
 
