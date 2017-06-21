@@ -18,10 +18,10 @@
         border-top: none;
     }
 
-    .nav a {
+/*    .nav a {
         padding: .8em .75em;
         white-space: nowrap;
-    }
+    }*/
 
     flex .is--active {
         text-decoration: underline;
