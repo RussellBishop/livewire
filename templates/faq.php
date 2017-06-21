@@ -1,6 +1,6 @@
 <?php
 
-    $title = 'Single Club';
+    $title = 'FAQ Page';
 
     require '../src/src.php';
 
