@@ -181,7 +181,9 @@ hr {
   }
 }
 
-[data-forcefeed*='sentences'] {
+[data-forcefeed*='sentences'],
+[data-forcefeed*='paragraphs']
+ {
   * + * {
     margin-top: 1rem;
   }

@@ -4,7 +4,7 @@
 
     require '../src/src.php';
 
-    $page = new Page();
+    $page = new Page(4630299);
 
 ?>
 
@@ -28,7 +28,7 @@
     </div>
 
 </div>
-<!-- 
+<!--
 <?php include('blocks/clubs-and-societies-filters.php'); ?>
  -->
 <div class="contained spacing pad-verticals-2">
@@ -59,7 +59,7 @@
     </article>
 
            <aside small="hide" large="3">
-            
+
             <div  class="spacing">
 
             <h2>What's On?</h2>
@@ -99,7 +99,7 @@
 
             </div>
 </div>
-        </aside> 
+        </aside>
 
 </grid>
     <grid sizes="12|6|3" class="push-bottom-3">
