@@ -47,11 +47,15 @@
 
         <?php $clubsocietyname = 'Salsa Society'; ?>
 
-        <h3>Who are the <?=$clubsocietyname?>?</h3>
+        <div class="spacing-article">
 
-        <p><span data-forcefeed="sentences|2"></span></p>
+            <h3>Who are the <?=$clubsocietyname?>?</h3>
 
-        <button type="button">Visit the <?=$clubsocietyname?></button>
+            <p><span data-forcefeed="sentences|2"></span></p>
+
+            <button type="button">Visit the <?=$clubsocietyname?></button>
+
+        </div>
 
     </article>
 
