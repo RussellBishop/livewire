@@ -22,7 +22,7 @@
     <h4><a href="/templates/whats-on.php">&larr; back to Parent Section</a></h4>
 
     <div class="spacing push-top-10 max-width-50rm">
-        <h1><?= live($page->nothing, 'sentences|1')?></h1>
+        <h1>Page title</h1>
         <h3><?= live($page->nothing, 'sentences|2')?></h3>
     </div>
 
