@@ -14,23 +14,33 @@
 
 <?php $active = 'yourstudentlife'; $menu = 'clubsandsocieties'; include('blocks/navigation.php'); ?>
 
-<div class="bg-5 contained pad-top-2 pad-bottom-3 relative z-1">
+<group>
 
-    <div class="fill cover z--1" style="opacity: .2; background-image: url('assets/video-1.png');">
+    <div class="bg-5 contained pad-top-2 pad-bottom-3 relative z-1 is--open" data-group="welcome-header" data-id="intro">
+
+        <div class="fill cover z--1" style="opacity: .2; background-image: url('assets/video-1.png');"></div>
+
+        <h4><a href="/templates/news.php">&larr; back to Your student life</a></h4>
+
+        <div class="text-align-center pad-verticals-6">
+            <h1><icon play-circle-o data-target="video" data-action="open"></icon></h1>
+        </div>
+
+        <div class="spacing">
+            <h1><?= live($page->heading_1, 'sentences|1')?></h1>
+        </div>
 
     </div>
 
-    <h4><a href="/templates/news.php">&larr; back to Your student life</a></h4>
+    <div class="bg-5 contained relative" data-group="welcome-header" data-id="video">
 
-    <div class="text-align-center pad-verticals-6">
-        <h1><icon play-circle-o></icon></h1>
+        <img class="min-width-100pc" src="/dist/img/youtubembed.jpg" />
+
+        <button type="button" data-target="intro" data-action="open" class="absolute top right" style="background-color: rgba(255,0,0,.5);"><icon times></icon></button>
+
     </div>
 
-    <div class="spacing">
-        <h1><?= live($page->heading_1, 'sentences|1')?></h1>
-    </div>
-
-</div>
+</group>
 
 <grid class="contained pad-verticals-2">
 
