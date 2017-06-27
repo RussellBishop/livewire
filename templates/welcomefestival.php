@@ -23,7 +23,7 @@
         <h4><a href="/templates/news.php">&larr; back to Your student life</a></h4>
 
         <div class="text-align-center pad-verticals-6">
-            <h1><icon play-circle-o data-target="video" data-action="open"></icon></h1>
+            <h1><button type="button" data-target="video" data-action="open"><icon play-circle-o></icon></button></h1>
         </div>
 
         <div class="spacing">
