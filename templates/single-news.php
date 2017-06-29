@@ -50,7 +50,7 @@
         </div>
 
         <h2>More in <a href="#">Help and Advice</a></h2>
-
+        <p>Introduction to the section. Introduction to the section. Introduction to the section. </p>
         <grid sizes="12|6|12">
 
             <div>

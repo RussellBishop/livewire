@@ -90,11 +90,17 @@
 
     </grid>
 
-    <flex justify="around" class="push-bottom-2">
+<!--     <flex justify="around" class="push-bottom-2">
         <div>
             <button type="button" disabled><icon arrow-left></icon></button>
             <span class="push-sides-1">1 of 6</span>
             <button type="button"><icon arrow-right></icon></button>
+        </div>
+    </flex> -->
+
+    <flex justify="around" class="push-bottom-2">
+        <div>
+            <button type="button"><span class="push-sides-1">Load more</span><icon spinner></icon></button>
         </div>
     </flex>
 

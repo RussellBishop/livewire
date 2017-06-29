@@ -22,6 +22,11 @@
     <h4><a href="/templates/whats-on.php">&larr; back to What's on</a></h4>
 
     <div class="spacing push-top-10">
+        <div class="max-width-10vw bg-2 border" style="border-radius: 2px;">
+            <a class="max-width-30vw" href="http://uclu.org/sites/uclu.org/files/styles/large/public/muslim_aid_0.png?itok=j2QnCAE3">
+                <img src="http://uclu.org/sites/uclu.org/files/styles/large/public/muslim_aid_0.png?itok=j2QnCAE3" />
+            </a>
+        </div>
         <h1><?= live($page->event_title, 'sentences|1')?></h1>
         <p><?= live($page->location, 'words|3')?></p>
         <p><?= live($page->date, 'words|3')?>, <?= live($page->time, 'words|3')?></p>
@@ -33,9 +38,7 @@
 
     <article large="8" class="">
 
-        <a class="float-right max-width-30vw push-left-1 push-bottom-1" href="http://uclu.org/sites/uclu.org/files/styles/large/public/muslim_aid_0.png?itok=j2QnCAE3">
-            <img src="http://uclu.org/sites/uclu.org/files/styles/large/public/muslim_aid_0.png?itok=j2QnCAE3" />
-        </a>
+
 
         <div class="spacing-article max-images">
 

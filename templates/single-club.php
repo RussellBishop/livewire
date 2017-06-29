@@ -67,7 +67,7 @@
 
 <div class="contained spacing pad-verticals-2">
 
-    <flex justify="between" class="push-bottom-2">
+<!--     <flex justify="between" class="push-bottom-2">
         <h1>Upcoming Events</h1>
         <div>
             <button type="button" disabled><icon arrow-left></icon></button>
@@ -117,7 +117,7 @@
             ?>
         </div>
 
-    </grid>
+    </grid> -->
 
     <flex justify="between" class="push-bottom-2">
         <h1>Recent Events</h1>
