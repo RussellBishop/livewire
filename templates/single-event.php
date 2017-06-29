@@ -16,12 +16,12 @@
 
 <div class="bg-5 contained pad-top-2 pad-bottom-3 relative z-1">
 
-    <div class="fill cover z--1" style="opacity: .2; background-image: url('http://lorempixel.com/1000/750/nightlife/');">
+    <div class="fill cover z--1" style="opacity: .2;">
     </div>
 
     <h4><a href="/templates/whats-on.php">&larr; back to What's on</a></h4>
 
-    <div class="spacing push-top-10">
+    <div class="spacing push-top-5">
         <div class="max-width-10vw bg-2 border" style="border-radius: 2px;">
             <a class="max-width-30vw" href="http://uclu.org/sites/uclu.org/files/styles/large/public/muslim_aid_0.png?itok=j2QnCAE3">
                 <img src="http://uclu.org/sites/uclu.org/files/styles/large/public/muslim_aid_0.png?itok=j2QnCAE3" />

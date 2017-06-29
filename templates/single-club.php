@@ -16,16 +16,16 @@
 
 <div class="bg-5 contained pad-top-2 pad-bottom-3 relative z-1">
 
-    <div class="fill cover z--1" style="opacity: .2; background-image: url('http://lorempixel.com/1000/750/nightlife/');">
+    <div class="fill cover z--1" style="opacity: .2;">
     </div>
 
     <h4><a href="/templates/whats-on.php">&larr; back to Directory</a></h4>
 
-    <div class="spacing push-top-10 max-width-50rm">
+    <div class="spacing push-top-5 max-width-50rm">
         <div class="max-width-10vw min-width-5rm bg-2 border" style="border-radius: 2px;">
             <?= live($page->club_logo, 'logos|1')?>
         </div>
-        <h1>UCL Jazz Society</h1>
+        <h1><a href="">UCL Jazz Society</a></h1>
         <p class="o-60 text-caps">Arts</p>
         <h3>UCL Jazz Society is an eclectic group of musicians who share a common love of jazz. We are open to all ages and abilities, regardless of previous experience, and strive to ensure everyone improves and enjoys their time playing and listening to jazz.</h3>
         <h1>

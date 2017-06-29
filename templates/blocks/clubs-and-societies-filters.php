@@ -2,6 +2,14 @@
 
     <fieldset>
 
+        <label for="edit-title">Search</label>
+
+        <input type="text" id="edit-title">
+
+    </fieldset>
+
+    <fieldset>
+
         <label for="edit-field-category-tid">Category</label>
 
         <select id="edit-field-category-tid">
@@ -10,14 +18,6 @@
             <option value="2759">General Interest</option>
             <option value="2758">Sports</option>
         </select>
-
-    </fieldset>
-
-    <fieldset>
-
-        <label for="edit-title">Name</label>
-
-        <input type="text" id="edit-title">
 
     </fieldset>
 
