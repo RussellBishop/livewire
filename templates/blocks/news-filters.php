@@ -1,4 +1,11 @@
-<grid sizes="12|3|2" justify="between" class="contained pad-verticals-2 bg-2">
+<div class="spacing">
+<!--     <a href=""> <div class="pad-sides-2 bg-3 text-align-center pad-verticals-1 push-bottom-1">All Categories</div></a> -->
+    <a href=""> <div class="pad-sides-2 bg-3 text-align-center pad-verticals-1 push-bottom-1">Arts</div></a>
+    <a href=""> <div class="pad-sides-2 bg-3 text-align-center pad-verticals-1 push-bottom-1">General Interest</div></a>
+    <a href=""> <div class="pad-sides-2 bg-3 text-align-center pad-verticals-1 push-bottom-1">Sports</div></a>
+</div>
+
+<!-- <grid sizes="12|3|2" justify="between" class="contained pad-verticals-2 bg-2">
 
     <fieldset>
 
@@ -40,4 +47,4 @@
 
     </fieldset>
 
-</grid>
+</grid> -->

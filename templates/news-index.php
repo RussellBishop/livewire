@@ -28,7 +28,7 @@
     </div>
 
 </div>
-<?php include('blocks/news-filters.php'); ?>
+
 
 <div class="contained spacing pad-verticals-2">
 <grid>
@@ -58,6 +58,10 @@
     </article>
 
            <aside small="hide" large="3">
+           <div class="border">
+               <div class="pad-verticals-2 pad-sides-2"><h3>Categories</h3></div>
+               <div class="pad-verticals-2 pad-sides-2"><?php include('blocks/news-filters.php'); ?></div>
+           </div>
 
             <div  class="spacing">
 <!-- 
@@ -114,7 +118,7 @@
 
                 'title'         =>  'Salsa Society - End of Year Party',
                 'image'         =>  'http://lorempixel.com/1000/750/nightlife/',
-                'link'          =>  '/templates/single-event.php',
+                'link'          =>  '/templates/single-news.php',
 
             );
 
@@ -140,7 +144,7 @@
 
                 'title'         =>  'Salsa Society - End of Year Party',
                 'image'         =>  'http://lorempixel.com/1000/750/nightlife/',
-                'link'          =>  '/templates/single-event.php',
+                'link'          =>  '/templates/single-news.php',
 
             );
 
@@ -166,7 +170,7 @@
 
                 'title'         =>  'Salsa Society - End of Year Party',
                 'image'         =>  'http://lorempixel.com/1000/750/nightlife/',
-                'link'          =>  '/templates/single-event.php',
+                'link'          =>  '/templates/single-news.php',
 
             );
 

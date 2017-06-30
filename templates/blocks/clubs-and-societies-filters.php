@@ -1,3 +1,25 @@
+<grid sizes="12|12|12" justify="between" class="contained pad-verticals-2 bg-2">
+
+    <fieldset>
+
+        <label for="edit-title">Search</label>
+
+        <input type="text" id="edit-title">
+
+    </fieldset>
+
+    <grid sizes="4|2|2" class=" push-bottom-3">
+        <div large="4" class="pad-sides-2 bg-3 text-align-center text-small text-caps"><a href="">Arts</a></div>
+        <div large="4" class="pad-sides-2 bg-3 text-align-center text-small text-caps"><a href="">Sport</a></div>
+        <div large="4" class="pad-sides-2 bg-3 text-align-center text-small text-caps"><a href="">Category</a></div>
+        <div large="4" class="pad-sides-2 bg-3 text-align-center text-small text-caps"><a href="">Sub-Category</a></div>
+        <div large="4" class="pad-sides-2 bg-3 text-align-center text-small text-caps"><a href="">Sub-Category</a></div>
+        <div large="4" class="pad-sides-2 bg-3 text-align-center text-small text-caps"><a href="">Sub-Category</a></div>
+    </grid>
+
+    </grid>
+
+<!-- 
 <grid sizes="12|3|2" justify="between" class="contained pad-verticals-2 bg-2">
 
     <fieldset>
@@ -47,4 +69,4 @@
 
     </fieldset>
 
-</grid>
+</grid> -->

@@ -16,7 +16,7 @@
 
 <div class="bg-5 contained pad-top-2 pad-bottom-3 relative z-1">
 
-    <div class="fill cover z--1" style="opacity: .2;">
+    <div class="fill cover z--1" style="opacity: .2; background-image: url('http://lorempixel.com/1000/400/people/');">
     </div>
 
     <h4><a href="/templates/whats-on.php">&larr; back to Directory</a></h4>
@@ -25,11 +25,13 @@
         <div class="max-width-10vw min-width-5rm bg-2 border" style="border-radius: 2px;">
             <?= live($page->club_logo, 'logos|1')?>
         </div>
-        <h1><a href="">UCL Jazz Society</a></h1>
-        <p class="o-60 text-caps">Arts</p>
+        <h1>UCL Jazz Society</h1>
+        <div large="2" class="pad-sides-2 bg-4 text-align-center text-small text-caps">Arts</div>
         <h3>UCL Jazz Society is an eclectic group of musicians who share a common love of jazz. We are open to all ages and abilities, regardless of previous experience, and strive to ensure everyone improves and enjoys their time playing and listening to jazz.</h3>
+
+        <div class="border text-align-center" large="3"><a href=""><h3><icon globe></icon> Visit our website</h3></a></div>
         <h1>
-            <a href="#facebook"><icon globe></icon></a>
+            
             <a href="#facebook"><icon facebook-square></icon></a>
             <a href="#facebook"><icon twitter></icon></a>
             <a href="#facebook"><icon instagram></icon></a>
@@ -120,7 +122,7 @@
     </grid> -->
 
     <flex justify="between" class="push-bottom-2">
-        <h1>Recent Events</h1>
+        <h1>Future Events</h1>
         <button type="button">See all events</button>
     </flex>
 
@@ -136,5 +138,11 @@
     ?>
 
 </div>
+
+    <grid sizes="12|3|4" class="contained push-bottom-3">
+        <div>See other categories: </div>
+        <div large="4" class="pad-sides-2 bg-3 text-align-center text-small text-caps"><a href="">Arts</a></div>
+        <div large="4" class="pad-sides-2 bg-3 text-align-center text-small text-caps"><a href="">Sport</a></div>
+    </grid>
 
 <?php include('../src/footer.php'); ?>

@@ -25,7 +25,7 @@
 
         <h1>Clubs and Societies</h1>
 
-        <h2><?= live($page->club_logo, 'sentences|2')?></h2>
+        <!-- <h2><?= live($page->club_logo, 'sentences|2')?></h2> -->
 
     </div>
 

@@ -46,7 +46,6 @@
 
     </grid>
     <grid sizes="12|6|3" class="pad-verticals-2">
-
         <?php
 
             $post = array (
@@ -57,7 +56,24 @@
 
             );
 
-            for ($x = 1; $x <= 3; $x++) {
+            for ($x = 1; $x <= 2; $x++) {
+
+                include('blocks/newscard.php');
+
+            }
+
+        ?>
+        <?php
+
+            $post = array (
+
+                'title'         =>  'Salsa Society - End of Year Party',
+                'image'         =>  'http://lorempixel.com/1000/750/nightlife/',
+                'link'          =>  '/templates/single-event.php',
+
+            );
+
+            for ($x = 1; $x <= 1; $x++) {
 
                 include('blocks/eventcard.php');
 
@@ -126,7 +142,7 @@
         ?>
 
     </grid> -->
-
+<!-- 
     <grid sizes="12|6|3" class="push-bottom-3">
 
         <?php
@@ -147,7 +163,7 @@
 
         ?>
 
-    </grid>
+    </grid> -->
 </div>
     <grid sizes="12|6|6">
 
@@ -161,7 +177,7 @@
 
     </grid>
 
-<div class="contained pad-verticals-2 spacing">
+<div class="pad-verticals-2 spacing">
 
     <grid>
 

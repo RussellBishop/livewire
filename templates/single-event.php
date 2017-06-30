@@ -34,7 +34,7 @@
 
 </div>
 
-<grid class="contained pad-verticals-2">
+<grid class="contained spacing pad-verticals-2">
 
     <article large="8" class="">
 
@@ -45,6 +45,18 @@
             <?= live($page->event_description, 'sentences|12')?>
 
         </div>
+
+        <div class="push-top-2">Wheelchair accessible? <icon check></icon>
+        </div>
+
+        <div class="push-top-2">Family friendly? <icon check></icon> </div>
+
+        <grid sizes="6|6|3" class="push-top-2">
+            <div large="2">Category: </div>
+            <div large="2" class="pad-sides-2 bg-3 text-align-center text-small">BARS</div>
+            <div class=""> </div>
+            <div class=""> </div>
+        </grid>
 
         <hr />
 
@@ -71,8 +83,10 @@
         <div class="bg-2 spacing pad-2 border">
             <h3>Booking</h3>
             <?= live($page->booking, 'sentences|1')?>
-            <?= live($page->contact_details_for_additional_information_about_the_event, 'sentences|1')?>
             <button type="button">Buy ticket</button>
+        </div>
+        <div class="bg-2 spacing pad-2 border">
+            <?= live($page->contact_details_for_additional_information_about_the_event, 'sentences|1')?>
         </div>
     </aside>
 
