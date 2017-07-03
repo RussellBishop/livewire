@@ -50,6 +50,21 @@
 
         </div>
 
+        <grid sizes="4|2|2" class="push-top-2">
+            <div class="border" style="border-radius: 2px;">
+                <?= live($page->club_logo, 'logos|1')?>
+            </div>
+            <div class="border" style="border-radius: 2px;">
+                <?= live($page->club_logo, 'logos|1')?>
+            </div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+        </grid>
+
+        <div class="push-top-2">Date established: January 2015</div>
+
     </article>
 
     <aside large="4" class="spacing">
@@ -120,6 +135,7 @@
         </div>
 
     </grid> -->
+
 
     <flex justify="between" class="push-bottom-2">
         <h1>Future Events</h1>

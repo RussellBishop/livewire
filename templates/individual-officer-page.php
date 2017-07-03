@@ -212,7 +212,7 @@
     </section>
 </grid>
 
-<grid class="contained pad-verticals-2">
+<!-- <grid class="contained pad-verticals-2">
 
     <article large="8" class="spacing push-bottom-4 max-images">
 
@@ -224,8 +224,8 @@
 
     </article>
 
-</grid>
-<div class="contained">
+</grid> -->
+<div class="pad-verticals-3 contained">
 <h3>Meet other officers</h3>
 <grid sizes="12|2|2" class="pad-verticals-2">
     <div class="spacing"><a href=""><div class="block bg-3 cover ratio-100" style="background-image: url('/assets/img/mark_sqr.jpg');"></div> <div> <h4><a href="">Mark Crawford</a></h4> <p>Postgraduate Students' Officer</p></div></a></div> 
