@@ -16,7 +16,7 @@
 
 <grid class="bg-5 contained relative z-1">
 
-    <div large="8" class="spacing push-top-10 pad-verticals-2">
+    <div large="8" class="spacing pad-verticals-2">
         <h4 class="pad-verticals-4"><a href="/templates/news.php">&larr; back to Make a change</a></h4>
         <h1><?= live($page->officer_name, 'words|2')?></h1>
         <h4><?= live($page->role, 'words|3')?></h4>
