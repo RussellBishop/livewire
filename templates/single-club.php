@@ -80,61 +80,10 @@
         </div>
     </aside>
 
+
 </grid>
 
 <div class="contained spacing pad-verticals-2">
-
-<!--     <flex justify="between" class="push-bottom-2">
-        <h1>Upcoming Events</h1>
-        <div>
-            <button type="button" disabled><icon arrow-left></icon></button>
-            <button type="button"><icon arrow-right></icon></button>
-        </div>
-    </flex>
-
-    <grid sizes="12|6|3" class="push-bottom-3">
-
-        <div>
-            <?php
-
-                $post = array (
-
-                    'title'         =>  'Salsa Society - End of Year Party',
-                    'image'         =>  'http://lorempixel.com/1000/750/nightlife/',
-                    'link'          =>  '/templates/single-event.php',
-
-                );
-
-                include('blocks/eventcard.php');
-
-            ?>
-        </div>
-
-        <div small="hide">
-            <?php
-
-                include('blocks/eventcard.php');
-
-            ?>
-        </div>
-
-        <div small-medium="hide">
-            <?php
-
-                include('blocks/eventcard.php');
-
-            ?>
-        </div>
-
-        <div small-medium="hide">
-            <?php
-
-                include('blocks/eventcard.php');
-
-            ?>
-        </div>
-
-    </grid> -->
 
 
     <flex justify="between" class="push-bottom-2">

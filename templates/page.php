@@ -40,6 +40,80 @@
 
     </article>
 
+
+    <aside large="3" class="spacing">
+
+
+        <h2>This Section</h2>
+<!--         <p>Introduction to the section. Introduction to the section. Introduction to the section. </p> -->
+        <grid sizes="12|6|12">
+            <div class="bg-3 pad-sides-2 pad-verticals-1 spacing">
+                <div><a href="Children page">Children page</a></div>
+                <div><a href="Children page">Children page</a></div>
+                <div><a href="Children page">Children page</a></div>
+                <div><a href="Children page">Children page</a></div>
+            </div>
+
+
+            <div>
+
+                <?php
+
+                    $post = array (
+
+                        'title'         =>  'Impact content element',
+                        'description'   =>  'Sentences',
+                        'link'          =>  '#',
+
+                    );
+
+                    include('blocks/impactstory.php');
+
+                ?>
+
+            </div>
+
+            <div>
+
+                <?php
+
+                    $post = array (
+
+                        'title'         =>  'Related content title',
+                        'link'          =>  '#',
+
+                    );
+
+                    include('blocks/feedcard.php');
+
+                ?>
+
+            </div>
+
+            <div>
+
+                <?php
+
+                    $post = array (
+
+                        'title'         =>  'Related content title',
+                        'link'          =>  '#',
+
+                    );
+
+                    include('blocks/feedcard.php');
+
+                ?>
+
+            </div>
+
+        </grid>
+                <div class="bg-3 pad-verticals-1 pad-sides-2 text-align-center">
+            <?php include('blocks/share.php'); ?>
+        </div>
+    </aside>
+
+
 </grid>
 
 <?php include('blocks/section-footer.php'); ?>
