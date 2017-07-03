@@ -52,10 +52,10 @@
 
         <grid sizes="4|2|2" class="push-top-2">
             <div class="border" style="border-radius: 2px;">
-                <?= live($page->club_logo, 'logos|1')?>
+                <a href="http://uclu.org/sexualharassment"><img src="http://uclu.org/sites/uclu.org/files/styles/large/public/campaigns/zt_logo_for_fb_0.jpg?itok=YtiGvqyI"/></a>
             </div>
             <div class="border" style="border-radius: 2px;">
-                <?= live($page->club_logo, 'logos|1')?>
+                <a href="http://uclu.org/prideinsport"><img src="http://uclu.org/sites/uclu.org/files/styles/large/public/campaigns/prideinsportlogo.png?itok=bt12BkrN"/></a>
             </div>
             <div class=""></div>
             <div class=""></div>
