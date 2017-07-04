@@ -73,43 +73,19 @@
 
             </div>
 
-            <div>
-
-                <?php
-
-                    $post = array (
-
-                        'title'         =>  'Related content title',
-                        'link'          =>  '#',
-
-                    );
-
-                    include('blocks/feedcard.php');
-
-                ?>
-
-            </div>
-
-            <div>
-
-                <?php
-
-                    $post = array (
-
-                        'title'         =>  'Related content title',
-                        'link'          =>  '#',
-
-                    );
-
-                    include('blocks/feedcard.php');
-
-                ?>
-
+            <h2>Related content</h2>
+            <div class="bg-3 pad-sides-2 pad-verticals-1 spacing">
+                <div><a href="Children page">Example Link</a></div>
+                <div><a href="Children page">Example Link</a></div>
+                <div><a href="Children page">Example Link</a></div>
+                <div><a href="Children page">Example Link</a></div>
             </div>
 
         </grid>
-                <div class="bg-3 pad-verticals-1 pad-sides-2 text-align-center">
-            <?php include('blocks/share.php'); ?>
+        <div class="bg-2 spacing pad-2 border">
+            <h3>Contact information</h3>
+            <p>Name Surname</p>
+            <p>Email: uczxjaz@ucl.ac.uk </p>
         </div>
     </aside>
 
