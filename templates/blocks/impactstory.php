@@ -7,7 +7,7 @@
             <h3><a href="<?=$post['link'];?>"><?=$post['title'];?></a></h3>
         </div>
 
-        <p class="text-small"><?=$post['description'];?>&hellip;</p>
+        <p class="text-small"><?= live($page->nothing, 'sentences|2')?></p>
     </div>
 
 </div>

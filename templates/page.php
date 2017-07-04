@@ -48,10 +48,10 @@
 <!--         <p>Introduction to the section. Introduction to the section. Introduction to the section. </p> -->
         <grid sizes="12|6|12">
             <div class="bg-3 pad-sides-2 pad-verticals-1 spacing">
-                <div><a href="Children page">Children page</a></div>
-                <div><a href="Children page">Children page</a></div>
-                <div><a href="Children page">Children page</a></div>
-                <div><a href="Children page">Children page</a></div>
+                <div><a href="Children page"><?= live($page->nothing, 'words|2')?></a></div>
+                <div><a href="Children page"><?= live($page->nothing, 'words|2')?></a></div>
+                <div><a href="Children page"><?= live($page->nothing, 'words|2')?></a></div>
+                <div><a href="Children page"><?= live($page->nothing, 'words|2')?></a></div>
             </div>
 
 
@@ -62,7 +62,6 @@
                     $post = array (
 
                         'title'         =>  'Impact content element',
-                        'description'   =>  'Sentences',
                         'link'          =>  '#',
 
                     );
@@ -75,16 +74,16 @@
 
             <h2>Related content</h2>
             <div class="bg-3 pad-sides-2 pad-verticals-1 spacing">
-                <div><a href="Children page">Example Link</a></div>
-                <div><a href="Children page">Example Link</a></div>
-                <div><a href="Children page">Example Link</a></div>
-                <div><a href="Children page">Example Link</a></div>
+                <div><a href="Children page"><?= live($page->nothing, 'words|2')?></a></div>
+                <div><a href="Children page"><?= live($page->nothing, 'words|2')?></a></div>
+                <div><a href="Children page"><?= live($page->nothing, 'words|2')?></a></div>
+                <div><a href="Children page"><?= live($page->nothing, 'words|2')?></a></div>
             </div>
 
         </grid>
         <div class="bg-2 spacing pad-2 border">
             <h3>Contact information</h3>
-            <p>Name Surname</p>
+            <p><?= live($page->nothing, 'names|1')?></p>
             <p>Email: uczxjaz@ucl.ac.uk </p>
         </div>
     </aside>
