@@ -1,6 +1,6 @@
 <?php
 
-    $title = 'Licencees';
+    $title = 'Licensees';
 
     require '../src/src.php';
 
@@ -16,7 +16,7 @@
 
 <div class="bg-0 contained pad-top-7 pad-bottom-3 relative z-1">
 
-    <div class="z--1 o-20 text-align-center"><h1>Licencees</h2></div>
+    <div class="z--1 o-20 text-align-center"><h1>Licensees</h2></div>
     <hr/>
     <div class="bg-2 contained pad-verticals-4">
         <h3>
@@ -38,7 +38,7 @@
 
                 array (
 
-                    'title'         =>  'Licencee',
+                    'title'         =>  'Licensee',
                     'link'          =>  '#',
 
                 ),
