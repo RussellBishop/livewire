@@ -3,8 +3,8 @@
             <div class="blockquote" small="hide"><i>The voice of beer and pub industry</i></div>
             <div large="hide"></div>
             <div class="text-align-center">
-                <a href="#" large="hide"><img class="height-3" src="/dist/img/logo.jpg" /></a>
-                <a href="#" small-medium="hide"><img class="height-3" src="/dist/img/logo.jpg" /></a>
+                <a href="#" large="hide"><img class="height-3" src="assets/logo.jpg" /></a>
+                <a href="#" small-medium="hide"><img class="height-3" src="assets/logo.jpg" /></a>
             </div>
             <flex align="centre">
                 <flex align="centre">
