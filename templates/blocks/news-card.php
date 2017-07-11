@@ -8,7 +8,7 @@
             <p class="text-small o-40">Friday 12th May 2017</p>
         </div>
 
-        <p class="text-small">ff<?=$post['description'];?>&hellip;</p>
+        <p class="text-small"><?=$post['description'];?>&hellip;</p>
     </div>
 
 </div>

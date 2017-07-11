@@ -1,4 +1,4 @@
-<section class="contained bg-2 pad-verticals-2 spacing">
+<!-- <section class="contained bg-2 pad-verticals-2 spacing">
 
     <grid sizes="12|6|3">
         <div class="spacing">
@@ -50,18 +50,18 @@
         </div>
     </grid>
 
-</section>
+</section> -->
 
 <section class="contained bg-3 pad-verticals-2 spacing text-small spacing">
 
     <grid justify="between">
 
-        <p><a href="#">Data protection and privacy</a> | <a href="#">Report a problem</a> | <a href="#">Sitemap</a> | <a href="#">Charity &amp; Company Details</a></p>
+        <p><a href="#">Data protection and privacy</a> | <a href="#">Report a problem</a> | <a href="#">Sitemap</a> | 
 
-        <p>Copyright &copy; 2017 Students’ Union UCL. All rights reserved.</p>
+        <p>Copyright &copy; 2017 BBPA. All rights reserved.</p>
 
     </grid>
 
-    <p>Students’ Union UCL, 25 Gordon Street, London, WC1H 0AY | 020 7679 2500</p>
+    <p>British Beer and Pub Society</p>
 
 </section>

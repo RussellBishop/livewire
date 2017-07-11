@@ -1,89 +1,95 @@
-<div class="fixed sticky top left right bg-2 z-5">
-
+<div class="fixed sticky top left right bg-1 z-5">
     <flex justify="between" align="centre" class="pad">
+            <div class="blockquote" small="hide"><i>The voice of beer and pub industry</i></div>
+            <div large="hide"></div>
+            <div class="text-align-center">
+                <a href="#" large="hide"><img class="height-3" src="/dist/img/logo.jpg" /></a>
+                <a href="#" small-medium="hide"><img class="height-3" src="/dist/img/logo.jpg" /></a>
+            </div>
+            <flex align="centre">
+                <flex align="centre">
+                    <button type="submit"><icon search></icon></button>
+                </flex>
+                <a href="#" class="button push-left-2" small="hide"><icon lock></icon> <span small="hide" large="hide">James</span></a>
+            </flex>
 
-        <a href="#" large="hide"><img class="height-2" src="/dist/img/suucl-logo.svg" /></a>
-        <a href="#" small-medium="hide"><img class="height-2" src="/dist/img/suucl-logo-u.svg" /></a>
+    </flex>
+</div>
+<div class="fixed sticky top left right bg-2 z-5">
+    <flex justify="between" align="centre" class="pad">
+    <div></div>
 
         <flex grow="1" small-medium="hide" class="pad-sides-2" style="flex-grow: 1; max-width: 1140px;">
 
-            <a href="#" data-target="makeachange-subnav-large" data-action="toggle" data-group="nav" class="<?php if ($active == 'makeachange') echo ' is--active'; ?>">Make a change <icon arrow-down></icon></a>
+            <a href="#" data-group="nav" class="<?php if ($active == 'whatson') echo ' is--active'; ?>">News</a>
 
-            <a href="#" data-target="yourstudentlife-subnav-large" data-action="toggle" data-group="nav" class="<?php if ($active == 'yourstudentlife') echo ' is--active'; ?>">Your student life <icon arrow-down></icon></a>
+            <a href="#" data-target="about-subnav-large" data-action="toggle" data-group="nav" class="<?php if ($active == 'about') echo ' is--active'; ?>">About <icon arrow-down></icon></a>
 
-            <a href="#" data-target="placesforyou-subnav-large" data-action="toggle" data-group="nav" class="<?php if ($active == 'placesforyou') echo ' is--active'; ?>">Places for you <icon arrow-down></icon></a>
+            <a href="#" data-target="our-passion-subnav-large" data-action="toggle" data-group="nav" class="<?php if ($active == 'ourpassion') echo ' is--active'; ?>">Our Passion <icon arrow-down></icon></a>
 
-            <a href="#" data-target="helpandadvice-subnav-large" data-action="toggle" data-group="nav" class="<?php if ($active == 'helpandadvice') echo ' is--active'; ?>">Help and advice <icon arrow-down></icon></a>
+            <a href="#" data-target="members-subnav-large" data-action="toggle" data-group="nav" class="<?php if ($active == 'members') echo ' is--active'; ?>">Members <icon arrow-down></icon></a>
 
-            <a href="#" data-group="nav" class="<?php if ($active == 'whatson') echo ' is--active'; ?>">What's on?</a>
+            <a href="#" data-group="nav" class="<?php if ($active == 'campaigns') echo ' is--active'; ?>">Campaigns</a>
 
+            <a href="/templates/policy.php" data-group="nav" class="<?php if ($active == 'policy') echo ' is--active'; ?>">Policy</a>
+
+            <a href="#" data-target="stats-subnav-large" data-action="toggle" data-group="nav" class="<?php if ($active == 'helpandadvice') echo ' is--active'; ?>">Stats <icon arrow-down></icon></a>
+
+            <a href="#" data-group="nav" class="<?php if ($active == 'policy') echo ' is--active'; ?>">Shop</a>
         </flex>
-
-        <flex align="centre">
-
-            <flex align="centre">
-                <input small="hide" large="hide" class="max-10" placeholder="Search&hellip;" type="text" required  />
-                <button type="submit"><icon search></icon></button>
-            </flex>
-
-            <a href="#" class="button push-left-2"><icon user></icon> <span small="hide" large="hide">James</span></a>
-
-        </flex>
-
+        <div></div>
     </flex>
 
-    <group small-medium="hide" class="contained">
-        <grid data-group="subnav-large" data-id="makeachange-subnav-large" class="pad">
-            <div large="5" class="pad spacing">
-                <h1><a href="/make-a-change.php">Make a change</a></h1>
-                <?= live($page->blank, 'sentences|2')?>
-            </div>
-            <div large="7" class="nav subnav">
-                <grid sizes="12|6|6">
-                    <?php include('makeachange-subnav.php'); ?>
-                </grid>
-            </div>
-        </grid>
+    <group small-medium="hide" class="contained push-bottom-2">
 
-        <grid data-group="subnav-large" data-id="yourstudentlife-subnav-large" class="pad">
-            <div large="5" class="pad spacing">
-                <h1><a href="your-student-life.php">Your Student Life</a></h1>
-                <?= live($page->blank, 'sentences|2')?>
+        <div data-group="subnav-large" data-id="about-subnav-large">
+            <div class="pad spacing text-align-center">
+                <h1><a href="/make-a-change.php">About</a></h1>  
             </div>
-            <div large="7" class="nav subnav">
-                <grid sizes="12|6|6">
-                    <?php include('yourstudentlife-subnav.php'); ?>
+            <div class="nav subnav text-align-center">
+                <grid sizes="12|3|3">
+                    <?php include('about-subnav.php'); ?>
                 </grid>
             </div>
-        </grid>
+        </div>
 
-        <grid data-group="subnav-large" data-id="placesforyou-subnav-large" class="pad">
-            <div large="5" class="pad spacing">
-                <h1><a href="places-for-you.php">Places for you</a></h1>
-                <?= live($page->blank, 'sentences|2')?>
+        <div data-group="subnav-large" data-id="our-passion-subnav-large">
+            <div class="pad spacing text-align-center">
+                <h1><a href="/make-a-change.php">Our Passion</a></h1>  
             </div>
-            <div large="7" class="nav subnav">
-                <grid sizes="12|6|6">
-                    <?php include('placesforyou-subnav.php'); ?>
+            <div class="nav subnav text-align-center">
+                <grid sizes="12|3|3">
+                    <?php include('our-passion-subnav.php'); ?>
                 </grid>
             </div>
-        </grid>
+        </div>        
 
-        <grid data-group="subnav-large" data-id="helpandadvice-subnav-large" class="pad">
-            <div large="5" class="pad spacing">
-                <h1><a href="help-and-advice.php">Help and Advice</a></h1>
-                <?= live($page->blank, 'sentences|2')?>
+        <div data-group="subnav-large" data-id="members-subnav-large">
+            <div class="pad spacing text-align-center">
+                <h1><a href="/make-a-change.php">Members</a></h1>  
             </div>
-            <div large="7" class="nav subnav">
-                <grid sizes="12|6|6">
-                    <?php include('helpandadvice-subnav.php'); ?>
+            <div class="nav subnav text-align-center">
+                <grid sizes="12|3|3">
+                    <?php include('members-subnav.php'); ?>
                 </grid>
             </div>
-        </grid>
+        </div> 
+
+        <div data-group="subnav-large" data-id="stats-subnav-large">
+            <div class="pad spacing text-align-center">
+                <h1><a href="/make-a-change.php">Stats</a></h1>  
+            </div>
+            <div class="nav subnav text-align-center">
+                <grid sizes="12|3|3">
+                    <?php include('stats-subnav.php'); ?>
+                </grid>
+            </div>
+        </div> 
     </group>
 
-    <flex justify="between" class="bg-3 pad" large="hide">
-        <button data-target="nav yourstudentlife-subnav" data-action="open" class="bg-4">Your Student Life <icon arrow-down></icon></button>
+
+    <flex justify="between" class="bg-2 pad" large="hide">
+        <button data-target="nav members-subnav" data-action="open" class="bg-4">Members <icon arrow-down></icon></button>
 
         <button data-target="nav" data-action="toggle"><icon bars></icon></button>
     </flex>
@@ -93,41 +99,45 @@
         <grid data-id="nav" class="nav">
 
             <div small-medium="11" class="subnav">
-                <button type="button" class="<?php if ($active == 'home') echo ' is--active'; ?>">Home</button>
+                <button type="button" class="<?php if ($active == 'home') echo ' is--active'; ?>">News</button>
 
-                <button data-target="makeachange-subnav" data-action="toggle" type="button" class="<?php if ($active == 'makeachange') echo ' is--active'; ?>">Make a change <icon arrow-down></icon></button>
+                <button data-target="about-subnav" data-action="toggle" type="button" class="<?php if ($active == 'about') echo ' is--active'; ?>">About <icon arrow-down></icon></button>
 
                     <group>
-                        <div data-group="subnav" data-id="makeachange-subnav" class="nav subnav">
-                            <?php include('blocks/makeachange-subnav.php'); ?>
+                        <div data-group="subnav" data-id="about-subnav" class="nav subnav">
+                            <?php include('blocks/about-subnav.php'); ?>
                         </div>
                     </group>
 
-                <button data-target="yourstudentlife-subnav" data-action="toggle" type="button" class="<?php if ($active == 'yourstudentlife') echo ' is--active'; ?>">Your Student Life <icon arrow-down></icon></button>
+                <button data-target="our-passion-subnav" data-action="toggle" type="button" class="<?php if ($active == 'ourpassion') echo ' is--active'; ?>">Our Passion <icon arrow-down></icon></button>
 
                     <group>
-                        <div data-group="subnav" data-id="yourstudentlife-subnav" class="nav subnav">
-                            <?php include('blocks/yourstudentlife-subnav.php'); ?>
+                        <div data-group="subnav" data-id="our-passion-subnav" class="nav subnav">
+                            <?php include('blocks/our-passion-subnav.php'); ?>
                         </div>
                     </group>
 
-                <button data-target="placesforyou-subnav" data-action="toggle" type="button" class="<?php if ($active == 'placesforyou') echo ' is--active'; ?>">Places for you <icon arrow-down></icon></button>
+                <button data-target="members-subnav" data-action="toggle" type="button" class="<?php if ($active == 'members') echo ' is--active'; ?>">Members <icon arrow-down></icon></button>
 
                     <group>
-                        <div data-group="subnav" data-id="placesforyou-subnav" class="nav subnav">
-                            <?php include('blocks/placesforyou-subnav.php'); ?>
+                        <div data-group="subnav" data-id="members-subnav" class="nav subnav">
+                            <?php include('blocks/members-subnav.php'); ?>
                         </div>
                     </group>
 
-                <button data-target="helpandadvice-subnav" data-action="toggle" type="button" class="<?php if ($active == 'helpandadvice') echo ' is--active'; ?>">Help and advice <icon arrow-down></icon></button>
+                <button type="button" class="<?php if ($active == 'campaigns') echo ' is--active'; ?>">Campaigns</button>
+
+                <a href="/templates/policy.php"><button type="button" class="<?php if ($active == 'policy') echo ' is--active'; ?>">Policy</button></a>
+
+                <button data-target="stats-subnav" data-action="toggle" type="button" class="<?php if ($active == 'stats') echo ' is--active'; ?>">Stats <icon arrow-down></icon></button>
 
                     <group>
-                        <div data-group="subnav" data-id="helpandadvice-subnav" class="nav subnav">
-                            <?php include('blocks/helpandadvice-subnav.php'); ?>
+                        <div data-group="subnav" data-id="stats-subnav" class="nav subnav">
+                            <?php include('blocks/stats-subnav.php'); ?>
                         </div>
                     </group>
-
-                <button type="button" class="<?php if ($active == 'whatson') echo ' is--active'; ?>">What's on?</button>
+                <button type="button" class="<?php if ($active == 'campaigns') echo ' is--active'; ?>">Shop</button>
+                <button type="button" class="<?php if ($active == 'policy') echo ' is--active'; ?>"><icon lock></icon> Members area</button>
 
             </div>
 

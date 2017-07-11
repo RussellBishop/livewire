@@ -1,6 +1,6 @@
 <?php
 
-    $title = 'News index';
+    $title = 'Licencees';
 
     require '../src/src.php';
 
