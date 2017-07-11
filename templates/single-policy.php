@@ -14,7 +14,7 @@
 
 <?php $active = 'policy'; include('blocks/navigation.php'); ?>
 
-<div class="bg-0 contained pad-top-2 pad-bottom-3 relative z-1">
+<div class="bg-0 contained pad-top-7 pad-bottom-3 relative z-1">
 
     <div class="z--1 o-20 text-align-center"><h1>Policy name</h1></div>
     <hr/>
