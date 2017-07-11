@@ -18,7 +18,7 @@
 
     <div class="z--1 o-20 text-align-center"><h1>Policy</h1></div>
     <hr/>
-    <div class="bg-2 contained pad-verticals-4">
+    <div class="bg-2 pad-verticals-4 pad-sides-6">
         <h3>
             <?= live($page->introduction, 'paragraphs|2')?>
         </h3>

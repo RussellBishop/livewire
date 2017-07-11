@@ -18,7 +18,7 @@
 
     <div class="z--1 o-20 text-align-center"><h1>Policy name</h1></div>
     <hr/>
-    <div class="bg-2 contained pad-verticals-4">
+    <div class="bg-2 pad-sides-12 pad-verticals-4">
         <p>
             <?= live($page->introduction, 'paragraphs|2')?>
         </p>
@@ -36,7 +36,7 @@
 
             <grid sizes="12|12|12">
                     <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><a href="Children page"><h4><?= live($page->nothing, 'words|4')?></h4></a><p><p class="text-small o-20">Friday 12th May 2017</p></p></div>
-                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><a href="Children page"><h4><?= live($page->nothing, 'words|3')?></h4></a><p><p class="text-small o-20">Friday 12th May 2017</p></p></div>
+                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><a href="Children page"><h4><?= live($page->nothing, 'words|5')?></h4></a><p><p class="text-small o-20">Friday 12th May 2017</p></p></div>
                     <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><a href="Children page"><h4><?= live($page->nothing, 'words|4')?></h4></a><p><p class="text-small o-20">Friday 12th May 2017</p></p></div>
             </grid>
         </div>
