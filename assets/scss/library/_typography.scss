@@ -77,6 +77,13 @@ $headingCountMax: $headingCount + 1;
 
 h#{$headingCountMax} {
   font-weight: bold;
+
+}
+
+h0 {
+  @extend %heading;
+  display: block;
+  font-size: 4em;
 }
 
 blockquote {

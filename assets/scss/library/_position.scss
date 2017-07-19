@@ -41,6 +41,10 @@
   position: relative;
 }
 
+.absolute-centre {
+  @include absolute-centre;
+}
+
 @each $side in $sides {
   .#{$side} {
     #{$side}: 0;

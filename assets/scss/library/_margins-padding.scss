@@ -124,8 +124,10 @@ $max: 20;
   @include spacing(1rem);
 }
 
-.spacing-2 {
-  @include spacing(2rem);
+@for $i from 0 through 5 {
+  .spacing-#{$i} {
+    @include spacing($i * 1rem);
+  }
 }
 
 $contentSpacing: 1rem;
