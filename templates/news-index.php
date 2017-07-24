@@ -1,6 +1,6 @@
 <?php
 
-    $title = 'Licencees';
+    $title = 'News index';
 
     require '../src/src.php';
 
@@ -12,185 +12,117 @@
 
 <body>
 
-<?php $active = 'yourstudentlife'; $menu = 'clubsandsocieties'; include('blocks/navigation.php'); ?>
+<?php $active = 'members'; $menu = 'members'; include('blocks/navigation.php'); ?>
 
-<div class="bg-5 contained pad-top-2 pad-bottom-3 relative z-1">
-
-    <div class="fill cover z--1 o-10">
-    </div>
-
-    <h4><a href="/templates/your-student-life.php">&larr; back to Make a change</a></h4>
-
-    <div class="spacing push-top-5 max-width-50rm">
-
-        <h1>News</h1>
-
-    </div>
-
-</div>
-
-
-<div class="contained spacing pad-verticals-2">
+<div class="contained spacing pad-verticals-2 pad-top-7">
 <grid>
-    <article large="9">
-        <div class="border">
+    <article large="9" >
+        <div>
 
                 <a href="<?=$post['link'];?>" class="block bg-2 cover ratio-40 relative">
                 <div class="absolute bottom-1 left-1 bg-4 border" style="border-radius: 3px;">
                 </div>
             </a>
 
-        <div class="pad spacing">
-            <div>
-                <h3><a href="<?=$post['link'];?>">Zero Tolerance to Sexual Harassment Award Ceremony</a></h3>
+        <div class="pad spacing text-align-center">
+                    <div class="text-small">
+                <p class="o-40">Business Rates / 24th November</p>
+            </div>
+            <div class="pad-verticals-1 pad-sides-2">
+                <h3><a href="<?=$post['link'];?>">Election 2017 – BBPA manifesto urges all parties to back policies for unlocking growth and investment in British beer and pubs</a></h3>
             </div>
 
-            <div class="text-small">
-                <p>By <?= live($page->club_logo, 'names|1')?></p>
-                <p class="o-40">Friday 12th May 2017, 11:22am</p>
+            <div class="text-align-left pad-sides-2">
+                <p class="push-bottom-1">
+                    Britain’s pubs carry one of the heaviest tax burdens in the UK economy, says a new report from Oxford Economics for the British Beer &amp; Pub Association (BBPA).<br/><br/>
+                    The full report shows that the industry’s total tax bill amounts to a staggering £7.3 billion, or £140,000 for every pub, representing 34 pence in every pound of turnover…
+
+                </p>
+                <button>Read more</button>
             </div>
-            <p>
-                On Wednesday 14 June, the Students’ Union held the Zero Tolerance To Sexual Harassment Awards to celebrate the work of departments over the past year in creating a Zero Tolerance environment at UCL.
-            </p>
         </div>
 
     </div>
+
+
     </article>
 
-           <aside small="hide" large="3">
-           <div class="border">
-               <div class="pad-verticals-2 pad-sides-2"><h3>Categories</h3></div>
-               <div class="pad-verticals-2 pad-sides-2"><?php include('blocks/news-filters.php'); ?></div>
+    <aside small="hide" large="3">
+        <div class="bg-2">
+            <div class="pad-verticals-1 pad-sides-1 text-align-center"><h3>Most popular stories</h3><hr/></div>
+            <div>
+                <?php
+
+                    $posts = array (
+
+                        array (
+
+                            'title'         =>  'BBPA responds to London Mayor’s ‘Culture and the night-time economy’ consultation',
+
+                        ),
+                        array (
+
+                            'title'         =>  'Tower Hamlets postpones late-night levy - BBPA comments',
+
+                        ),
+
+                    );
+
+                    $postsCount = count($posts);
+
+                    for ($x = 0; $x < 4; $x++) {
+
+                        $post = $posts[$x % $postsCount];
+
+                        include('blocks/topstory-block.php');
+
+                    }
+
+                ?>
+            </div>
+            <div class="pad-sides-1"><button class="push-bottom-1">Read more</button></div>
            </div>
 
             <div  class="spacing">
-<!-- 
-                <h2>What's On?</h2>
-                <div>
 
-                    <?php
-
-                        $post = array (
-
-                            'title'         =>  'Heads Up! A Mental Health Awareness Year',
-                            'description'   =>  'Heads Up has been a mental health campaign that we’ve been running as a sabb team that I’ve been leading on for the past year',
-                            'link'          =>  '#',
-
-                        );
-
-                        include('blocks/newsfeedcard.php');
-
-                    ?>
-
-                </div>
-
-                <div>
-
-                    <?php
-
-                        $post = array (
-
-                            'title'         =>  'Is your department taking a stand against sexual harassment?',
-                            'description'   =>  'So far, over half of departments at UCL are working with us towards creating a university that says NO to sexual harassment and sexual violence',
-                            'link'          =>  '#',
-
-                        );
-
-                        include('blocks/newsfeedcard.php');
-
-                    ?>
-
-                </div> -->
             </div>
         </aside>
 
 </grid>
 
-    <flex justify="between" class="push-bottom-2">
-        <h1>Sport</h1>
-        <button type="button">See all Sport news</button>
-    </flex>
-    <grid sizes="12|6|3" class="push-bottom-3">
+    <hr/>
+<grid>
+    <div large="9">
+        <grid sizes="12|6|4" class="push-bottom-3">
 
-        <?php
+            <?php
 
-            $post = array (
+                $post = array (
 
-                'title'         =>  'Salsa Society - End of Year Party',
-                'image'         =>  'http://lorempixel.com/1000/750/nightlife/',
-                'link'          =>  '/templates/single-news.php',
 
-            );
+                            'title'         =>  'Tower Hamlets postpones late-night levy - BBPA comments',
+                            'image'         =>  'http://lorempixel.com/1000/750/nightlife/',
+                            'link'          =>  '/templates/single-news.php',
+                            'info'   =>  'The British Beer & Pub Association has responded the London Mayor Sadiq Khan’s Culture and the night-time economy consultation…',
 
-            for ($x = 1; $x <= 4; $x++) {
 
-                include('blocks/newsindexcard.php');
 
-            }
+                );
 
-        ?>
+                for ($x = 1; $x <= 9; $x++) {
 
-    </grid>
+                    include('blocks/newsindexcard.php');
 
-    <flex justify="between" class="push-bottom-2">
-        <h1>Health</h1>
-        <button type="button">See all Health news</button>
-    </flex>
-    <grid sizes="12|6|3" class="push-bottom-3">
+                }
 
-        <?php
+            ?>
 
-            $post = array (
-
-                'title'         =>  'Salsa Society - End of Year Party',
-                'image'         =>  'http://lorempixel.com/1000/750/nightlife/',
-                'link'          =>  '/templates/single-news.php',
-
-            );
-
-            for ($x = 1; $x <= 4; $x++) {
-
-                include('blocks/newsindexcard.php');
-
-            }
-
-        ?>
-
-    </grid>
-
-    <flex justify="between" class="push-bottom-2">
-        <h1>University</h1>
-        <button type="button">See all University news</button>
-    </flex>
-    <grid sizes="12|6|3" class="push-bottom-3">
-
-        <?php
-
-            $post = array (
-
-                'title'         =>  'Salsa Society - End of Year Party',
-                'image'         =>  'http://lorempixel.com/1000/750/nightlife/',
-                'link'          =>  '/templates/single-news.php',
-
-            );
-
-            for ($x = 1; $x <= 4; $x++) {
-
-                include('blocks/newsindexcard.php');
-
-            }
-
-        ?>
-
-    </grid>
-
-<!--     <flex justify="around" class="push-bottom-2">
-        <div>
-            <button type="button" disabled><icon arrow-left></icon></button>
-            <span class="push-sides-1">1 of 6</span>
-            <button type="button"><icon arrow-right></icon></button>
-        </div>
-    </flex> -->
+        </grid>
+    </div>
+    <div large="3">
+    <?php include('blocks/categories-block.php');?>
+    </div>
+</grid>
 
 </div>
 

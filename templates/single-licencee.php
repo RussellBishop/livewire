@@ -1,6 +1,6 @@
 <?php
 
-    $title = 'Single Policy Page';
+    $title = 'Single Licensee Page';
 
     require '../src/src.php';
 
@@ -16,11 +16,11 @@
 
 <div class="bg-0 contained pad-top-7 pad-bottom-3 relative z-1">
 
-    <div class="z--1 o-20 text-align-center"><h1>Beer Duty</h1></div>
+    <div class="z--1 o-20 text-align-center"><h1>Licensee single</h1></div>
     <hr/>
     <div class="bg-2 pad-sides-12 pad-verticals-4">
         <p>
-            Beer duty is the tax on producing and selling beer. The UK has one of the highest rates of duty in the world and the current rate is 12 times higher than that in Germany. Tax increases put jobs and investment in the industry at risk and this is why we campaign for the rate to be reduced in line with other major brewing nations. 
+            <?= live($page->introduction, 'paragraphs|2')?>
         </p>
     </div>
 </div>
@@ -30,14 +30,17 @@
     <article large="8" class="spacing max-images">
         <div class="push-bottom-4">
             <flex justify="between" class="push-bottom-2">
-                <h2>Briefings</h2>
-                <button type="button">See all briefings</button>
+                <h2>Guidance</h2>
+                <button type="button">See all links</button>
             </flex>
 
             <grid sizes="12|12|12">
-                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><flex justify="between"><a href="Children page"><h4><?= live($page->nothing, 'words|4')?></h4></a><icon download></icon></flex><p><p class="text-small o-20">Friday 12th May 2017</p></p></div>
-                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><flex justify="between"><a href="Children page"><h4><?= live($page->nothing, 'words|5')?></h4></a><icon download></icon></flex><p><p class="text-small o-20">Friday 12th May 2017</p></p></div>
-                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><flex justify="between"><a href="Children page"><h4><?= live($page->nothing, 'words|4')?></h4></a><icon download></icon></flex><p><p class="text-small o-20">Friday 12th May 2017</p></p></div>
+                    <div class="pad-sides-2 spacing"><a href="Children page"><h4><?= live($page->nothing, 'words|4')?></h4></a><p><!-- <p class="text-small o-20">Friday 12th May 2017</p> --></p></div>
+                    <div class="pad-sides-2 spacing"><a href="Children page"><h4><?= live($page->nothing, 'words|5')?></h4></a><p><!-- <p class="text-small o-20">Friday 12th May 2017</p> --></p></div>
+                    <div class="pad-sides-2 spacing"><a href="Children page"><h4><?= live($page->nothing, 'words|4')?></h4></a><p><!-- <p class="text-small o-20">Friday 12th May 2017</p> --></p></div>
+                    <div class="pad-sides-2 spacing"><a href="Children page"><h4><?= live($page->nothing, 'words|4')?></h4></a><p><!-- <p class="text-small o-20">Friday 12th May 2017</p> --></p></div>
+                    <div class="pad-sides-2 spacing"><a href="Children page"><h4><?= live($page->nothing, 'words|5')?></h4></a><p><!-- <p class="text-small o-20">Friday 12th May 2017</p> --></p></div>
+                    <div class="pad-sides-2 spacing"><a href="Children page"><h4><?= live($page->nothing, 'words|4')?></h4></a><p><!-- <p class="text-small o-20">Friday 12th May 2017</p> --></p></div>
             </grid>
         </div>
 <hr/>
@@ -102,13 +105,39 @@
 
     <aside large="3" class="spacing">
 
-            <div class="border pad-sides-2 pad-verticals-1 spacing">
-                <h2 class="text-align-center push-bottom-2">Relevant Panels</h2>
+    <div class="bg-2 pad-sides-2 pad-verticals-1 spacing">
+                <h2 class="text-align-center push-bottom-2">Contact form</h2>
                 <p><?= live($page->whatweoffer, 'sentences|1')?></p>
-                <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><a href="/templates/single-individual-panel.php">Future Beer Group</a></div>
-                <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><a href="/templates/single-individual-panel.php">Environment, Health &amp; Safety Panel</a></div>
-                <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><a href="/templates/single-individual-panel.php">Duty Operations Panel</a></div>
+                <fieldset>
 
+                    <label for="edit-title">Name</label>
+
+                    <input type="text" id="edit-title">
+
+                </fieldset>
+                <fieldset>
+
+                    <label for="edit-title">Email</label>
+
+                    <input type="text" id="edit-title">
+
+                </fieldset>
+                <fieldset>
+
+                    <label for="edit-title">Pub name</label>
+
+                    <input type="text" id="edit-title">
+
+                </fieldset>
+                <fieldset>
+
+                    <label for="edit-title">Postcode</label>
+
+                    <input type="text" id="edit-title">
+
+                </fieldset>
+
+                <button>Submit</button>
 
             </div>
     </aside>

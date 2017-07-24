@@ -3,14 +3,14 @@
             <div class="blockquote" small="hide"><i>The voice of beer and pub industry</i></div>
             <div large="hide"></div>
             <div class="text-align-center">
-                <a href="#" large="hide"><img class="height-3" src="assets/logo.jpg" /></a>
-                <a href="#" small-medium="hide"><img class="height-3" src="assets/logo.jpg" /></a>
+                <a href="/templates/index.php" large="hide"><img class="height-3" src="assets/logo.jpg" /></a>
+                <a href="/templates/index.php" small-medium="hide"><img class="height-3" src="assets/logo.jpg" /></a>
             </div>
             <flex align="centre">
                 <flex align="centre">
                     <button type="submit"><icon search></icon></button>
                 </flex>
-                <a href="#" class="button push-left-2" small="hide"><icon lock></icon> <span small="hide" large="hide">James</span></a>
+                <a href="/templates/members-area.php" class="button push-left-2" small="hide"><icon lock></icon> <span small="hide" large="hide">James</span></a>
             </flex>
 
     </flex>
@@ -137,7 +137,7 @@
                         </div>
                     </group>
                 <button type="button" class="<?php if ($active == 'campaigns') echo ' is--active'; ?>">Shop</button>
-                <button type="button" class="<?php if ($active == 'policy') echo ' is--active'; ?>"><icon lock></icon> Members area</button>
+                <a href="/templates/members-area.php"><button type="button" class="<?php if ($active == 'policy') echo ' is--active'; ?>"><icon lock></icon> Members area</button></a>
 
             </div>
 

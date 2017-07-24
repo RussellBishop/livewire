@@ -38,70 +38,70 @@
                 array (
 
                     'title'         =>  'Tax, trade and the economy',
-                    'link'          =>  '/templates/single-policy.php',
-
+                    'link'          =>  '/templates/policy-sub.php',
+ 
                 ),
 
                 array (
 
                     'title'         =>  'Licensing',
-                    'link'          =>  '/templates/single-policy.php',
+                    'link'          =>  '/templates/policy-sub.php',
 
                 ),
 
                 array (
 
                     'title'         =>  'Responsibility',
-                    'link'          =>  '/templates/single-policy.php',
+                    'link'          =>  '/templates/policy-sub.php',
 
                 ),
 
                 array (
 
                     'title'         =>  'People',
-                    'link'          =>  '/templates/single-policy.php',
+                    'link'          =>  '/templates/policy-sub.php',
 
                 ),
 
                 array (
 
                     'title'         =>  'Brexit',
-                    'link'          =>  '/templates/single-policy.php',
+                    'link'          =>  '/templates/policy-sub.php',
 
                 ),
 
                 array (
 
                     'title'         =>  'Supply chain',
-                    'link'          =>  '/templates/single-policy.php',
+                    'link'          =>  '/templates/policy-sub.php',
 
                 ),
 
                 array (
 
                     'title'         =>  'Property and planning',
-                    'link'          =>  '/templates/single-policy.php',
+                    'link'          =>  '/templates/policy-sub.php',
 
                 ),
 
                 array (
 
                     'title'         =>  'Environment, Health and safety',
-                    'link'          =>  '/templates/single-policy.php',
+                    'link'          =>  '/templates/policy-sub.php',
 
                 ),
 
                 array (
 
                     'title'         =>  'Product assurance and food safety',
-                    'link'          =>  '/templates/single-policy.php',
+                    'link'          =>  '/templates/policy-sub.php',
 
                 ),
 
                 array (
 
                     'title'         =>  'Exports',
-                    'link'          =>  '/templates/single-policy.php',
+                    'link'          =>  '/templates/policy-sub.php',
 
                 ),
 
