@@ -27,7 +27,7 @@
 
 <div class="contained pad-verticals-2 spacing-3">
 
-    <grid sizes="12|6|6">
+    <grid sizes="12|12|12" class="spacing">
 
         <grid sizes="12|12|6" class="border push-bottom-1" style="margin-bottom: 0;">
 
@@ -58,16 +58,16 @@
                 <div class="spacing">
 
                     <h1>Creating Change</h1>
-
-                    <p><a href="#">What else has the Union done for you?</a></p>
-                    <p>Not enough? <a href="#">Suggest another change</a></p>
+                    <h3><a href="#"><i>&ldquo;We've worked with UCL to ensure international student fees remain the same throughout their entire degree.&rdquo;</i></a></h3>
+                    
 
                 </div>
 
             </grid>
 
             <grid justify="centre" direction="column" class="bg-3 relative pad" style="margin-bottom: 0;">
-                <h3><a href="#"><i>&ldquo;We've worked with UCL to ensure international student fees remain the same throughout their entire degree.&rdquo;</i></a></h3>
+                <p><a href="#">What else has the Union done for you?</a></p>
+                <p>Not enough? <a href="#">Suggest another change</a></p>
             </grid>
 
         </grid>
