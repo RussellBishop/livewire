@@ -47,7 +47,7 @@
         <div class="push-bottom-4">
             <flex justify="between" class="push-bottom-2">
                 <h2>News</h2>
-                <button type="button">See all news</button>
+                <a href="/templates/news-index.php"> <button type="button">See all news</button></a>
             </flex>
 
             <grid sizes="12|4|4">

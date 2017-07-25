@@ -18,7 +18,7 @@
 
     <div class="z--1 o-20 text-align-center"><h1>Beer Duty</h1></div>
     <hr/>
-    <div class="bg-2 pad-sides-12 pad-verticals-4">
+    <div class="bg-2 pad-sides-6 pad-verticals-4">
         <p>
             Beer duty is the tax on producing and selling beer. The UK has one of the highest rates of duty in the world and the current rate is 12 times higher than that in Germany. Tax increases put jobs and investment in the industry at risk and this is why we campaign for the rate to be reduced in line with other major brewing nations. 
         </p>
@@ -44,7 +44,7 @@
         <div class="push-bottom-4">
             <flex justify="between" class="push-bottom-2">
                 <h2>News</h2>
-                <button type="button">See all news</button>
+                <a href="/templates/news-index.php"><button type="button">See all news</button></a>
             </flex>
 
             <grid sizes="12|4|4">

@@ -18,7 +18,7 @@
 
     <div class="z--1 o-20 text-align-center"><h1>Members Area</h1></div>
     <hr/>
-    <div class="bg-2 pad-sides-12 pad-verticals-4">
+    <div class="bg-2 pad-sides-6 pad-verticals-4">
         <p>
             <?= live($page->introduction, 'paragraphs|1')?> 
         </p>
@@ -103,7 +103,7 @@
         <div class="push-bottom-4">
             <flex justify="between" class="push-bottom-2">
                 <h2>News</h2>
-                <button type="button">See all news</button>
+                <a href="/templates/news-index-member.php"><button type="button">See all news</button></a>
             </flex>
 
             <grid sizes="12|4|4">
@@ -205,9 +205,9 @@
 
     <aside large="3" class="spacing">
 
-            <div class="bg-2 pad-sides-1 pad-verticals-1 spacing">
-                <button class="med">Technical Circulars</button>
-                <button class="med">Members Briefings</button>
+            <div class="bg-2 pad-sides-1 pad-verticals-1 spacing text-align-center">
+                <div class="push-bottom-1"><a href="/templates/single-technical-circular.php"><button class="med">Technical Circulars</button></a></div>
+                <div class="push-bottom-1"><a href="/templates/member-briefings.php"><button class="med">Members Briefings</button></a></div>
 
 
 

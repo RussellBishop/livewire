@@ -18,7 +18,7 @@
 
     <div class="z--1 o-20 text-align-center"><h1>Future Beer Group</h1></div>
     <hr/>
-    <div class="bg-2 pad-sides-12 pad-verticals-4">
+    <div class="bg-2 pad-sides-6 pad-verticals-4">
         <p>
             The co-ordinating policy body for all issues affecting the brewing industry and oversees delivery of beer element of BBPA strategy and key campaigns such as beer duty. All BBPA beer-related committees report into to FBG for endorsement of activity undertaken, policy development and pro-active industry initiatives / good practice guidance developed  
         </p>
@@ -27,66 +27,9 @@
 
 <grid class="contained pad-verticals-2">
 
-    <article large="8" class="spacing max-images">
-
-        <div class="push-bottom-4">
-
-            <flex justify="between" class="push-bottom-2">
-                <h2>Agendas</h2>
-                <button type="button">See all agendas</button>
-            </flex>
-
-            <grid sizes="12|4|4">
-                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><flex justify="between"><a href="Children page"><h4><?= live($page->nothing, 'words|4')?></h4></a><icon download></icon></flex><p></p></div>
-                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><flex justify="between"><a href="Children page"><h4><?= live($page->nothing, 'words|5')?></h4></a><icon download></icon></flex><p></p></div>
-                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><flex justify="between"><a href="Children page"><h4><?= live($page->nothing, 'words|4')?></h4></a><icon download></icon></flex><p></p></div>
-            </grid>
-
-        </div>
-
-        <hr/>
-
-        <div class="push-bottom-4">
-
-            <flex justify="between" class="push-bottom-2">
-                <h2>Minutes</h2>
-                <button type="button">See all minutes</button>
-            </flex>
-
-            <grid sizes="12|4|4">
-                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><flex justify="between"><a href="Children page"><h4><?= live($page->nothing, 'words|4')?></h4></a><icon download></icon></flex><p></p></div>
-                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><flex justify="between"><a href="Children page"><h4><?= live($page->nothing, 'words|5')?></h4></a><icon download></icon></flex><p></p></div>
-                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><flex justify="between"><a href="Children page"><h4><?= live($page->nothing, 'words|4')?></h4></a><icon download></icon></flex><p></p></div>
-            </grid>
-        </div>
-        <hr/>
-
-        <div class="push-bottom-4">
-        
-            <flex justify="between" class="push-bottom-2">
-                <h2>Other relevant documents</h2>
-                <button type="button">See all documents</button>
-            </flex>
-
-            <grid sizes="12|4|4">
-                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><flex justify="between"><a href="Children page"><h4><?= live($page->nothing, 'words|4')?></h4></a><icon download></icon></flex><p></p></div>
-                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><flex justify="between"><a href="Children page"><h4><?= live($page->nothing, 'words|5')?></h4></a><icon download></icon></flex><p></p></div>
-                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><flex justify="between"><a href="Children page"><h4><?= live($page->nothing, 'words|4')?></h4></a><icon download></icon></flex><p></p></div>
-            </grid>
-        </div>
-
-        <div class="push-bottom-4">
-        
-            <flex justify="between" class="push-bottom-2">
-                <h2>Next meetings</h2>
-                <button type="button">See all meetings</button>
-            </flex>
-
-            <grid sizes="6|4|4">
-                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><h2>24th August</h2><p>Friday</p><p class="text-align-right pad-top-3">1.30 PM</p></div>
-                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><h2>26th November</h2><p>Friday</p><p class="text-align-right pad-top-3">1.30 PM</p></div> 
-                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><h2>28th December</h2><p>Friday</p><p class="text-align-right pad-top-3">1.30 PM</p></div>
-            </grid>
+    <article large="9" small="12" class="spacing max-images">
+        <div class="bg-2 text-align-center pad-verticals-10">
+            <a href="/templates/single-individual-panel-member.php"><button class="med">Logged in user <icon lock></icon></button></a>
         </div>
 
     </article>

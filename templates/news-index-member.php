@@ -80,6 +80,7 @@
 
                 ?>
             </div>
+  
            </div>
 
             <div  class="spacing">
@@ -109,7 +110,49 @@
 
                 );
 
-                for ($x = 1; $x <= 9; $x++) {
+                for ($x = 1; $x <= 2; $x++) {
+
+                    include('blocks/newsindexcard.php');
+
+                }
+
+            ?>
+                        <?php
+
+                $post = array (
+
+
+                            'title'         =>  'Tower Hamlets postpones late-night levy - BBPA comments',
+                            'image'         =>  'http://lorempixel.com/1000/750/nightlife/',
+                            'link'          =>  '/templates/single-news.php',
+                            'info'   =>  'The British Beer & Pub Association has responded the London Mayor Sadiq Khan’s Culture and the night-time economy consultation…',
+
+
+
+                );
+
+                for ($x = 1; $x <= 5; $x++) {
+
+                    include('blocks/newsindexcard-member.php');
+
+                }
+
+            ?>
+                        <?php
+
+                $post = array (
+
+
+                            'title'         =>  'Tower Hamlets postpones late-night levy - BBPA comments',
+                            'image'         =>  'http://lorempixel.com/1000/750/nightlife/',
+                            'link'          =>  '/templates/single-news.php',
+                            'info'   =>  'The British Beer & Pub Association has responded the London Mayor Sadiq Khan’s Culture and the night-time economy consultation…',
+
+
+
+                );
+
+                for ($x = 1; $x <= 2; $x++) {
 
                     include('blocks/newsindexcard.php');
 
