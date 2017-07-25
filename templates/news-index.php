@@ -93,6 +93,7 @@
     <hr/>
 <grid>
     <div large="9">
+    <div class="bg-2 push-bottom-1 pad-verticals-1"><flex justify="between"><div class="pad-sides-1">Filter content:</div><flex><div class="pad-sides-1"><button class="pad-sides-1">News</button></div><div class="pad-sides-1"><button class="pad-sides-1">Blog</button></div></flex><div> </div></flex></div>
         <grid sizes="12|6|4" class="push-bottom-3">
 
             <?php

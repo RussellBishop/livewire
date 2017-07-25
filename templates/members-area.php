@@ -157,7 +157,7 @@
             </grid>
         </div> 
 
-        <div class="push-bottom-4">
+<!--         <div class="push-bottom-4">
 
             <flex justify="between" class="push-bottom-2">
                 <h2>Minutes</h2>
@@ -184,7 +184,7 @@
                     <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><flex justify="between"><a href="Children page"><h4><?= live($page->nothing, 'words|5')?></h4></a><icon download></icon></flex><p></p></div>
                     <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><flex justify="between"><a href="Children page"><h4><?= live($page->nothing, 'words|4')?></h4></a><icon download></icon></flex><p></p></div>
             </grid>
-        </div>
+        </div> -->
 
         <div class="push-bottom-4">
         
@@ -206,7 +206,8 @@
     <aside large="3" class="spacing">
 
             <div class="bg-2 pad-sides-1 pad-verticals-1 spacing">
-                <h2 class="text-align-center push-bottom-2">Technical Circulars</h2>
+                <button class="med">Technical Circulars</button>
+                <button class="med">Members Briefings</button>
 
 
 

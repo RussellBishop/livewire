@@ -25,9 +25,11 @@
         </article>
     
         <aside small="hide" large="3">
-        <div class="bg-2 text-align-center pad-verticals-5">
-            <h2 class="pad-sides-1">Check out our Campaigns</h2>
-            <div class="text-align-center pad-sides-1 pad-verticals-1"><button>See all</button></div>
+        <div class="bg-2 pad-verticals-2">
+            <div class="text-align-center push-bottom-4"><a href="/templates/members-area.php"><button>Access members area <icon lock></icon></button></a></div>
+            <div class="contained"><hr/></div>
+            <h2 class="pad-sides-1 text-align-center">Campaigns</h2>
+            <div class="text-align-center pad-sides-1 pad-verticals-1"><button>See our campaigns</button></div>
             </div>
         </aside>
     </grid>
@@ -99,7 +101,7 @@
     <div class="bg-2 text-align-center pad-verticals-10"><h2>Policies Area</h2></div>
     <div class="bg-2 text-align-center pad-verticals-10"><h2>Campaigns</h2></div>
     <div class="bg-2 text-align-center pad-verticals-10"><h2>Stats Area</h2></div>
-    <div class="bg-2 text-align-center pad-verticals-10"><h2>Members Area</h2><div class="text-align-center pad-sides-1 pad-verticals-1"><a href="/templates/members-area.php"><button>Access members area <icon lock></icon></button></a></div></div>
+    <div class="bg-2 text-align-center pad-verticals-10"><h2>BBPA Members Area</h2><div class="text-align-center pad-sides-1 pad-verticals-1"></div></div>
     </grid>
 </div>
 

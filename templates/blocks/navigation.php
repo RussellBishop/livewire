@@ -21,7 +21,7 @@
 
         <flex grow="1" small-medium="hide" class="pad-sides-2" style="flex-grow: 1; max-width: 1140px;">
 
-            <a href="#" data-group="nav" class="<?php if ($active == 'whatson') echo ' is--active'; ?>">News</a>
+            <a href="/templates/news-index.php" data-group="nav" class="<?php if ($active == 'whatson') echo ' is--active'; ?>">News</a>
 
             <a href="#" data-target="about-subnav-large" data-action="toggle" data-group="nav" class="<?php if ($active == 'about') echo ' is--active'; ?>">About <icon arrow-down></icon></a>
 
@@ -99,7 +99,7 @@
         <grid data-id="nav" class="nav">
 
             <div small-medium="11" class="subnav">
-                <button type="button" class="<?php if ($active == 'home') echo ' is--active'; ?>">News</button>
+                <a href="/templates/news-index.php"><button type="button" class="<?php if ($active == 'home') echo ' is--active'; ?>">News</button></a>
 
                 <button data-target="about-subnav" data-action="toggle" type="button" class="<?php if ($active == 'about') echo ' is--active'; ?>">About <icon arrow-down></icon></button>
 

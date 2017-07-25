@@ -22,6 +22,7 @@
         </div>
         <p><?=$post['info'];?></p>
         <button>Read more</button>
+        <hr/>
     </div>
 
 </div>

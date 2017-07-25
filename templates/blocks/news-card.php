@@ -1,4 +1,4 @@
-<div class="border">
+<div class="">
 
     <a href="<?=$post['link'];?>" class="block bg-3 cover ratio-50" style="background-image: url('<?=$post['image'];?>');"></a>
 
