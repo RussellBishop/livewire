@@ -1,6 +1,6 @@
 <?php
 
-    $title = 'Single Policy Page';
+    $title = 'Individual Panel - Member';
 
     require '../src/src.php';
 
@@ -28,6 +28,21 @@
 <grid class="contained pad-verticals-2">
 
     <article large="8" class="spacing max-images">
+
+        <div class="push-bottom-4">
+        
+            <flex justify="between" class="push-bottom-2">
+                <h2>Next meetings</h2>
+                <button type="button">See all meetings</button>
+            </flex>
+
+            <grid sizes="6|4|4">
+                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><h2>24th August</h2><p>Friday</p><p class="text-align-right pad-top-3">1.30 PM</p></div>
+                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><h2>26th November</h2><p>Friday</p><p class="text-align-right pad-top-3">1.30 PM</p></div> 
+                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><h2>28th December</h2><p>Friday</p><p class="text-align-right pad-top-3">1.30 PM</p></div>
+            </grid>
+        </div>
+        <hr/>
 
         <div class="push-bottom-4">
 
@@ -75,19 +90,7 @@
             </grid>
         </div>
 
-        <div class="push-bottom-4">
-        
-            <flex justify="between" class="push-bottom-2">
-                <h2>Next meetings</h2>
-                <button type="button">See all meetings</button>
-            </flex>
 
-            <grid sizes="6|4|4">
-                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><h2>24th August</h2><p>Friday</p><p class="text-align-right pad-top-3">1.30 PM</p></div>
-                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><h2>26th November</h2><p>Friday</p><p class="text-align-right pad-top-3">1.30 PM</p></div> 
-                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><h2>28th December</h2><p>Friday</p><p class="text-align-right pad-top-3">1.30 PM</p></div>
-            </grid>
-        </div>
 
     </article>
 

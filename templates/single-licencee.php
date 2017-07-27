@@ -16,31 +16,26 @@
 
 <div class="bg-0 contained pad-top-7 pad-bottom-3 relative z-1">
 
-    <div class="z--1 o-20 text-align-center"><h1>Licensee single</h1></div>
+    <div class="z--1 o-20 text-align-center"><h1>Pub people</h1></div>
     <hr/>
-    <div class="bg-2 pad-sides-12 pad-verticals-4">
-        <p>
-            <?= live($page->introduction, 'paragraphs|2')?>
-        </p>
-    </div>
 </div>
 
 <grid class="contained pad-verticals-2">
 
-    <article large="8" class="spacing max-images">
+    <article large="9" class="spacing max-images">
         <div class="push-bottom-4">
             <flex justify="between" class="push-bottom-2">
-                <h2>Guidance</h2>
+                <h2>Guidance for licensees on staff, wages and other employment obligations</h2>
                 <button type="button">See all links</button>
             </flex>
 
             <grid sizes="12|12|12">
-                    <div class="pad-sides-2 spacing"><a href="Children page"><h4><?= live($page->nothing, 'words|4')?></h4></a><p><!-- <p class="text-small o-20">Friday 12th May 2017</p> --></p></div>
-                    <div class="pad-sides-2 spacing"><a href="Children page"><h4><?= live($page->nothing, 'words|5')?></h4></a><p><!-- <p class="text-small o-20">Friday 12th May 2017</p> --></p></div>
-                    <div class="pad-sides-2 spacing"><a href="Children page"><h4><?= live($page->nothing, 'words|4')?></h4></a><p><!-- <p class="text-small o-20">Friday 12th May 2017</p> --></p></div>
-                    <div class="pad-sides-2 spacing"><a href="Children page"><h4><?= live($page->nothing, 'words|4')?></h4></a><p><!-- <p class="text-small o-20">Friday 12th May 2017</p> --></p></div>
-                    <div class="pad-sides-2 spacing"><a href="Children page"><h4><?= live($page->nothing, 'words|5')?></h4></a><p><!-- <p class="text-small o-20">Friday 12th May 2017</p> --></p></div>
-                    <div class="pad-sides-2 spacing"><a href="Children page"><h4><?= live($page->nothing, 'words|4')?></h4></a><p><!-- <p class="text-small o-20">Friday 12th May 2017</p> --></p></div>
+                    <div class="pad-sides-2 spacing"><a href="Children page"><h4><?= live($page->nothing, 'words|4')?> <icon download></icon></h4></a><p><!-- <p class="text-small o-20">Friday 12th May 2017</p> --></p></div>
+                    <div class="pad-sides-2 spacing"><a href="Children page"><h4><?= live($page->nothing, 'words|5')?> <icon download></icon></h4></a><p><!-- <p class="text-small o-20">Friday 12th May 2017</p> --></p></div>
+                    <div class="pad-sides-2 spacing"><a href="Children page"><h4><?= live($page->nothing, 'words|4')?> <icon download></icon></h4></a><p><!-- <p class="text-small o-20">Friday 12th May 2017</p> --></p></div>
+                    <div class="pad-sides-2 spacing"><a href="Children page"><h4><?= live($page->nothing, 'words|4')?> <icon download></icon></h4></a><p><!-- <p class="text-small o-20">Friday 12th May 2017</p> --></p></div>
+                    <div class="pad-sides-2 spacing"><a href="Children page"><h4><?= live($page->nothing, 'words|5')?> <icon download></icon></h4></a><p><!-- <p class="text-small o-20">Friday 12th May 2017</p> --></p></div>
+                    <div class="pad-sides-2 spacing"><a href="Children page"><h4><?= live($page->nothing, 'words|4')?> <icon download></icon></h4></a><p><!-- <p class="text-small o-20">Friday 12th May 2017</p> --></p></div>
             </grid>
         </div>
 <hr/>

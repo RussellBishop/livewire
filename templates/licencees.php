@@ -28,7 +28,7 @@
 
 <grid class="contained pad-verticals-2">
 
-    <article large="8" class="spacing max-images">
+    <article large="9" class="spacing max-images">
 <div class="spacing">
 
     <grid sizes="12|6|4" class="push-bottom-3">
@@ -39,16 +39,57 @@
 
                 array (
 
-                    'title'         =>  'Licensee',
+                    'title'         =>  'Pub people',
                     'link'          =>  '/templates/single-licencee.php',
 
                 ),
 
+                array (
+
+                    'title'         =>  'Licensing and regulation',
+                    'link'          =>  '/templates/single-licencee.php',
+
+                ),
+
+
+                array (
+
+                    'title'         =>  'Health and safety',
+                    'link'          =>  '/templates/single-licencee.php',
+
+                ),
+
+                array (
+
+                    'title'         =>  'Food',
+                    'link'          =>  '/templates/single-licencee.php',
+
+                ),
+
+                array (
+
+                    'title'         =>  'Property and planning',
+                    'link'          =>  '/templates/single-licencee.php',
+
+                ),
+
+                array (
+
+                    'title'         =>  'Responsibility',
+                    'link'          =>  '/templates/single-licencee.php',
+
+                ),
+                array (
+
+                    'title'         =>  'Cellar management',
+                    'link'          =>  '/templates/single-licencee.php',
+
+                ),
             );
 
             $postsCount = count($posts);
 
-            for ($x = 0; $x < 9; $x++) {
+            for ($x = 0; $x < 7; $x++) {
 
                 $post = $posts[$x % $postsCount];
 

@@ -20,7 +20,7 @@
     <hr/>
     <div class="bg-2 pad-verticals-4 pad-sides-6">
         <h3>
-            <?= live($page->introduction, 'paragraphs|2')?>
+            As the voice of the UK’s brewing and pub sector, the BBPA works across a range of substantial policy areas to research, advise and influence on behalf of its members.
         </h3>
     </div>
 </div>
@@ -39,6 +39,7 @@
 
                     'title'         =>  'Tax, trade and the economy',
                     'link'          =>  '/templates/policy-sub.php',
+                    'image'         =>  'assets/tax.jpg'
  
                 ),
 
@@ -46,6 +47,7 @@
 
                     'title'         =>  'Licensing',
                     'link'          =>  '/templates/policy-sub.php',
+                    'image'         =>  'assets/licensing.jpg'
 
                 ),
 
@@ -53,6 +55,7 @@
 
                     'title'         =>  'Responsibility',
                     'link'          =>  '/templates/policy-sub.php',
+                    'image'         =>  'assets/respon.jpg'
 
                 ),
 
@@ -60,6 +63,7 @@
 
                     'title'         =>  'People',
                     'link'          =>  '/templates/policy-sub.php',
+                    'image'         =>  'assets/people.jpg'
 
                 ),
 
@@ -67,6 +71,7 @@
 
                     'title'         =>  'Brexit',
                     'link'          =>  '/templates/policy-sub.php',
+                    'image'         =>  'assets/brexit.jpg'
 
                 ),
 
@@ -74,6 +79,7 @@
 
                     'title'         =>  'Supply chain',
                     'link'          =>  '/templates/policy-sub.php',
+                    'image'         =>  'assets/supply.jpg'
 
                 ),
 
@@ -81,6 +87,7 @@
 
                     'title'         =>  'Property and planning',
                     'link'          =>  '/templates/policy-sub.php',
+                    'image'         =>  'assets/property.jpg'
 
                 ),
 
@@ -88,6 +95,7 @@
 
                     'title'         =>  'Environment, Health and safety',
                     'link'          =>  '/templates/policy-sub.php',
+                    'image'         =>  'assets/environment.jpg'
 
                 ),
 
@@ -95,6 +103,7 @@
 
                     'title'         =>  'Product assurance and food safety',
                     'link'          =>  '/templates/policy-sub.php',
+                    'image'         =>  'assets/food.jpg'
 
                 ),
 
@@ -102,6 +111,7 @@
 
                     'title'         =>  'Exports',
                     'link'          =>  '/templates/policy-sub.php',
+                    'image'         =>  'assets/exports.jpg'
 
                 ),
 
@@ -113,7 +123,7 @@
 
                 $post = $posts[$x % $postsCount];
 
-                include('blocks/licencees-card.php');
+                include('blocks/policy-card.php');
 
             }
 

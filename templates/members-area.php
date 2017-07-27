@@ -27,11 +27,11 @@
 
 <grid class="contained pad-verticals-2">
 
-    <article large="8" class="spacing max-images">
+    <article large="9" class="spacing max-images">
 
         <div class="push-bottom-4">
 
-                <h2>Panels</h2>
+                <h2 class="push-bottom-2">Panels</h2>
 
 <grid sizes="12|6|4" class="push-bottom-3">
 
@@ -41,43 +41,64 @@
 
                 array (
 
-                    'title'         =>  'Environment, Health & Safety Panel',
-                    'link'          =>  '/templates/policy-sub.php',
+                    'title'         =>  'Future Beer Group',
+                    'link'          =>  '/templates/single-individual-panel-member.php',
  
                 ),
 
                 array (
 
-                    'title'         =>  'Export Delivery Group',
-                    'link'          =>  '/templates/policy-sub.php',
-
-                ),
-
-                array (
-
-                    'title'         =>  'Industry Statistics Panel',
-                    'link'          =>  '/templates/policy-sub.php',
-
-                ),
-
-                array (
-
-                    'title'         =>  'Small Brewer Relief WG',
-                    'link'          =>  '/templates/policy-sub.php',
-
-                ),
-
-                array (
-
-                    'title'         =>  'Logistics Health and Safety Panel',
-                    'link'          =>  '/templates/policy-sub.php',
+                    'title'         =>  'Environment, Health & Safety Panel',
+                    'link'          =>  '/templates/single-individual-panel-member.php',
 
                 ),
 
                 array (
 
                     'title'         =>  'Duty Operations Panel',
-                    'link'          =>  '/templates/policy-sub.php',
+                    'link'          =>  '/templates/single-individual-panel-member.php',
+
+                ),
+
+                array (
+
+                    'title'         =>  'Export Delivery Group',
+                    'link'          =>  '/templates/single-individual-panel-member.php',
+
+                ),
+
+                array (
+
+                    'title'         =>  'Returnable Assets Management Panel',
+                    'link'          =>  '/templates/single-individual-panel-member.php',
+
+                ),
+
+                array (
+
+                    'title'         =>  'Beer Quality & Safety Panel',
+                    'link'          =>  '/templates/single-individual-panel-member.php',
+
+                ),
+
+                array (
+
+                    'title'         =>  'Industry Statistics Panel',
+                    'link'          =>  '/templates/single-individual-panel-member.php',
+
+                ),
+
+                array (
+
+                    'title'         =>  'Small Brewer Relief WG',
+                    'link'          =>  '/templates/single-individual-panel-member.php',
+
+                ),
+
+                array (
+
+                    'title'         =>  'Logistics Health and Safety Panel',
+                    'link'          =>  '/templates/single-individual-panel-member.php',
 
                 ),
 
@@ -85,7 +106,7 @@
 
             $postsCount = count($posts);
 
-            for ($x = 0; $x < 6; $x++) {
+            for ($x = 0; $x < 9; $x++) {
 
                 $post = $posts[$x % $postsCount];
 
@@ -99,6 +120,20 @@
 
         </div>
 
+        <hr/>
+        <div class="push-bottom-4">
+        
+            <flex justify="between" class="push-bottom-2">
+                <h2>Next meetings</h2>
+                <button type="button">See all meetings</button>
+            </flex>
+
+            <grid sizes="6|4|4">
+                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><h2>24th August</h2><p>Friday</p><p class="text-align-right pad-top-3">1.30 PM</p></div>
+                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><h2>26th November</h2><p>Friday</p><p class="text-align-right pad-top-3">1.30 PM</p></div>
+                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><h2>28th December</h2><p>Friday</p><p class="text-align-right pad-top-3">1.30 PM</p></div>
+            </grid>
+        </div>
         <hr/>
         <div class="push-bottom-4">
             <flex justify="between" class="push-bottom-2">
@@ -186,19 +221,7 @@
             </grid>
         </div> -->
 
-        <div class="push-bottom-4">
-        
-            <flex justify="between" class="push-bottom-2">
-                <h2>Next meetings</h2>
-                <button type="button">See all meetings</button>
-            </flex>
 
-            <grid sizes="6|4|4">
-                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><h2>24th August</h2><p>Friday</p><p class="text-align-right pad-top-3">1.30 PM</p></div>
-                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><h2>26th November</h2><p>Friday</p><p class="text-align-right pad-top-3">1.30 PM</p></div>
-                    <div class="bg-3 pad-sides-2 pad-verticals-1 spacing"><h2>28th December</h2><p>Friday</p><p class="text-align-right pad-top-3">1.30 PM</p></div>
-            </grid>
-        </div>
 
 
     </article>
