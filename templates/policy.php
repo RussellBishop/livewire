@@ -110,7 +110,7 @@
                 array (
 
                     'title'         =>  'Exports',
-                    'link'          =>  '/templates/policy-sub.php',
+                    'link'          =>  '/templates/exports.php',
                     'image'         =>  'assets/exports.jpg'
 
                 ),

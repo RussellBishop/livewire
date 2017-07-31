@@ -20,7 +20,7 @@
     <hr/>
     <div class="bg-2 pad-verticals-4 pad-sides-6">
         <h3>
-            <?= live($page->introduction, 'paragraphs|1')?>
+            These are all issues that are important to the beer and pub industry and this section explains taxes and duties including hot topics like beer duty and business rates. You’ll find out what we’re campaigning about and how we support measures to prevent fraud.
         </h3>
     </div>
 </div>

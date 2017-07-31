@@ -29,7 +29,7 @@
 
             <a href="#" data-target="members-subnav-large" data-action="toggle" data-group="nav" class="<?php if ($active == 'members') echo ' is--active'; ?>">Members <icon arrow-down></icon></a>
 
-            <a href="#" data-group="nav" class="<?php if ($active == 'campaigns') echo ' is--active'; ?>">Campaigns</a>
+            <a href="/templates/campaigning.php" data-group="nav" class="<?php if ($active == 'campaigns') echo ' is--active'; ?>">Campaigning</a>
 
             <a href="/templates/policy.php" data-group="nav" class="<?php if ($active == 'policy') echo ' is--active'; ?>">Policy</a>
 
@@ -125,7 +125,7 @@
                         </div>
                     </group>
 
-                <button type="button" class="<?php if ($active == 'campaigns') echo ' is--active'; ?>">Campaigns</button>
+                <a href="/templates/campaigning.php"><button type="button" class="<?php if ($active == 'campaigns') echo ' is--active'; ?>">Campaigning</button></a>
 
                 <a href="/templates/policy.php"><button type="button" class="<?php if ($active == 'policy') echo ' is--active'; ?>">Policy</button></a>
 
