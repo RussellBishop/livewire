@@ -20,7 +20,7 @@
     <hr/>
     <div class="bg-2 pad-verticals-4 pad-sides-6">
         <h3>
-            These are all issues that are important to the beer and pub industry and this section explains taxes and duties including hot topics like beer duty and business rates. You’ll find out what we’re campaigning about and how we support measures to prevent fraud.
+            From taxes and duties to business rates and tariffs, there are a host of economic factors that impact on the competitiveness of the sector. Find out why, and how we campaign to help UK brewers and pub companies, in this section.
         </h3>
     </div>
 </div>

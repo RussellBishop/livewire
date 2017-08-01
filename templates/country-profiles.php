@@ -1,6 +1,6 @@
 <?php
 
-    $title = 'Exports';
+    $title = 'Country profiles';
 
     require '../src/src.php';
 
@@ -16,7 +16,7 @@
 
 <div class="bg-0 contained pad-top-7 pad-bottom-3 relative z-1">
 
-    <div class="z--1 o-20 text-align-center"><h1>Exports</h1></div>
+    <div class="z--1 o-20 text-align-center"><h1>Country profiles</h1></div>
     <hr/>
     <div class="bg-2 pad-verticals-4 pad-sides-6">
         <h3>
@@ -37,38 +37,41 @@
 
                 array (
 
-                    'title'         =>  'Country profiles',
-                    'link'          =>  '/templates/country-profiles.php',
-                    'image'         =>  '#'
+                    'title'         =>  'USA',
+                    'link'          =>  '/templates/country-single.php',
  
                 ),
 
                 array (
 
-                    'title'         =>  'Best practice guides',
-                    'link'          =>  '/templates/best-practices.php',
-                    'image'         =>  '#'
+                    'title'         =>  'China',
+                    'link'          =>  '/templates/country-single.php',
 
                 ),
 
                 array (
 
-                    'title'         =>  'Showcase',
-                    'link'          =>  '/templates/showcase.php',
-                    'image'         =>  '#'
+                    'title'         =>  'Belgium',
+                    'link'          =>  '/templates/country-single.php',
 
                 ),
 
+                array (
+
+                    'title'         =>  'Germany',
+                    'link'          =>  '/templates/country-single.php',
+
+                ),
 
             );
 
             $postsCount = count($posts);
 
-            for ($x = 0; $x < 3; $x++) {
+            for ($x = 0; $x < 6; $x++) {
 
                 $post = $posts[$x % $postsCount];
 
-                include('blocks/policy-card.php');
+                include('blocks/licencees-card.php');
 
             }
 

@@ -70,7 +70,7 @@
                 array (
 
                     'title'         =>  'Brexit',
-                    'link'          =>  '/templates/policy-sub.php',
+                    'link'          =>  '/templates/brexit.php',
                     'image'         =>  'assets/brexit.jpg'
 
                 ),

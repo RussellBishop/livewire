@@ -35,7 +35,7 @@
 
             <a href="#" data-target="stats-subnav-large" data-action="toggle" data-group="nav" class="<?php if ($active == 'helpandadvice') echo ' is--active'; ?>">Stats <icon arrow-down></icon></a>
 
-            <a href="#" data-group="nav" class="<?php if ($active == 'policy') echo ' is--active'; ?>">Shop</a>
+            <a href="/templates/shop-index.php" data-group="nav" class="<?php if ($active == 'policy') echo ' is--active'; ?>">Shop</a>
         </flex>
         <div></div>
     </flex>
@@ -136,7 +136,7 @@
                             <?php include('blocks/stats-subnav.php'); ?>
                         </div>
                     </group>
-                <button type="button" class="<?php if ($active == 'campaigns') echo ' is--active'; ?>">Shop</button>
+                <a href="/templates/shop-index.php"><button type="button" class="<?php if ($active == 'campaigns') echo ' is--active'; ?>">Shop</button></a>
                 <a href="/templates/members-area.php"><button type="button" class="<?php if ($active == 'policy') echo ' is--active'; ?>"><icon lock></icon> Members area</button></a>
 
             </div>

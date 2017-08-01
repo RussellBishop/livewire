@@ -28,15 +28,15 @@
     <grid>
         <article large="9">
             <div>
-                <h2 class="text-align-center push-bottom-4">Benefits of BBPA membership:</h2>
-                <grid sizes="12|4|4">
-                    <div><h4 class="push-bottom-1">BBPA panel membership</h4>the BBPA facilitates a range of membership panels to set the strategic direction of our policy, communications and campaigns functions</div>
-                    <div><h4 class="push-bottom-1">Insights, briefings and updates</h4>the BBPA regularly updates members on key issues and provides detailed briefings across all issues impacting upon the sector. You will also receive a daily update on sector issues, a more comprehensive monthly round-up and a regular update from the BBPA CEO</div>
-                    <div><h4 class="push-bottom-1">Events</h4>the BBPA holds a number of events throughout the year. Some are annual, notably the BBPA Dinner and Awards, and the joint BBPA/All-Party Parliamentary Beer Group Christmas reception. Others are organised on an ad-hoc basis to tackle specific sector issues</div>
-                    <div><h4 class="push-bottom-1">Leading industry statistics</h4>as a member, you will receive unrivalled statistics on the beer and pub industry free of charge. This includes the annual BBPA statistics handbook, annual barrelage survey and monthly beer sales volume survey. Further, through our partnership with CGA, you will also have access to key regional trends across the drinks categories</div>
-                    <div><h4 class="push-bottom-1">Access to SUSTAIN</h4>the government rewards companies who meet the targets set out in the CCAs</div>
-                    <div><h4 class="push-bottom-1">Compliance assistance with Climate Change Agreements (CCAs)</h4>the government rewards companies who meet the targets set out in the CCAs</div>
-                    <div><h4 class="push-bottom-1">Ongoing support from the BBPA team</h4>the BBPA team holds specialist industry knowledge over a range of policy, communications and public affairs areas</div>
+                <h2 class="text-align-center push-bottom-4 o-20">Benefits of BBPA membership:</h2><hr/>
+                <grid sizes="12|6|6">
+                    <div><h4 class="push-bottom-1">BBPA panel membership</h4></div><div>the BBPA facilitates a range of membership panels to set the strategic direction of our policy, communications and campaigns functions<hr/></div>
+                    <div><h4 class="push-bottom-1">Insights, briefings and updates</h4></div><div>the BBPA regularly updates members on key issues and provides detailed briefings across all issues impacting upon the sector. You will also receive a daily update on sector issues, a more comprehensive monthly round-up and a regular update from the BBPA CEO<hr/></div>
+                    <div><h4 class="push-bottom-1">Events</h4></div><div>the BBPA holds a number of events throughout the year. Some are annual, notably the BBPA Dinner and Awards, and the joint BBPA/All-Party Parliamentary Beer Group Christmas reception. Others are organised on an ad-hoc basis to tackle specific sector issues<hr/></div>
+                    <div><h4 class="push-bottom-1">Leading industry statistics</h4></div><div>as a member, you will receive unrivalled statistics on the beer and pub industry free of charge. This includes the annual BBPA statistics handbook, annual barrelage survey and monthly beer sales volume survey. Further, through our partnership with CGA, you will also have access to key regional trends across the drinks categories<hr/></div>
+                    <div><h4 class="push-bottom-1">Access to SUSTAIN</h4></div><div>the government rewards companies who meet the targets set out in the CCAs<hr/></div>
+                    <div><h4 class="push-bottom-1">Compliance assistance with Climate Change Agreements (CCAs)</h4></div><div>the government rewards companies who meet the targets set out in the CCAs<hr/></div>
+                    <div><h4 class="push-bottom-1">Ongoing support from the BBPA team</h4></div><div>the BBPA team holds specialist industry knowledge over a range of policy, communications and public affairs areas<hr/></div>
                 </grid>
             </div>    
         </article>

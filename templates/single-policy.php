@@ -27,7 +27,7 @@
 
 <grid class="contained pad-verticals-2">
 
-    <article large="8" class="spacing max-images">
+    <article large="9" class="spacing max-images">
         <div class="push-bottom-4">
             <flex justify="between" class="push-bottom-2">
                 <h2>Briefings</h2>
