@@ -20,7 +20,7 @@
     <hr/>
         <div class="bg-2 pad-verticals-4 pad-sides-6">
             <h3>
-                <?= live($page->introduction, 'paragraphs|1')?>
+                Introduction (to be written) goes here.
             </h3>
         </div>
 </div>

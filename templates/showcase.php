@@ -95,7 +95,7 @@
         <aside small="hide" large="3">
             <div class="pad-sides-2 bg-2 pad-verticals-1 spacing">
                 <h2 class="text-align-center push-bottom-2">Contact form</h2>
-                <p>Please enter your details below to enquire about working with BBPA.</p>
+                <p>If you would like your company to appear in this showcase, please fill in the form below.</p>
                 <fieldset>
 
                     <label for="edit-title">Name</label>

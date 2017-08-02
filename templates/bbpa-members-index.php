@@ -63,14 +63,14 @@
                 </fieldset>
                 <fieldset>
 
-                    <label for="edit-title">Pub name</label>
+                    <label for="edit-title">Company name</label>
 
                     <input type="text" id="edit-title">
 
                 </fieldset>
                 <fieldset>
 
-                    <label for="edit-title">Postcode</label>
+                    <label for="edit-title">Phone number</label>
 
                     <input type="text" id="edit-title">
 

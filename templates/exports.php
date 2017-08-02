@@ -28,53 +28,70 @@
 
 
 <div class="contained spacing pad-verticals-2">
+<grid>
+        <article large="9" medium="9" small="12">
+            <div class="spacing">
+                <grid sizes="12|6|4" class="push-bottom-3">
 
-    <grid sizes="12|6|4" class="push-bottom-3">
+                    <?php
 
-        <?php
+                        $posts = array (
 
-            $posts = array (
+                            array (
 
-                array (
+                                'title'         =>  'Country profiles',
+                                'link'          =>  '/templates/country-profiles.php',
+                                'image'         =>  '#'
+             
+                            ),
 
-                    'title'         =>  'Country profiles',
-                    'link'          =>  '/templates/country-profiles.php',
-                    'image'         =>  '#'
- 
-                ),
+                            array (
 
-                array (
+                                'title'         =>  'Best practice guides',
+                                'link'          =>  '/templates/best-practices.php',
+                                'image'         =>  '#'
 
-                    'title'         =>  'Best practice guides',
-                    'link'          =>  '/templates/best-practices.php',
-                    'image'         =>  '#'
+                            ),
 
-                ),
+                            array (
 
-                array (
+                                'title'         =>  'Showcase',
+                                'link'          =>  '/templates/showcase.php',
+                                'image'         =>  '#'
 
-                    'title'         =>  'Showcase',
-                    'link'          =>  '/templates/showcase.php',
-                    'image'         =>  '#'
-
-                ),
+                            ),
 
 
-            );
+                        );
 
-            $postsCount = count($posts);
+                        $postsCount = count($posts);
 
-            for ($x = 0; $x < 3; $x++) {
+                        for ($x = 0; $x < 3; $x++) {
 
-                $post = $posts[$x % $postsCount];
+                            $post = $posts[$x % $postsCount];
 
-                include('blocks/policy-card.php');
+                            include('blocks/policy-card.php');
 
-            }
+                        }
 
-        ?>
+                    ?>
+
+                </grid>
+
+
+
+                </div>  
+        </article>
+        <aside small="12" medium="3" large="3">
+        <div class="bg-2 text-align-center">
+            <p class="pad-verticals-1 pad-sides-1">Download the Export Strategy document</p>
+            <div class="pad-sides-2 ratio-50 bg-4"></div>
+            <div class="text-align-center pad-sides-1 pad-verticals-1"><a href="http://s3.amazonaws.com/bbpa-prod/attachments/documents/uploads/24683/original/Beer%20Story_2017_single%20pages.pdf?1499680304"><button>Download</button></a></div>
+            </div>
+        </aside>
 
     </grid>
+
 </div>
 
 <?php include('../src/footer.php'); ?>
