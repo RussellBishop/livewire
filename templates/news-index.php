@@ -134,6 +134,30 @@
     </div>
 </grid>
 
+    <div class="contained pad-verticals-2">
+
+        <div class="pad-verticals spacing" id="meettheteam">
+
+            <h1>Meet the team</h1>
+
+            <p><?= live($page->testing, 'sentences|1')?></p>
+
+            <grid sizes="6|3|2">
+
+                <?php
+
+                    for ($x = 1; $x <= 12; $x++) {
+                        include('../components/team-member.php');
+                    }
+
+                ?>
+
+            </grid>
+
+        </div>
+
+    </div>
+
 </div>
 
 <?php include('../src/footer.php'); ?>
