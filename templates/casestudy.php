@@ -36,7 +36,7 @@
 
         <div class="spacing pad-verticals-1 pad-sides-1 bg-4" small="12" medium-large="4">
 
-            <div class="bg-3"><img src="/dist/img/building.jpg"/></div>
+            <div class="bg-3"><img src="/assets/img/building.jpg"/></div>
             <h3>RIBA award shortlisted “Southwark Old Town Hall”</h3>
             <grid>
                     <div class="bg-1 pad-sides-1 text-small" small-medium-large="4">Brand</div>
@@ -49,7 +49,7 @@
 
         <div class="spacing pad-verticals-1 pad-sides-1 bg-4" small="12" medium-large="4">
 
-            <div class="bg-3"><img src="/dist/img/building.jpg"/></div>
+            <div class="bg-3"><img src="/assets/img/building.jpg"/></div>
             <h3>Elegant warehouse conversion in Primrose Hill</h3>
             <grid>
                     <div class="bg-1 pad-sides-1 text-small" small-medium-large="4">Brand</div>
@@ -63,7 +63,7 @@
 
         <div class="spacing pad-verticals-1 pad-sides-1 bg-4" small="12" medium-large="4">
 
-            <div class="bg-3"><img src="/dist/img/building.jpg"/></div>
+            <div class="bg-3"><img src="/assets/img/building.jpg"/></div>
             <h3>Innovative safety solutions for city centre hotel </h3>
             <grid>
                     <div class="bg-1 pad-sides-1 text-small" small-medium-large="4">Brand</div>
@@ -76,7 +76,7 @@
 
         <div class="spacing pad-verticals-1 pad-sides-1 bg-4" small="12" medium-large="4">
 
-            <div class="bg-3"><img src="/dist/img/forest.jpg"/></div>
+            <div class="bg-3"><img src="/assets/img/forest.jpg"/></div>
             <h3>Award-winning luxury Forest Holiday sites</h3>
             <grid>
                     <div class="bg-1 pad-sides-1 text-small" small-medium-large="4">Brand</div>
@@ -90,7 +90,7 @@
 
         <div class="spacing pad-verticals-1 pad-sides-1 bg-4" small="12" medium-large="4">
 
-            <div class="bg-3"><img src="/dist/img/middle.jpg"/></div>
+            <div class="bg-3"><img src="/assets/img/middle.jpg"/></div>
             <h3>New £700 million Middlewood Locks Development</h3>
             <grid>
                     <div class="bg-1 pad-sides-1 text-small" small-medium-large="4">Brand</div>

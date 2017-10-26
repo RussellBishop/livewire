@@ -11,7 +11,7 @@
 <body class="bg-4">
 <div class="contained pad-verticals-3 pad-sides-1">
     <a href="/templates/">
-        <img src="/dist/img/cb-logo.png" class="height-3" />
+        <img src="/assets/img/cb-logo.png" class="height-3" />
     </a>
 </div>
     <div class="bg-4 contained text-align-left u-full-height">

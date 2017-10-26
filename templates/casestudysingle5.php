@@ -11,7 +11,7 @@
 
     <?php include('blocks/nav.php'); ?>
 
-    <div class="bg-3 text-align-center"><img src="/dist/img/middle.jpg"/></div>
+    <div class="bg-3 text-align-center"><img src="/assets/img/middle.jpg"/></div>
     <div class="text-small"><p><?= live($page->image_credit, 'words|3')?></p></div>
 
     <h2 class="text-align-center pad-verticals-2">

@@ -1,6 +1,6 @@
 <div class="u-full-height bg-4 relative">
 
-	<div class="fill cover z-1 o-50" style="background-image: url('/dist/img/building.jpg');"></div>
+	<div class="fill cover z-1 o-50" style="background-image: url('/assets/img/building.jpg');"></div>
 
 	<div class="z-2 relative">
 	    <grid large="10" class="contained pad-top-5">
