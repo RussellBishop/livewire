@@ -45,15 +45,6 @@
         </grid>
     </div>
 </div>
-
-<grid sizes="4|4|4" class="contained bg-4 pad-verticals-5">
-
-        <?php for ($i=0; $i<3; $i++) : ?>
-            <?php include('blocks/project.php');?>
-        <?php endfor; ?>
-
-</grid>
-
     <div class="contained spacing pad-verticals-5 text-align-center">
         <h1 class="pad-verticals-3">
             <?= live($page->testimonial, 'sentences|1')?>
@@ -62,6 +53,15 @@
             <?= live($page->testimonial_author, 'sentences|1')?>
         </h2>
     </div>
+<grid sizes="4|4|4" class="contained bg-5 pad-verticals-5">
+
+        <?php for ($i=0; $i<3; $i++) : ?>
+            <?php include('blocks/project.php');?>
+        <?php endfor; ?>
+
+</grid>
+
+
 
 
     <?php include('../src/footer.php'); ?>
