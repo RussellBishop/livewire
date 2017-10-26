@@ -1,19 +1,14 @@
-<header class="contained pad-verticals">
+<header class="contained pad-verticals bg-4">
 
-<grid align="center">
-    <a href="/templates/">
-        <img src="/dist/img/cb-logo.jpg" class="height-3" />
+<grid>
+    <div>
+        <a href="/templates/">
+        <img src="/dist/img/cb-logo.png" class="height-3" />
     </a>
+</div>
+<div><a href="/templates/menu.php"><button class="m"><icon bars/></button></a></div>
 
-    <flex>
-    	<span class="pad-sides-1"><a href="/templates/index.php">Home</a></span>
-    	<span class="pad-sides-1"><a href="/templates/services.php">Services</a></span>
-        <span class="pad-sides-1"><a href="/templates/process.php">Process</a></span>
-    	<span class="pad-sides-1"><a href="/templates/casestudy.php">Case studies</a></span>
-    	<span class="pad-sides-1"><a href="/templates/aboutus.php">About us</a></span>
-        <span class="pad-sides-1"><a href="/templates/enquiryform.php">Enquire</a></span>
-    	<span class="pad-sides-1"><a href="/templates/contactus.php">Contact us</a></span>
-    </flex>
+
 
 </grid>
 

@@ -16,4 +16,56 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto|Slabo+27px" rel="stylesheet">
 <link href="/dist/css/style.css" rel="stylesheet" />
 
+
+<style>
+.h0 {
+	font-size: 4rem;
+	font-weight: 700;
+}
+
+.hA {
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+.hB {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.u-full-height {
+	min-height: 100vh;
+}
+
+:root {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+.h1, h2,
+.h2, h3,
+.h3 {
+  font-family: 'Roboto', serif;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+</style>
+
 </head>

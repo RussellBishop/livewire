@@ -1,88 +1,47 @@
 <?php
 
-    $title = 'Home';
+    $title = 'About';
 
     require '../src/src.php';
 
     $page = new Page(4201623);
 ?>
 
-<body class="bg-4">
+
+<body>
 
     <?php include('blocks/nav.php'); ?>
-    <div class="bg-0 contained pad-verticals-6 text-align-center">
-        <h1>
-            <?= live($page->vision, 'words|2')?>
+<grid class="bg-4 u-full-height">
+    <div class="contained text-align-left u-full-height" large="10">
+        <div class="h0 pad-verticals-8">
+            <?= live($page->title, 'sentences|1')?>
+        </div>
+        <div class="hA">
+            <?= live($page->about, 'sentences|1')?>
+        </div>
+    </div>
+</grid>
+
+<div class="bg-3 contained pad-verticals-3">
+    <div class="hA">Meet the team</div>
+        
+    <grid sizes="4|4|4" class="pad-verticals-5">
+
+            <?php for ($i=0; $i<6; $i++) : ?>
+                <?php include('blocks/team.php');?>
+            <?php endfor; ?>
+    </grid>
+</div>
+    <div class="contained spacing pad-verticals-5 text-align-center">
+
+        <h1 class="pad-verticals-3">
+            <?= live($page->testimonial, 'sentences|1')?>
         </h1>
-    </div>  
-    <div class="contained spacing pad-verticals-4 bg-4">
-        <h2>
-            <?= live($page->strategy_heading, 'words|2')?>
+        <h2 class="pad-verticals-3">
+            <?= live($page->testimonial_author, 'sentences|1')?>
         </h2>
-        <p>
-            <?= live($page->strategy, 'sentences|4')?>
-        </p>
-    </div>
-    <div class="contained spacing pad-verticals-4 bg-5">
-        <h2>
-            <?= live($page->story_heading, 'words|2')?>
-        </h2>
-        <p>
-            <?= live($page->story, 'sentences|4')?>
-        </p>
-    </div>
-    <div class="contained spacing pad-verticals-4 bg-4">
-        <h2>
-            <?= live($page->senior_team_heading, 'words|2')?>
-        </h2>
-        <p>
-            <?= live($page->senior_team, 'sentences|1')?>
-        </p>
 
-            <grid>
-                <div small="12" medium="4" large="4">
-                    <div class="bg-3 ratio-125"></div> 
-                        <div class="text-align-center"> 
-                        <p>Name Surname</p>
-                        <p>Role</p>
-                    </div>
-                </div>
-                <div small="12" medium="4" large="4">
-                    <div class="bg-3 ratio-125"></div> 
-                        <div class="text-align-center"> 
-                        <p>Name Surname</p>
-                        <p>Role</p>
-                    </div>
-                </div>
-                <div small="12" medium="4" large="4">
-                    <div class="bg-3 ratio-125"></div> 
-                        <div class="text-align-center"> 
-                        <p>Name Surname</p>
-                        <p>Role</p>
-                    </div>
-                </div>
-                <div small="12" medium="4" large="4">
-                    <div class="bg-3 ratio-125"></div> 
-                        <div class="text-align-center"> 
-                        <p>Name Surname</p>
-                        <p>Role</p>
-                    </div>
-                </div>
-                <div small="12" medium="4" large="4">
-                    <div class="bg-3 ratio-125"></div> 
-                        <div class="text-align-center"> 
-                        <p>Name Surname</p>
-                        <p>Role</p>
-                    </div>
-                </div>
-                <div small="12" medium="4" large="4">
-                    <div class="bg-3 ratio-125"></div> 
-                        <div class="text-align-center"> 
-                        <p>Name Surname</p>
-                        <p>Role</p>
-                    </div>
-                </div>
-            </grid>
     </div>
 
-        <?php include('../src/footer.php'); ?>
+
+    <?php include('../src/footer.php'); ?>

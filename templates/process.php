@@ -7,86 +7,63 @@
     $page = new Page(4426978);
 ?>
 
+
 <body>
 
     <?php include('blocks/nav.php'); ?>
-
-    <div class="bg-0 contained pad-verticals-6 text-align-center">
-        <h1>
-            <?= live($page->heading, 'words|2')?>
-        </h1>
+<grid class="bg-4 u-full-height">
+    <div class="contained text-align-left u-full-height" large="10">
+        <div class="h0 pad-verticals-8">
+            <?= live($page->title, 'sentences|1')?>
+        </div>
+        <div class="hA">
+            <?= live($page->intro, 'sentences|1')?>
+        </div>
     </div>
+</grid>
 
+<div class="bg-3 contained pad-verticals-3">
+        
+    <grid sizes="4|4|4" class="pad-verticals-5">
+        <div class="pad-verticals-2">
+            <h1><?= live($page->stage_1_title, 'words|4')?></h1>
+            <h2 class="pad-verticals-2"><?= live($page->stage_1_intro, 'words|4')?></h2>
+            <h4><?= live($page->stage_1_text, 'words|4')?></h4>
+        </div>
 
-    <div class="bg-3 spacing contained pad-verticals-4">
-        <h2>
-            <?= live($page->page_title, 'words|2')?>
-        </h2>
-        <p>
-            <?= live($page->introduction, 'sentences|1')?>
-        </p>
-    </div>
+        <div class="pad-verticals-2">
+            <h1><?= live($page->stage_2_title, 'words|4')?></h1>
+            <h2 class="pad-verticals-2"><?= live($page->stage_2_intro, 'words|4')?></h2>
+            <h4><?= live($page->stage_2_text, 'words|4')?></h4>
+        </div>
 
-<div class="contained spacing pad-verticals-2">
-    <grid class="bg-4">
-        <div class="spacing pad-verticals-1 pad-sides-1 bg-4" small="12" medium-large="4">
-            <h2><?= live($page->stage_1_title, 'words|3')?></h2>
-        </div> 
-        <div class="spacing pad-verticals-1 pad-sides-1 bg-4" small="12" medium-large="8">
-            <p><?= live($page->stage_1_text, 'sentences|4')?></p>
-        </div> 
+        <div class="pad-verticals-2">
+            <h1><?= live($page->stage_3_title, 'words|4')?></h1>
+            <h2 class="pad-verticals-2"><?= live($page->stage_3_intro, 'words|4')?></h2>
+            <h4><?= live($page->stage_3_text, 'words|4')?></h4>
+        </div>
+
+        <div class="pad-verticals-2">
+            <h1><?= live($page->stage_4_title, 'words|4')?></h1>
+            <h2 class="pad-verticals-2"><?= live($page->stage_4_intro, 'words|4')?></h2>
+            <h4><?= live($page->stage_4_text, 'words|4')?></h4>
+        </div>
+
+        <div class="pad-verticals-2">
+            <h1><?= live($page->stage_5_title, 'words|4')?></h1>
+            <h2 class="pad-verticals-2"><?= live($page->stage_5_intro, 'words|4')?></h2>
+            <h4><?= live($page->stage_5_text, 'words|4')?></h4>
+        </div>
+
+        <div class="pad-verticals-2">
+            <h1><?= live($page->stage_6_title, 'words|4')?></h1>
+            <h2 class="pad-verticals-2"><?= live($page->stage_6_intro, 'words|4')?></h2>
+            <h4><?= live($page->stage_6_text, 'words|4')?></h4>
+        </div>
+
     </grid>
 </div>
-<div class="contained spacing pad-verticals-2">
-    <grid class="bg-4">
-        <div class="spacing pad-verticals-1 pad-sides-1 bg-4" small="12" medium-large="4">
-            <h2><?= live($page->stage_2_title, 'words|3')?></h2>
-        </div> 
-        <div class="spacing pad-verticals-1 pad-sides-1 bg-4" small="12" medium-large="8">
-            <p><?= live($page->stage_2_text, 'sentences|4')?></p>
-        </div> 
-    </grid>
-</div>
-<div class="contained spacing pad-verticals-2">
-    <grid class="bg-4">
-        <div class="spacing pad-verticals-1 pad-sides-1 bg-4" small="12" medium-large="4">
-            <h2><?= live($page->stage_3_title, 'words|3')?></h2>
-        </div> 
-        <div class="spacing pad-verticals-1 pad-sides-1 bg-4" small="12" medium-large="8">
-            <p><?= live($page->stage_3_text, 'sentences|4')?></p>
-        </div> 
-    </grid>
-</div>
-<div class="contained spacing pad-verticals-2">
-    <grid class="bg-4">
-        <div class="spacing pad-verticals-1 pad-sides-1 bg-4" small="12" medium-large="4">
-            <h2><?= live($page->stage_4_title, 'words|3')?></h2>
-        </div> 
-        <div class="spacing pad-verticals-1 pad-sides-1 bg-4" small="12" medium-large="8">
-            <p><?= live($page->stage_4_text, 'sentences|4')?></p>
-        </div> 
-    </grid>
-</div>
-<div class="contained spacing pad-verticals-2">
-    <grid class="bg-4">
-        <div class="spacing pad-verticals-1 pad-sides-1 bg-4" small="12" medium-large="4">
-            <h2><?= live($page->stage_5_title, 'words|3')?></h2>
-        </div> 
-        <div class="spacing pad-verticals-1 pad-sides-1 bg-4" small="12" medium-large="8">
-            <p><?= live($page->stage_5_text, 'sentences|4')?></p>
-        </div> 
-    </grid>
-</div>
-<div class="contained spacing pad-verticals-2">
-    <grid class="bg-4">
-        <div class="spacing pad-verticals-1 pad-sides-1 bg-4" small="12" medium-large="4">
-            <h2><?= live($page->stage_6_title, 'words|3')?></h2>
-        </div> 
-        <div class="spacing pad-verticals-1 pad-sides-1 bg-4" small="12" medium-large="8">
-            <p><?= live($page->stage_6_text, 'sentences|4')?></p>
-        </div> 
-    </grid>
-</div>
+
 
 
     <?php include('../src/footer.php'); ?>
