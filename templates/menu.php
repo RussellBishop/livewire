@@ -28,10 +28,10 @@
             <a href="/templates/process.php">How we work</a>
         </div>
         <div class="h0 pad-verticals-1">
-            <a href="/templates/praise.php">Praise</a>
+            <a href="/templates/praise.php">Recommendations</a>
         </div>
         <div class="h0 pad-verticals-1">
-            <a href="/templates/process.php">Contact us</a>
+            <a href="/templates/process.php">Get in touch</a>
         </div>
     </div>
 

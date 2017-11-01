@@ -18,6 +18,11 @@
 
 
 <style>
+.hXL {
+  font-size: 10rem;
+  font-weight: 700;
+}
+
 .h0 {
 	font-size: 4rem;
 	font-weight: 700;

@@ -22,16 +22,18 @@
     </div>
 </grid>
 
-<div class="bg-3 contained pad-verticals-3">
-    <div class="hA">Meet the team</div>
-        
-    <grid sizes="4|4|4" class="pad-verticals-5">
+<!--
+    <div class="bg-3 contained pad-verticals-3">
+        <div class="hA">Meet the team</div>
+            
+        <grid sizes="4|4|4" class="pad-verticals-5">
 
-            <?php for ($i=0; $i<6; $i++) : ?>
-                <?php include('blocks/team.php');?>
-            <?php endfor; ?>
-    </grid>
-</div>
+                <?php for ($i=0; $i<6; $i++) : ?>
+                    <?php include('blocks/team.php');?>
+                <?php endfor; ?>
+        </grid>
+    </div>
+-->
     <div class="contained spacing pad-verticals-5 text-align-center">
 
         <h1 class="pad-verticals-3">
