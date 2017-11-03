@@ -31,7 +31,7 @@
             <a href="/templates/praise.php">Recommendations</a>
         </div>
         <div class="h0 pad-verticals-1">
-            <a href="/templates/process.php">Get in touch</a>
+            <a href="/templates/getintouch.php">Get in touch</a>
         </div>
     </div>
 
